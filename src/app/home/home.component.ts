@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, DestroyRef, ElementRef, Signal, computed, effect, inject, viewChildren, Inject, PLATFORM_ID } from '@angular/core';
+import { ChangeDetectionStrategy, Component, DestroyRef, ElementRef, Signal, computed, effect, inject, viewChildren, PLATFORM_ID } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 
@@ -15,9 +15,7 @@ import { Utils } from '../core/utils';
 import { SharedGalleryComponent } from '../shared/gallery/gallery.component';
 import { Artist } from '../core/models/artist.model';
 import { News } from '../core/models/news.model';
-
-
-type EventWithArtistRoutes = Event & { artists: { artistName: string; artistRoute: string }[] };
+import { EventsComponent } from './events/events';
 
 @Component({
     selector: 'mk-home',
@@ -29,7 +27,8 @@ type EventWithArtistRoutes = Event & { artists: { artistName: string; artistRout
 		HeroComponent,
         ReleaseCardComponent,
         PodcastComponent,
-        SharedGalleryComponent
+        SharedGalleryComponent,
+        EventsComponent
     ],
     templateUrl: './home.component.html',
     styleUrls: ['home.component.scss'],

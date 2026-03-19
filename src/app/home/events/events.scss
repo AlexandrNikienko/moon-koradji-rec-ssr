@@ -1,0 +1,178 @@
+@use '../../../styles/_utils.scss' as *;
+
+.event {
+	background: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 100%);
+    padding: 0 2rem 2rem;
+    border-radius: 0 1rem 1rem;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	&__item {
+		display: flex;
+		gap: 2rem;
+		background: #00000080;
+        padding: 2rem;
+        border-radius: 1rem;
+		position: relative;
+
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			z-index: 0;
+		}
+
+		&:before {
+			inset: -2px;
+			background-image: linear-gradient(to right bottom, rgb(147, 51, 234), rgb(6, 182, 212));
+			border-radius: 1rem;
+		}
+
+		&:after {
+			inset: 0;
+			background: linear-gradient(135deg,rgba(19,19,19,.85),#111);
+			border-radius: 2rem;
+		}
+
+		&:last-child {
+			.event__left {
+				@include mobile {
+					display: none;
+				}
+			}
+		}
+
+		@include mobile {
+			flex-direction: column;
+			padding-inline: 1rem;
+		}
+	}
+	
+	&__left {
+		flex: 0 0 30%;
+
+		@include mobile {
+			flex: 0 0;
+		}
+	}
+
+	&__left,
+	&__right {
+		position: relative;
+    	z-index: 1;
+	}
+
+	&__date {
+		font-size: 3rem;
+		font-weight: bold;
+		line-height: 1;
+		color: rgb(192, 132, 252);
+	}
+
+	&__month {
+		font-size: 2rem;
+		text-transform: uppercase;
+		color: rgb(103, 232, 249);
+	}
+
+	&__year {
+		color: rgb(156, 163, 175)
+	}
+
+	&__title {
+		font-size: 2rem;
+		font-weight: 600;
+		line-height: normal;
+
+		text-transform: uppercase;
+		background: linear-gradient(90deg, cyan, violet);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+		@include mobile {
+			margin-bottom: 1rem;;
+		}
+	}
+
+	&__info {
+		margin-bottom: 1.5rem;
+	}
+
+	&__artists {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	&__artist {
+		padding: .5rem 1rem;
+		background-color: #53454580;
+		border-radius: 9999px;
+
+		&:not(:last-child):hover {
+			text-decoration: underline;
+		}
+
+		@include mobile {
+			font-size: .7em;
+		}
+	}
+
+	&__mushroom,
+	&__mushroom2 {
+		position: absolute;
+		width: auto;
+		z-index: 1;
+		opacity: 0.5;
+	}
+
+
+	&__mushroom {
+		height: 130px;
+		bottom: 0;
+		left: 50px;
+		animation: mushroom-glow 3s infinite ease-in-out;
+
+		@include tablet {
+			left: 10px;
+		}
+
+		@include mobile {
+			display: none;
+		}
+	}
+
+	&__mushroom2 {
+		height: 110px;
+    	bottom: -5px;
+		right: 50px;
+		animation: mushroom-glow 3s infinite ease-in-out;
+
+		@include tablet {
+			display: none;
+		}
+
+		@include mobile {
+			display: none;
+		}
+	}
+
+	@include mobile {
+		padding: 0 1rem 1rem;
+	}
+}
+
+@keyframes mushroom-glow {
+	0%, 100% {
+		opacity: 0.3;
+	}
+	50% {
+		opacity: 0.6;
+	}
+}
