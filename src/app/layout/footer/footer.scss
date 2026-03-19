@@ -1,0 +1,246 @@
+@use '../../../styles/utils' as *;
+
+.footer {
+	position: relative;
+	padding: 4rem 0;
+	background-color: $dark;
+	background: linear-gradient(135deg, $dark 0%, #000 100%);
+	width: 100%;
+	color: #9d9d9d;
+
+	%title {
+		text-transform: uppercase;
+		border-bottom: 1px solid var(--themeColor);
+		padding-bottom: 0.25em;
+		display: inline-block;
+		font-size: 1em;
+		font-weight: 300;
+		margin: 0;
+	}
+
+	.b-short-about {
+		&__header {
+			margin-bottom: 0.75em;
+		}
+
+		&__title {
+			@extend %title;
+		}
+
+		&__image {
+			width: 100px;
+			height: 100px;
+			float: inline-start;
+			margin-inline: 0 0.5rem;
+			margin-block: 0 0.5rem;
+		}
+
+		&__text {
+			margin: 0;
+			text-box-trim: trim-both;
+		}
+
+		&__link {
+			color: var(--themeColor);
+			white-space: nowrap;
+			display: inline-block;
+		}
+
+		@include mobile {
+			margin-bottom: 1em;
+		}
+	}
+
+	.s-more-info {
+		text-align: right;
+		text-align: end;
+		line-height: 1.5;
+
+		&__notes {
+			margin: 0.5em 0 0.25em 0;
+			font-size: 1em;
+
+			i {
+				font-style: italic;
+			}
+		}
+
+		&__contact {
+			a:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.s-follow {
+		&__header {
+			margin-bottom: 0.75em;
+			text-align: right;
+			text-align: end;
+		}
+
+		&__title {
+			@extend %title;
+		}
+
+		.btn-group {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+			margin-bottom: 0.5em;
+		}
+
+		.btn-link {
+			color: rgb(157, 157, 157);
+			flex: 0 0 auto;
+			font-size: 1em;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: none;
+				color: white;
+
+				.fa-facebook-square::before {
+					color: rgb(59, 89, 152);
+				}
+
+				.fa-soundcloud::before {
+					color: rgb(255, 115, 0);
+				}
+
+				.fa-music::before {
+					color: rgb(97, 154, 169);
+				}
+
+				.fa-youtube::before {
+					color: rgb(255, 0, 0);
+				}
+
+				.fa-instagram::before {
+					color: rgb(214,41,118);
+				}
+
+				.fa-bandcamp::before {
+					color: rgba(33, 149, 185, 0.75);
+				}
+			}
+		}
+
+		.fab,
+		.fas {
+			margin-right: 0;
+			margin-inline-end: 0.25em;
+
+			&::before {
+				transition: color 0.3s;
+			}
+		}
+	}
+
+	.fb-like {
+		padding: 0 0.75em;
+	}
+
+	.shops-wrapper {
+		margin-top: 2em;
+
+		&__title {
+			font-size: 1em;
+			font-weight: 300;
+			margin: 0;
+		}
+	}
+
+	.shops-list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		&__item {
+			margin: 0.5em;
+		}
+
+		&__item-link {
+			img {
+				max-width: 150px;
+				max-height: 30px;
+				vertical-align: middle;
+			}
+		}
+
+		@include tablet {
+			justify-content: center;
+		}
+
+		@include mobile {
+			justify-content: center;
+		}
+	}
+
+	.beatport-headphones {
+		margin-right: 4px;
+		height: 29px;
+		width: 29px;
+	}
+
+	.beatport-title {
+		height: 22px;
+		width: 103px;
+	}
+
+	@include mobile {
+		//  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+		font-size: calc(1em + (2 - 1) * ((100vw - 320px) / (768 - 320)));
+	}
+}
+
+@include desktopSmall {
+	.m-footer {
+		.s-follow {
+			.btn {
+				padding-right: 0.5em;
+				padding-left: 0.5em;
+			}
+		}
+	}
+}
+
+@include mobile {
+	.m-footer {
+		.s-left,
+		.s-right {
+			width: 100%;
+			text-align: center;
+		}
+
+		.s-left {
+			&__notes i {
+				display: none;
+			}
+		}
+
+		.s-right {
+			.btn-group {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+		}
+
+		.fb-like {
+			display: none;
+		}
+	}
+}
+
+.deco-f {
+	width: 200px;
+    height: auto;
+    position: absolute;
+    bottom: calc(100% - 8px);
+    left: 50%;
+    transform: translate(-50%) rotate(180deg);
+}

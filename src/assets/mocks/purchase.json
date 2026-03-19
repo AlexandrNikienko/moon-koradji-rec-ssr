@@ -1,0 +1,19 @@
+{
+	"purchase": [{
+		"title": "Out Now",
+		"subtitle": "Fresh psychedelic sounds",
+		"item": {
+			"cover": {
+				"default": "mkrl027_nexus_chrome.jpg",
+				"webp": "mkrl027_nexus_chrome-500.webp",
+				"webp2x": "mkrl027_nexus_chrome-1000.webp"
+			},
+			"title": "N3XU5",
+			"subtitle": "Chrome",
+			"button": {
+				"title": "More Info",
+				"routerLink": "releases/nexus-chrome"
+			}
+		}
+	}]
+}

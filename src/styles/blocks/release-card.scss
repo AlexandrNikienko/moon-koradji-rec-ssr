@@ -1,0 +1,147 @@
+.release-card {
+	display: block;
+	position: relative;
+	//color: black;
+	//background-repeat: no-repeat;
+	//background-position: center;
+	//background-size: cover;
+	overflow: hidden;
+	border-radius: 5px;
+
+	// &:before,
+	// &:after {
+	// 	content: "";
+	// 	position: absolute;
+	// 	z-index: 0;
+	// }
+
+	// &:before {
+	// 	inset: -2px;
+	// 	background-image: linear-gradient(to right bottom, rgb(147, 51, 234), rgb(6, 182, 212));
+	// 	border-radius: 1rem;
+	// }
+
+	// &:after {
+	// 	inset: 0;
+	// 	background: linear-gradient(135deg,#111,#000);
+	// 	border-radius: 2rem;
+	// }
+
+	&__link {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		cursor: pointer;
+		z-index: 15;
+	}
+
+	&__inner {
+		position: absolute;
+		inset: 0;
+		z-index: 10;
+		background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.75) 100%);
+	}
+
+	&__top,
+	&__bottom {
+		position: absolute;
+		left: 0;
+
+		@supports (inset-inline-start: 0) {
+			inset-inline-start: 0;
+			left: auto;
+		}
+	}
+
+	&__top {
+		z-index: 1;
+		background-color: rgba(0, 0, 0, 0.75);
+		padding: 0.5rem;
+		border-end-end-radius: .5rem;
+		border-start-end-radius: .5rem;
+		line-height: normal;
+		top: 0.5rem;
+	}
+
+	&__top-title {
+		color: #fff;
+		font-size: 0.75rem;
+		text-transform: uppercase;
+	}
+
+	&__top-text {
+		display: inline-block;
+		width: 100%;
+		text-align: left;
+		text-align: start;
+		color: var(--themeColor);
+	}
+
+	&__bottom {
+		bottom: -42px;
+		z-index: 10;
+		transition: 0.3s;
+	}
+
+	&__bottom-title {
+		// font-size: 1.25rem;
+		line-height: normal;
+		color: var(--lightGreyAlt);
+		padding: 0 1rem 1rem;
+		margin: 0;
+		display: block;
+		transition: padding-bottom 0.3s;
+	}
+
+	&__bottom-text {
+		padding: 0 1rem 1rem;
+		font-size: 1rem;
+		color: var(--themeColor);
+		white-space: nowrap;
+	}
+
+	&__image {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 5;
+	}
+
+	&__new {
+		width: auto;
+		vertical-align: baseline;
+	}
+
+	&:hover {
+		.release-card {
+			&__bottom {
+				bottom: 0;
+			}
+
+			&__bottom-title {
+				padding-bottom: 0.25rem;
+			}
+		}
+	}
+}
+
+.free-icon {
+	margin-right: 0.5rem;
+	background-color: red;
+	padding: 2px 4px 2px;
+	font-size: 0.75rem;
+	border-radius: 4px;
+	position: relative;
+	bottom: 2px;
+	text-transform: uppercase;
+	display: inline-block;
+
+	@supports (margin-inline-end: 0) {
+		margin-right: 0;
+		margin-inline-end: 0.5rem;
+	}
+}

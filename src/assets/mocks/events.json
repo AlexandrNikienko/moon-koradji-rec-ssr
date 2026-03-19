@@ -1,0 +1,26 @@
+{
+    "events": [
+		{
+			"date": "25",
+			"month": "January",
+			"year": "2026",
+			"endDate": "2026-01-25",
+			"country": "Sweden",
+			"title": "Meners Celebration 2026",
+			"info": "Groove Events Stokholm & MindGamers presents",
+			"link": "https://facebook.com/events/s/meners-celebration-2026/1557904335236696/",
+			"artists": ["Whrikk", "Kluster"]
+		},
+		{
+            "date": "17-24",
+            "month": "August",
+            "year": "2026",
+			"endDate": "2026-08-24",
+            "country": "Romania",
+            "title": "Glia Gathering",
+			"info": "Psytrance festival in Romanian mountains",
+			"link": "https://www.facebook.com/profile.php?id=100070371251345",
+			"artists": ["Whrikk", "Molchun", "Noise Gust", "DJ Zloj"]
+        }
+    ]
+}

@@ -1,0 +1,451 @@
+@use '../../styles/_utils.scss' as *;
+
+@import 'bootstrap/scss/_functions';
+@import 'bootstrap/scss/_variables';
+@import 'bootstrap/scss/mixins/_breakpoints';
+
+.hero-wrapper,
+.recent-releases-wrapper,
+.podcast-wrapper,
+.new
+{
+	margin-bottom: 12rem;
+
+	@include mobile {
+		margin-bottom: 6rem;
+	}
+}
+
+.featured-artists-wrapper {
+	margin-bottom: 5rem;
+
+	@include mobile {
+		margin-bottom: 3rem;
+	}
+}
+
+.event {
+	background: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 100%);
+    padding: 0 2rem 2rem;
+    border-radius: 0 1rem 1rem;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	&__item {
+		display: flex;
+		gap: 2rem;
+		background: #00000080;
+        padding: 2rem;
+        border-radius: 1rem;
+		position: relative;
+
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			z-index: 0;
+		}
+
+		&:before {
+			inset: -2px;
+			background-image: linear-gradient(to right bottom, rgb(147, 51, 234), rgb(6, 182, 212));
+			border-radius: 1rem;
+		}
+
+		&:after {
+			inset: 0;
+			background: linear-gradient(135deg,rgba(19,19,19,.85),#111);
+			border-radius: 2rem;
+		}
+
+		&:last-child {
+			.event__left {
+				@include mobile {
+					display: none;
+				}
+			}
+		}
+
+		@include mobile {
+			flex-direction: column;
+			padding-inline: 1rem;
+		}
+	}
+	
+	&__left {
+		flex: 0 0 30%;
+
+		@include mobile {
+			flex: 0 0;
+		}
+	}
+
+	&__left,
+	&__right {
+		position: relative;
+    	z-index: 1;
+	}
+
+	&__date {
+		font-size: 3rem;
+		font-weight: bold;
+		line-height: 1;
+		color: rgb(192, 132, 252);
+	}
+
+	&__month {
+		font-size: 2rem;
+		text-transform: uppercase;
+		color: rgb(103, 232, 249);
+	}
+
+	&__year {
+		color: rgb(156, 163, 175)
+	}
+
+	&__title {
+		font-size: 2rem;
+		font-weight: 600;
+		line-height: normal;
+
+		text-transform: uppercase;
+		background: linear-gradient(90deg, cyan, violet);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+		@include mobile {
+			margin-bottom: 1rem;;
+		}
+	}
+
+	&__info {
+		margin-bottom: 1.5rem;
+	}
+
+	&__artists {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	&__artist {
+		padding: .5rem 1rem;
+		background-color: #53454580;
+		border-radius: 9999px;
+
+		&:not(:last-child):hover {
+			text-decoration: underline;
+		}
+
+		@include mobile {
+			font-size: .7em;
+		}
+	}
+
+	&__mushroom,
+	&__mushroom2 {
+		position: absolute;
+		width: auto;
+		z-index: 1;
+		opacity: 0.5;
+	}
+
+
+	&__mushroom {
+		height: 130px;
+		bottom: 0;
+		left: 50px;
+		animation: mushroom-glow 3s infinite ease-in-out;
+
+		@include tablet {
+			left: 10px;
+		}
+
+		@include mobile {
+			display: none;
+		}
+	}
+
+	&__mushroom2 {
+		height: 110px;
+    	bottom: -5px;
+		right: 50px;
+		animation: mushroom-glow 3s infinite ease-in-out;
+
+		@include tablet {
+			display: none;
+		}
+
+		@include mobile {
+			display: none;
+		}
+	}
+
+	@include mobile {
+		padding: 0 1rem 1rem;
+	}
+}
+
+@keyframes mushroom-glow {
+	0%, 100% {
+		opacity: 0.3;
+	}
+	50% {
+		opacity: 0.6;
+	}
+}
+
+.recent-releases-inner {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+	grid-auto-rows: 1fr;
+	grid-gap: 2rem;
+	position: relative;
+	z-index: 10;
+
+	@include media-breakpoint-down(md) {
+		> app-release-card:last-of-type {
+			display: none;
+		}
+	}
+}
+
+app-release-card {
+	opacity: 0;
+	transition: .5s;
+
+	@include media-breakpoint-up(lg) {
+		&:nth-child(1) {
+			transform: translateX(-20px);
+		}
+
+		&:nth-child(3) {
+			transform: translateX(20px);
+		}
+	}
+
+	&.animate-in {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.bottom {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+
+	&__left {
+		flex: 0 1 340px;
+	}
+
+	&__right {
+		@include media-breakpoint-up(lg) {
+			display: block;
+			flex: 1 0 530px;
+		}
+
+		@include mobile {
+			margin-top: 3rem;
+		}
+	}
+
+	&__left,
+	&__right {
+		@media (min-width: $tablet-width) {
+			background: $darkBg;
+			padding: 2rem;
+			border-radius: 1rem;
+		}
+	}
+
+	@include tablet {
+		flex-wrap: wrap;
+	}
+
+	@include mobile {
+		flex-wrap: wrap;
+	}
+}
+
+.go-to-merch {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	&__title {
+		width: 100%;
+		margin-bottom: 2rem;
+		text-align: center;
+		font-size: 26px;
+		line-height: 1;
+	}
+
+	&__link {
+		position: relative;
+
+		&::after {
+			content: "\27a4";
+			position: absolute;
+			top: 6px;
+			left: 100%;
+			text-shadow: none;
+			animation: arrow 1s linear infinite;
+		}
+	}
+
+	&__content {
+		text-align: center;
+    	display: flex;
+    	align-items: flex-end;
+
+		img {
+			$k: 1;
+			$male: 400px;
+			$female: $male * $k;
+			width: auto;
+
+			&[src*='tshirt-2'] {
+				aspect-ratio: 365/719;
+    			width: $male;
+			}
+
+			&[src*='tshirt-1'] {
+				aspect-ratio: 292/619;
+    			width: $female;
+			}
+
+			&[src*='2024-dark'] {
+				//aspect-ratio: 447/560;
+    			width: $male;
+			}
+
+			&[src*='2024-color'] {
+				//aspect-ratio: 619/600;
+    			width: $female;
+			}
+		}
+
+		@include tablet {
+			padding-inline: 5rem;
+		}
+
+		@include mobile {
+			padding-inline: 0;
+			margin-bottom: 2rem;
+		}
+	}
+}
+
+.new-merch {
+	background: url("#{$imageFolder}/t-shirts/3/FB_banner_bg.jpg") no-repeat center / cover;
+	display: flex;
+	padding: 2rem;
+	border-radius: 2rem;
+	overflow: hidden;
+	//margin-top: 5rem;
+	// grid-template-columns: auto;
+	// grid-auto-columns: auto;
+	// grid-template-rows: auto;
+
+	&__title {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 5rem;
+
+		img {
+			margin-bottom: 1rem;
+			max-width: 250px;
+		}
+
+		a {
+			font-size: 1.5rem;
+    		text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	&__item {
+		display: flex;
+		justify-content: end;
+	}
+
+	&__title,
+	&__item {
+		flex: 1;
+	}
+}
+
+@media (max-width: 575px) {
+	$gap: 1rem;
+
+	.featured-artists-wrapper {
+		width: calc(100vw - #{$gap} * 2);
+	}
+}
+
+::ng-deep .release-card {
+	border: 2px solid gainsboro;
+}
+
+.deco {
+	svg {
+		width: 250px;
+		height: auto;
+		margin: auto;
+		display: block;
+	}
+}
+
+.deco2 {
+	margin-bottom: 1rem;
+
+	svg {
+		width: 250px;
+	}
+}
+
+.deco3 {
+	margin-top: 1rem;
+	margin-bottom: 5rem;
+
+	svg {
+		width: 250px;
+	}
+}
+
+.podcast-wrapper {
+	position: relative;
+
+	.deco svg {
+		width: 200px;
+	}
+
+	.deco4 {
+		transform: rotate(90deg);
+		position: absolute;
+		right: -181px;
+    	bottom: 100px;
+	}
+
+	.deco5 {
+		transform: rotate(-90deg);
+		position: absolute;
+		left: -181px;
+		bottom: 100px;
+	}
+}
+
+.deco1 {
+	margin-bottom: 1rem;
+}
