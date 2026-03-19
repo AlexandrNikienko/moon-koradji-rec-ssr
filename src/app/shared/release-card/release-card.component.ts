@@ -1,6 +1,6 @@
 import { RouterModule } from '@angular/router';
 
-import { Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { Release } from '../../core/models/release.model';
 import { IMAGEFOLDER } from '../../../environments/environment';
 import { PictureComponent } from '../picture/picture.component';
@@ -8,7 +8,8 @@ import { PictureComponent } from '../picture/picture.component';
 @Component({
     imports: [RouterModule, PictureComponent],
     selector: 'app-release-card',
-    templateUrl: './release-card.component.html'
+    templateUrl: './release-card.component.html',
+  	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ReleaseCardComponent {
 	releaseItem = input.required<Release>();

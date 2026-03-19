@@ -10,7 +10,9 @@
 </svg>
 
 @if (heroRelease()) {
-	<app-hero [heroRelease]="heroRelease()"/>
+  <section class="hero-wrapper">
+    <app-hero [heroRelease]="heroRelease()"/>
+  </section>
 }
 
 @if (recentReleases().length > 0) {

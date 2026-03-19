@@ -1,11 +1,12 @@
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { iMeta, MetaDataService } from './../core/services/meta-data.service';
-import { Component, inject } from '@angular/core';
 
 @Component({
     imports: [RouterModule],
     templateUrl: 'about.component.html',
-    styleUrls: ['about.component.scss']
+    styleUrls: ['about.component.scss'],
+  	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AboutComponent {
 	private metaData = inject(MetaDataService);

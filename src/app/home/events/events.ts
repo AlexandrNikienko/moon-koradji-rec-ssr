@@ -1,4 +1,4 @@
-import { Component, computed, inject, Signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, Signal } from '@angular/core';
 import { DataSignalService } from '../../core/services/data-signal';
 import { Event } from '../../core/models/event.model';
 import { RouterModule } from '@angular/router';
@@ -9,10 +9,10 @@ type EventWithArtistRoutes = Event & { artists: { artistName: string; artistRout
     selector: 'app-events',
     templateUrl: './events.html',
     styleUrls: ['./events.scss'],
-    standalone: true,
     imports: [
         RouterModule
-    ]
+    ],
+  	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EventsComponent {
     private dataSignalService = inject(DataSignalService);

@@ -1,5 +1,5 @@
 
-import { Component, OnInit, input, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, OnInit, input, Inject, PLATFORM_ID, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -17,7 +17,8 @@ register();
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
     templateUrl: './gallery.component.html',
     styleUrls: ['swiper.scss'],
-    standalone: true
+    standalone: true,
+  	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SharedGalleryComponent implements OnInit {
 	items = input<Gallery[]>();

@@ -1,9 +1,9 @@
-<section class="new">
-    <div class="new__left">
+<section class="hero">
+    <div class="hero__left">
         <app-picture [cover]="heroRelease()!.releaseCover" [imageFolder]="'release-cover/'" />
     </div>
 
-    <div class="new__right">
+    <div class="hero__right">
         <section class="deco deco1">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="834.000000pt" height="173.000000pt"
                 viewBox="0 0 834.000000 173.000000" preserveAspectRatio="xMidYMid meet">
@@ -21,10 +21,10 @@
 
         <mk-heading [title]="heroReleaseStatus()" [subTitle]="'Fresh psychedelic sounds'" />
 
-        <div class="new__title">{{heroRelease()!.releaseTitle.split(' - ')[0]}}</div>
+        <div class="hero__title">{{heroRelease()!.releaseTitle.split(' - ')[0]}}</div>
 
         @if (heroRelease()!.releaseSubTitle) {
-        <div class="new__sub-title">&laquo;{{heroRelease()!.releaseTitle.split(' - ')[1]}}&raquo;</div>
+            <div class="hero__sub-title">&laquo;{{heroRelease()!.releaseTitle.split(' - ')[1]}}&raquo;</div>
         }
 
         <a [routerLink]="'/releases/' + heroRelease()!.releaseRoute" class="btn">
@@ -32,7 +32,7 @@
         </a>
     </div>
 
-    <div class="new__bg">
-        <img class="new__bg-image" src="{{coverFolder + heroRelease()!.releaseCover.default}}" alt="">
+    <div class="hero__bg">
+        <img class="hero__bg-image" src="{{coverFolder + heroRelease()!.releaseCover.default}}" alt="">
     </div>
 </section>

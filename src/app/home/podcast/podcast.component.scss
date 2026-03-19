@@ -9,7 +9,7 @@
 	z-index: 1;
 	display: block;
 	text-align: center;
-	background: url("#{$imageFolder}/mk-bg-alt.jpg") center / cover;
+	background: url("#{$imageFolder}/mk-bg-alt.jpg") no-repeat center / cover;
 
 	&__item {
 		display: flex;

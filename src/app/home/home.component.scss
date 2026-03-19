@@ -6,8 +6,7 @@
 
 .recent-releases-wrapper,
 .podcast-wrapper,
-::ng-deep .new
-{
+.hero-wrapper {
 	margin-bottom: 12rem;
 
 	@include mobile {
