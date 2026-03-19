@@ -398,7 +398,7 @@ app-release-card {
 	border: 2px solid gainsboro;
 }
 
-.deco {
+::ng-deep .deco {
 	svg {
 		width: 250px;
 		height: auto;
@@ -446,6 +446,6 @@ app-release-card {
 	}
 }
 
-.deco1 {
+::ng-deep .deco1 {
 	margin-bottom: 1rem;
 }

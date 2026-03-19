@@ -9,7 +9,7 @@ import gsap from 'gsap';
   styleUrls: ['./welcome.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HeroComponent implements AfterViewInit, OnDestroy {
+export class WelcomeComponent implements AfterViewInit, OnDestroy {
   @ViewChild('canvas', { static: true }) canvasRef!: ElementRef<HTMLCanvasElement>;
   @ViewChild('eyebrow', { static: false }) eyebrowRef!: ElementRef<HTMLDivElement>;
   @ViewChild('titleAccent', { static: false }) titleAccentRef!: ElementRef<HTMLDivElement>;

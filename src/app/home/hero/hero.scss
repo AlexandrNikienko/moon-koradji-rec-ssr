@@ -1,4 +1,4 @@
-@use '../utils' as *;
+@use '../../../styles/utils' as *;
 
 .new {
     display: flex;
@@ -10,8 +10,6 @@
 	position: relative;
 	overflow: hidden;
 	border: 1px solid gainsboro;
-
-	//background: radial-gradient(140% 107.13% at 50% 10%, transparent 30%, #63e 100%);
 	background: radial-gradient(140% 100% at 50% 0%, rgba(102, 51, 238, 0.2) 0%, transparent 70%);
 
 	@include mobile {
@@ -91,7 +89,7 @@
 		object-fit: cover;
 	}
 
-	.picture img {
+	::ng-deep .picture img {
 		width: 475px;
 		border-radius: 1rem;
 		box-shadow: $brand-border;
@@ -112,10 +110,4 @@
 	@include mobile {
 		flex-direction: column;
 	}
-
-	// .heading {
-	// 	&__title {
-	// 		background: linear-gradient(97.13deg, rgb(132 242 7) 8.47%, rgba(255, 193, 7, .5) 108.41%) text !important;
-	// 	}
-	// }
 }
