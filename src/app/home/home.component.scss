@@ -4,10 +4,9 @@
 @import 'bootstrap/scss/_variables';
 @import 'bootstrap/scss/mixins/_breakpoints';
 
-.hero-wrapper,
 .recent-releases-wrapper,
 .podcast-wrapper,
-.new
+::ng-deep .new
 {
 	margin-bottom: 12rem;
 
@@ -201,7 +200,7 @@
 	}
 }
 
-.recent-releases-inner {
+::ng-deep .recent-releases-inner {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
 	grid-auto-rows: 1fr;
@@ -216,7 +215,7 @@
 	}
 }
 
-app-release-card {
+::ng-deep app-release-card {
 	opacity: 0;
 	transition: .5s;
 

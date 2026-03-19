@@ -12,3 +12,19 @@
 @if (heroRelease()) {
 	<app-hero [heroRelease]="heroRelease()"/>
 }
+
+@if (recentReleases().length > 0) {
+  <section class="recent-releases-wrapper">
+    <mk-heading [title]="'Recent Releases'" [subTitle]="'New psychedelic trance music from Moon Koradji Records'" [route]="'/releases'"/>
+
+    <div class="recent-releases-inner">
+      @for (release of recentReleases(); track $index) {
+          <app-release-card [releaseItem]="release"/>
+      }
+    </div>
+  </section>
+}
+
+<section class="podcast-wrapper">
+  <app-podcast/>
+</section>
