@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component, DestroyRef, ElementRef, Signal, computed, effect, inject, viewChildren } from '@angular/core';
+import { ChangeDetectionStrategy, Component, DestroyRef, ElementRef, Signal, computed, effect, inject, viewChildren, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 
 import { MetaDataService, iMeta } from './../core/services/meta-data.service';
 import { DataSignalService } from '../core/services/data-signal';
@@ -10,6 +10,11 @@ import { Release } from '../core/models/release.model';
 import { HeroComponent } from './hero/hero';
 import { ReleaseCardComponent } from '../shared/release-card/release-card.component';
 import { PodcastComponent } from './podcast/podcast.component';
+import { Gallery } from '../core/models/gallery.model';
+import { Utils } from '../core/utils';
+import { SharedGalleryComponent } from '../shared/gallery/gallery.component';
+import { Artist } from '../core/models/artist.model';
+import { News } from '../core/models/news.model';
 
 
 type EventWithArtistRoutes = Event & { artists: { artistName: string; artistRoute: string }[] };
@@ -23,7 +28,8 @@ type EventWithArtistRoutes = Event & { artists: { artistName: string; artistRout
         HeadingComponent,
 		HeroComponent,
         ReleaseCardComponent,
-        PodcastComponent
+        PodcastComponent,
+        SharedGalleryComponent
     ],
     templateUrl: './home.component.html',
     styleUrls: ['home.component.scss'],
@@ -33,6 +39,7 @@ export class HomeComponent {
 	private dataSignalService = inject(DataSignalService);
 	private destroyRef = inject(DestroyRef);
 	private metaData = inject(MetaDataService);
+	private platformId = inject(PLATFORM_ID);
 
 	allReleases: Signal<Release[]> = this.dataSignalService.getData<Release>('releases');
 
@@ -48,6 +55,29 @@ export class HomeComponent {
 
 	private observer: IntersectionObserver | null = null;
 
+    artists: Signal<Artist[]> = this.dataSignalService.getData<Artist>('artists');
+
+	featuredArtists: Signal<Artist[]> = computed<Artist[]>(() =>
+		this.artists().filter(artist => artist.featured)
+	);
+
+    featuredGalleryItems: Signal<Gallery[]> = computed<Gallery[]>(() => {
+		return Utils.shuffleArray(this.featuredArtists()).map(artist => {
+			const artistName = artist.artistName;
+
+			return {
+				name: artistName,
+				route: `/artists/${artist.artistRoute}`,
+				image: {
+					default: `featured_${artistName.replace(/ /g, '_').toLocaleLowerCase()}.jpg`,
+					webp: `featured_${artistName.replace(/ /g, '_').toLocaleLowerCase()}.webp`
+				}
+			};
+		})
+	});
+
+    news: Signal<News[]> = this.dataSignalService.getData<News>('news');
+
 	constructor() {
 		effect(() => {
 			if (!this.releaseCards().length) return;
@@ -55,16 +85,16 @@ export class HomeComponent {
 			this.initScrollAnimation();
 
 			this.releaseCards().forEach(card =>
-				this.observer!.observe(card.nativeElement)
+				this.observer?.observe(card.nativeElement)
 			);
-		},
-		{ allowSignalWrites: true }
+		}
 
 		// this.jsonLDService.insertSchema(this.jsonLDService.orgSchema);
 		// this.metaData.setMetaData(this.metaDataObj);
 	)}
 
     private initScrollAnimation() {
+		if (!isPlatformBrowser(this.platformId)) return;
 		if (this.observer) return;
 
 		this.observer = new IntersectionObserver(
