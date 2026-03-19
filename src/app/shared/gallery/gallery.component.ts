@@ -16,8 +16,7 @@ register();
     imports: [CommonModule, RouterModule, PictureComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
     templateUrl: './gallery.component.html',
-    styleUrls: ['swiper.scss'],
-    standalone: true,
+    styleUrls: ['gallery.component.scss'],
   	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SharedGalleryComponent implements OnInit {

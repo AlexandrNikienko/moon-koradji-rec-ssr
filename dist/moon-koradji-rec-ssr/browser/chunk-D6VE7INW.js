@@ -1,0 +1,1 @@
+var s=class{static scrollToTop(){window.scrollTo({top:0,left:0,behavior:"smooth"})}static shuffleArray(o){for(let t=o.length-1;t>0;t--){let l=Math.floor(Math.random()*(t+1));[o[t],o[l]]=[o[l],o[t]]}return o}};export{s as a};

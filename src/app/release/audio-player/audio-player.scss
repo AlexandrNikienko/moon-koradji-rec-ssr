@@ -1,0 +1,10 @@
+:host {
+	position: relative;
+	display: block;
+
+	::ng-deep iframe {
+		position: relative;
+		z-index: 1;
+	}
+}
+

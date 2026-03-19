@@ -12,7 +12,7 @@ import { PictureComponent } from '../picture/picture.component';
   	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ReleaseCardComponent {
-	releaseItem = input.required<Release>();
+	releaseItem = input.required<Release | null>();
 	
 	coverFolder = IMAGEFOLDER + 'release-cover/';
 }

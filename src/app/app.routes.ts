@@ -1,22 +1,19 @@
 import { Route } from '@angular/router';
 
-import { ResourceExistsGuard } from './core/services/resource-exist-guard.service';
-
 export const routes: Route[] = [
 	{
 		path: '',
 		pathMatch: 'full',
 		loadComponent: () => import('./home/home.component').then(x => x.HomeComponent)
 	},
-	// {
-	// 	path: 'releases',
-	// 	loadComponent: () => import('./releases/releases.component').then(x => x.ReleasesComponent)
-	// },
-	// {
-	// 	path: 'releases/:releaseRoute',
-	// 	loadComponent: () => import('./release/release.component').then(x => x.ReleaseComponent),
-	// 	// resolve: [ResourceExistsGuard]
-	// },
+	{
+		path: 'releases',
+		loadComponent: () => import('./releases/releases.component').then(x => x.ReleasesComponent)
+	},
+	{
+		path: 'releases/:releaseRoute',
+		loadComponent: () => import('./release/release.component').then(x => x.ReleaseComponent)
+	},
 	// {
 	// 	path: 'artists',
 	// 	loadComponent: () => import('./artists/artists.component').then(x => x.ArtistsComponent)
