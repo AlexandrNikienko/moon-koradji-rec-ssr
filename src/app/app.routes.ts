@@ -22,20 +22,20 @@ export const routes: Route[] = [
 		path: 'artists/:artistRoute',
 		loadComponent: () => import('./artist/artist.component').then(x => x.ArtistComponent)
 	},
-	// {
-	// 	path: 'podcasts',
-	// 	loadComponent: () => import('./podcasts/podcasts.component').then(x => x.PodcastsComponent)
-	// },
+	{
+		path: 'podcasts',
+		loadComponent: () => import('./podcasts/podcasts.component').then(x => x.PodcastsComponent)
+	},
 	{
 		path: 'about',
 		loadComponent: () => import('./about/about.component').then(x => x.AboutComponent)
 	},
-	// { 
-	// 	path: '404',
-	// 	loadComponent: () => import('./layout/not-found/layout-not-found.component').then(x => x.LayoutNotFoundComponent)
-	// },
-  	// { 
-	// 	path: '**',
-	// 	redirectTo: '/404'
-	// }
+	{ 
+		path: '404',
+		loadComponent: () => import('./layout/not-found/not-found').then(x => x.NotFoundComponent)
+	},
+  	{ 
+		path: '**',
+		redirectTo: '/404'
+	}
 ];

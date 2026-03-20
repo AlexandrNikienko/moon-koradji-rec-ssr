@@ -1,7 +1,10 @@
 {
   "routes": {
     "/": {},
+    "/404": {},
     "/about": {},
+    "/artists": {},
+    "/podcasts": {},
     "/releases": {}
   }
 }

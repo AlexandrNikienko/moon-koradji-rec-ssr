@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
     imports: [RouterModule],
-    templateUrl: './layout-not-found.component.html',
+    templateUrl: './not-found.html',
     styleUrls: ['not-found.scss']
 })
-export class LayoutNotFoundComponent { }
+export class NotFoundComponent { }
