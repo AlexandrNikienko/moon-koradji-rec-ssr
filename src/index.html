@@ -39,34 +39,54 @@
 	<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
-			"@type": "Organization",
+			"@type": ["Organization", "MusicGroup"],
+			"@id": "https://www.moonkoradji.com/#organization",
 			"name": "Moon Koradji Records",
 			"url": "https://www.moonkoradji.com",
+			"logo": {
+				"@type": "ImageObject",
+				"url": "https://www.moonkoradji.com/assets/images/mk_square.jpg"
+			},
+			"image": "https://www.moonkoradji.com/assets/images/mk_square.jpg",
+			"description": "Ukrainian psytrance label founded in 2007 in Kyiv by Oleksandr Nikiienko, aka DJ Omsun.",
+			"foundingDate": "2007",
+			"foundingLocation": {
+				"@type": "Place",
+				"name": "Kyiv, Ukraine"
+			},
+			"genre": ["Psytrance", "Forest Psy", "Dark Psy"],
 			"sameAs": [
 				"https://www.facebook.com/MoonKoradjiRecords",
+				"https://www.instagram.com/moonkoradjirecords",
 				"https://soundcloud.com/moon-koradji-records",
 				"https://www.youtube.com/user/MoonKoradji",
-				"https://moonkoradjirecords.bandcamp.com/"
+				"https://moonkoradjirecords.bandcamp.com",
+				"https://www.beatport.com/label/moon-koradji-records/25269",
+				"https://open.spotify.com/user/4gk1x57oss4st6tx32rfkpmd8"
 			],
-			"logo": "https://www.moonkoradji.com/assets/images/mk_square.jpg",
-			"image": "https://www.moonkoradji.com/assets/images/mk_square.jpg",
-			"description": "Ukrainian psytrance label founded in 2007 by Oleksandr Nikiienko aka DJ Omsun.",
-			"email": "info@moonkoradji.com",
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"email": "info@moonkoradji.com",
+				"contactType": "customer service",
+				"description": "Demo submissions and A&R inquiries"
+			},
 			"member": [
 				{
-				"@type": "OrganizationRole",
-				"member": {
-					"@type": "Person",
-					"name": "DJ Omsun",
-					"givenName": "Oleksandr Nikiienko",
-					"sameAs": [
-					"https://www.moonkoradji.com/artists/dj-omsun",
-					"https://www.facebook.com/omsunkoradji",
-					"https://soundcloud.com/moonkoradji",
-					"https://www.instagram.com/omsunkoradji"
-					]
-				},
-				"roleName": ["Founder", "DJ"]
+					"@type": "OrganizationRole",
+					"member": {
+						"@type": "Person",
+						"name": "Oleksandr Nikiienko",
+						"alternateName": "DJ Omsun",
+						"givenName": "Oleksandr",
+						"familyName": "Nikiienko",
+						"sameAs": [
+							"https://www.moonkoradji.com/artists/dj-omsun",
+							"https://www.facebook.com/omsunkoradji",
+							"https://soundcloud.com/moonkoradji",
+							"https://www.instagram.com/omsunkoradji"
+						]
+					},
+					"roleName": ["Founder", "DJ"]
 				}
 			]
 		}
