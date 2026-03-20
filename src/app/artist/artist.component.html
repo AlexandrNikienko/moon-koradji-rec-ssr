@@ -1,0 +1,84 @@
+@if (artist()) {
+	<mk-heading [title]="artist().artistName" />
+
+	<div class="artist-wrapper">
+		@if (artist().artistAvatar) {
+			<div class="artist-foto-wrapper">
+				<img class="artist-foto" src="/assets/images/artists/{{artist().artistAvatar}}" alt="{{artist().artistName}}">
+			</div>
+		}
+
+		<div class="artist-details-wrapper">
+			<a class="s-go-back" routerLink="/artists">
+				<i class="fas fa-long-arrow-alt-left"></i>Go to Artists page
+			</a>
+
+			@if (artist().artistRealName) {
+				<div class="s-artist-details">Real name: {{artist().artistRealName}}</div>
+			}
+
+			<div class="s-artist-details">Country: {{artist().artistCountry}}</div>
+
+			<div class="s-artist-description">
+				@for (description of artist().artistDescription; track description) {
+					<p class="s-artist-description__item">
+						{{description.paragraph}}
+					</p>
+				}
+			</div>
+
+			<div class="btn-group float-end" role="group">
+				<!--<a class="btn btn-link" href="javascript: void(0)" (click)="share()"
+					title="Share on Facebook">
+					<i class="fas fa-share fa-2x"></i>
+				</a>-->
+
+				@if (artist().artistFacebook) {
+					<a class="btn btn-link" href="{{artist().artistFacebook}}" target="_blank" title="Facebook page">
+						<i class="fab fa-facebook-square fa-2x"></i>
+					</a>
+				}
+
+				@if (artist().artistSoundcloud) {
+					<a class="btn btn-link" href="{{artist().artistSoundcloud}}" target="_blank" title="SoundCloud page">
+						<i class="fab fa-soundcloud fa-2x"></i>
+					</a>
+				}
+
+				@if (artist().artistMixcloud) {
+					<a class="btn btn-link" href="{{artist().artistMixcloud}}" target="_blank" title="Mixcloud page">
+						<i class="fab fa-mixcloud fa-2x"></i>
+					</a>
+				}
+			</div>
+		</div>
+	</div>
+
+	@if (artist().releases) {
+		<div class="s-involved row">
+			<div class="small-title">Releases with {{artist().artistName}}</div>
+
+			@for (release of artist().releases; track release) {
+				<div class="s-involved__item col-lg-2 col-md-3 col-sm-3 col-xs-3">
+					<a class="s-involved__link " [routerLink]="['/releases', release.cdLink]">
+						<div class="s-involved__image"
+							[ngStyle]="{'background-image': 'url(/assets/images/release-cover/' + release.cdCover + ')'}">
+						</div>
+						<div class="s-involved__name">{{release.cdName}}</div>
+					</a>
+				</div>
+			}
+		</div>
+	}
+
+	@if (artist().mixes) {
+		<div class="s-mixes">
+			@for (mix of artist().mixes; track mix) {
+				<div class="s-mixes__item">
+					<p class="s-mix-year">{{mix.year}}</p>
+					<div class="s-mix-block" [innerHTML]="mix.embedCode | safe: 'html'"></div>
+				</div>
+			}
+		</div>
+	}
+}

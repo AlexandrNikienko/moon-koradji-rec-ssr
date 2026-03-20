@@ -5,6 +5,7 @@ import { SafeHtmlPipe } from '../../core/pipes/safe-html.pipe';
     imports: [SafeHtmlPipe],
     selector: 'app-shared-video',
     templateUrl: './video.component.html',
+    styleUrls: ['video.component.scss'],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SharedVideoComponent {

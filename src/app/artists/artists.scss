@@ -1,0 +1,154 @@
+@use '../../styles/_utils.scss' as *;
+
+.artists-wrapper {
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem 2rem;
+	margin-bottom: 2rem;
+
+	@include desktopSmall {
+		//columns: 3;
+	}
+
+	@include tablet {
+		//columns: 2;
+	}
+
+	@include mobile {
+		//columns: 1;
+	}
+}
+
+.artist-item {	
+	position: relative;
+
+	&__link {
+		display: block;
+		color: white;
+		border-radius: 3px;
+		transition: none;
+
+		&:hover {
+			box-shadow: inset 0 0 1px #fff,
+						inset -1px -1px 1px #9ff,
+						inset 1px -1px 1px #9c9,
+						inset -1px 1px 1px #6cf,
+						inset 1px 1px 1px #66f;
+			text-decoration: none;
+
+			.s-artist-item__bg {
+				opacity: .35;
+			}
+		}
+	}
+
+	&__name {
+		margin: 0;
+		line-height: 45px;
+		padding-inline: 1rem 1.25rem;
+    	white-space: nowrap;
+	}
+
+	&__flag {
+		position: absolute;
+		top: 1px;
+		right: 1px;
+		height: 12px;
+		width: auto;
+		aspect-ratio: 4 / 3;
+	}
+
+	&__mark {
+		font-size: 0.75em;
+		margin-left: 5px;
+		opacity: 0.75;
+	}
+
+	&__icon {
+		position: relative;
+		top: -.7em;
+	}
+
+	.far, .fas {
+		font-size: 10px;
+		top: 6px;
+		left: 14px;
+	}
+}
+
+mk-heading {
+	grid-column: 1 / -1;
+}
+
+.letter-separator {
+	grid-column: 1 / -1;
+	line-height: normal;
+    font-family: Orbitron, sans-serif;
+    font-size: 1.5rem;
+    color: #0ff;
+	display: flex;
+    align-items: center;
+	position: relative;
+	gap: $gap;
+
+	&::after {
+		content: '';
+		height: 1px;
+		display: block;
+		flex: 1;
+		background: linear-gradient(to left, rgba(#f0f, 0.1), rgba(6, 182, 212, 0.5));
+	}
+
+	@include mobile {
+		gap: 1rem;
+	}
+}
+
+.filter {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 2rem;
+
+	&__list {
+		list-style: none;
+		margin-bottom: 0;
+		padding-left: 0;
+		padding-top: 8px;
+		font-size: 12px;
+
+		.far, .fas {
+			font-size: 10px;
+		}
+	}
+
+	&__list-item {
+		position: relative;
+	}
+
+	.mat-mdc-slide-toggle {
+		margin-left: 1rem;
+	}
+
+	::ng-deep .mdc-label {
+		color: white
+	}
+
+	@include mobile {
+		flex-direction: column;
+	}
+}
+
+.far, .fas {
+	display: inline-block;
+	width: 12px;
+	text-align: center;
+}
+
+.fa-star {
+    color: orange;
+}
+
+.fa-eye-slash {
+	color: rgb(152, 152, 152)
+}

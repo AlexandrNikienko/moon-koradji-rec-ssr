@@ -14,14 +14,14 @@ export const routes: Route[] = [
 		path: 'releases/:releaseRoute',
 		loadComponent: () => import('./release/release.component').then(x => x.ReleaseComponent)
 	},
-	// {
-	// 	path: 'artists',
-	// 	loadComponent: () => import('./artists/artists.component').then(x => x.ArtistsComponent)
-	// },
-	// {
-	// 	path: 'artists/:artistRoute',
-	// 	loadComponent: () => import('./artist/artist.component').then(x => x.ArtistComponent)
-	// },
+	{
+		path: 'artists',
+		loadComponent: () => import('./artists/artists.component').then(x => x.ArtistsComponent)
+	},
+	{
+		path: 'artists/:artistRoute',
+		loadComponent: () => import('./artist/artist.component').then(x => x.ArtistComponent)
+	},
 	// {
 	// 	path: 'podcasts',
 	// 	loadComponent: () => import('./podcasts/podcasts.component').then(x => x.PodcastsComponent)

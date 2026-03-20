@@ -1,0 +1,12 @@
+.video-wrapper {
+	position: relative;
+    aspect-ratio: 15 / 9;
+
+	::ng-deep iframe {
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+}
