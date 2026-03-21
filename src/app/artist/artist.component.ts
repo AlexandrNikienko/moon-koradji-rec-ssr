@@ -10,6 +10,7 @@ import { HeadingComponent } from './../layout/heading/heading.component';
 import { SafeHtmlPipe } from '../core/pipes/safe-html.pipe';
 import { map } from 'rxjs/operators';
 import { DataSignalService } from '../core/services/data-signal';
+import { JsonLdService } from '../core/services/json-ld.service';
 
 @Component({
     imports: [
@@ -26,6 +27,7 @@ export class ArtistComponent {
 	private router = inject(Router);
 	private dataSignalService = inject(DataSignalService);
 	private metaData = inject(MetaDataService);
+	private jsonLd = inject(JsonLdService);
 
 	artistRoute = toSignal(
 		this.route.paramMap.pipe(map(params => params.get('artistRoute'))),
@@ -48,9 +50,10 @@ export class ArtistComponent {
 				this.router.navigate(['/404']);
 			}
 
-			// if (this.artist()) {
-				// 	this.setMetaData(this.artist());
-			// }
+			const artist = this.artist();
+			if (artist) {
+				this.setMetaData(artist);
+			}
 		});
 	}
 
@@ -61,11 +64,25 @@ export class ArtistComponent {
 			title: `${artist.artistName} | Moon Koradji Records`,
 			description: artistDesc,
 			ogTitle: artist.artistName,
-			ogImage: 'https://www.moonkoradji.com/assets/images/release-cover/' + artist.artistAvatar,
+			ogImage: 'https://www.moonkoradji.com/assets/images/artists/' + artist.artistAvatar,
 			ogUrl: 'https://www.moonkoradji.com/artists/' + artist.artistRoute,
-			ogDescription: artistDesc
+			ogDescription: artistDesc,
+			ogType: 'profile'
 		}
 
 		this.metaData.setMetaData(metaDataObj);
+
+		// JSON-LD
+		this.jsonLd.setJsonLd({
+			'@context': 'https://schema.org',
+			'@type': 'MusicGroup',
+			'@id': `https://www.moonkoradji.com/artists/${artist.artistRoute}/#artist`,
+			'name': artist.artistName,
+			'url': `https://www.moonkoradji.com/artists/${artist.artistRoute}`,
+			'image': `https://www.moonkoradji.com/assets/images/artists/${artist.artistAvatar}`,
+			'recordLabel': {
+				'@id': 'https://www.moonkoradji.com/#organization'
+			}
+		});
 	}
 }

@@ -15,6 +15,7 @@ import { Release } from '../core/models/release.model';
 import { ReleaseCardComponent } from '../shared/release-card/release-card.component';
 import { DataSignalService } from '../core/services/data-signal';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { JsonLdService } from '../core/services/json-ld.service';
 
 @Component({
 	selector: 'app-release',
@@ -38,8 +39,7 @@ export class ReleaseComponent {
 	private router = inject(Router);
 	private dataSignalService = inject(DataSignalService);
 	private metaData = inject(MetaDataService);
-
-	private metaDataObj: iMeta | undefined = undefined;
+	private jsonLd = inject(JsonLdService);
 
 	releaseRoute = toSignal(
 		this.route.paramMap.pipe(map(params => params.get('releaseRoute'))),
@@ -47,7 +47,7 @@ export class ReleaseComponent {
 	);
 
 	allReleases: Signal<Release[]> = this.dataSignalService.getData<Release>('releases');
-  	allArtists: Signal<Artist[]> = this.dataSignalService.getData<Artist>('artists');
+	allArtists: Signal<Artist[]> = this.dataSignalService.getData<Artist>('artists');
 
 	releaseIndex = computed<number>(() =>
 		this.allReleases().findIndex(r => r.releaseRoute === this.releaseRoute())
@@ -88,19 +88,17 @@ export class ReleaseComponent {
 
 			const rel = this.release();
 			if (rel) {
-				console.log('Setting meta data for release:', rel.releaseTitle);
 				this.setMetaData(rel);
 			}
 		});
 	}
 
-	shareOnFacebook(e: MouseEvent): void {
+	shareOnFacebook(e: Event): void {
+		e.stopPropagation();
 		const release = this.release();
 		if (!release) return;
 		const shareUrl = 'https://www.facebook.com/sharer.php?u=' + 'https://www.moonkoradji.com/releases/' + release.releaseRoute;
-		//console.log('Sharing on Facebook:', shareUrl);
 		window.open(shareUrl, '_blank');
-		e.stopPropagation();
 	}
 
 	toggleCoverModal(): void {
@@ -110,7 +108,8 @@ export class ReleaseComponent {
 	setMetaData(release: Release): void {
 		const releaseDesc = release.releaseDescription ? release.releaseDescription.reduce((desc, par) => desc + par.paragraph, '') : '';
 
-		this.metaDataObj = {
+		// Meta data tags
+		const metaDataObj: iMeta = {
 			title: `${release.releaseTitle} | Moon Koradji Records`,
 			description: releaseDesc,
 			ogTitle: release.releaseTitle,
@@ -120,8 +119,22 @@ export class ReleaseComponent {
 			ogType: 'music.album'
 		}
 
-		console.log('Meta data object set:', this.metaDataObj);
+		//console.log('Meta data object set:', metaDataObj);
 
-		this.metaData.setMetaData(this.metaDataObj);
+		this.metaData.setMetaData(metaDataObj);
+
+		// JSON-LD
+		this.jsonLd.setJsonLd({
+			'@context': 'https://schema.org',
+			'@type': 'MusicAlbum',
+			'@id': `https://www.moonkoradji.com/releases/${release.releaseRoute}/#release`,
+			'name': release.releaseTitle,
+			'url': `https://www.moonkoradji.com/releases/${release.releaseRoute}`,
+			'image': `https://www.moonkoradji.com/assets/images/release-cover/${release.releaseCover.default}`,
+			'datePublished': release.releaseDate,
+			'recordLabel': {
+				'@id': 'https://www.moonkoradji.com/#organization'
+			}
+		});
 	}
 }
