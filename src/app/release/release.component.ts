@@ -86,6 +86,7 @@ export class ReleaseComponent {
 
 			const rel = this.release();
 			if (rel) {
+				console.log('Setting meta data for release:', rel.releaseTitle);
 				this.setMetaData(rel);
 			}
 		});
@@ -94,7 +95,9 @@ export class ReleaseComponent {
 	shareOnFacebook(): void {
 		const release = this.release();
 		if (!release) return;
-		window.open('https://www.facebook.com/sharer.php?u=' + encodeURIComponent('https://www.moonkoradji.com/releases/' + release.releaseRoute), '_blank');
+		const shareUrl = 'https://www.facebook.com/sharer.php?u=' + 'https://www.moonkoradji.com/releases/' + release.releaseRoute;
+		console.log('Sharing on Facebook:', shareUrl);
+		window.open(shareUrl, '_blank');
 	}
 
 	toggleCoverModal(): void {
@@ -110,8 +113,11 @@ export class ReleaseComponent {
 			ogTitle: release.releaseTitle,
 			ogImage: 'https://www.moonkoradji.com/assets/images/release-cover/' + release.releaseCover.default,
 			ogUrl: 'https://www.moonkoradji.com/releases/' + release.releaseRoute,
-			ogDescription: releaseDesc
+			ogDescription: releaseDesc,
+			ogType: 'music.album'
 		}
+
+		console.log('Meta data object set:', this.metaDataObj);
 
 		this.metaData.setMetaData(this.metaDataObj);
 	}

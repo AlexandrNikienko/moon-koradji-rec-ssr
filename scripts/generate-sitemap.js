@@ -31,7 +31,7 @@ const artistPages = artistsData.artists
 const releasePages = releasesData.releases
   .filter(r => r.releaseRoute)
   .map(r => ({
-    url: `/release/${r.releaseRoute}`,
+    url: `/releases/${r.releaseRoute}`,
     priority: r.isNew ? '1.0' : r.isHero ? '0.9' : '0.7',
     changefreq: 'yearly',
     lastmod: (() => {

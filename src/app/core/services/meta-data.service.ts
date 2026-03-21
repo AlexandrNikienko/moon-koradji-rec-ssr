@@ -8,6 +8,7 @@ export interface iMeta {
 	ogImage: string,
 	ogUrl: string,
 	ogDescription: string
+	ogType?: string
 }
 
 @Injectable({
@@ -28,5 +29,8 @@ export class MetaDataService {
 		this.meta.updateTag({property: 'og:image', content: meta.ogImage});
 		this.meta.updateTag({property: 'og:url', content: meta.ogUrl});
 		this.meta.updateTag({property: 'og:description', content: meta.ogDescription});
+		if (meta.ogType) {
+			this.meta.updateTag({property: 'og:type', content: meta.ogType});
+		}
 	}
 }

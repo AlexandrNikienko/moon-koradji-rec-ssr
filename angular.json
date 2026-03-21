@@ -23,16 +23,6 @@
             "assets": [
               "src/assets",
               {
-                "glob": "robots.txt",
-                "input": "src",
-                "output": "/"
-              },
-              {
-                "glob": "sitemap.xml",
-                "input": "src",
-                "output": "/"
-              },
-              {
                 "glob": "**/*",
                 "input": "public"
               }
@@ -45,9 +35,6 @@
             "outputMode": "static",
             "ssr": {
               "entry": "src/server.ts"
-            },
-            "prerender": {
-              "discoverRoutes": true
             }
           },
           "configurations": {
@@ -96,16 +83,6 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/assets",
-              {
-                "glob": "robots.txt",
-                "input": "src",
-                "output": "/"
-              },
-              {
-                "glob": "sitemap.xml",
-                "input": "src",
-                "output": "/"
-              },
               {
                 "glob": "**/*",
                 "input": "public"
