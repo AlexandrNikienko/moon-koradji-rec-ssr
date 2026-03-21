@@ -13,6 +13,7 @@ const staticPages = [
   { url: '/',        priority: '1.0', changefreq: 'monthly' },
   { url: '/artists', priority: '0.8', changefreq: 'monthly' },
   { url: '/releases',priority: '0.8', changefreq: 'monthly' },
+  { url: '/podcasts', priority: '0.5', changefreq: 'yearly'  },
   { url: '/about',   priority: '0.4', changefreq: 'yearly'  },
 //   { url: '/contact', priority: '0.4', changefreq: 'yearly'  },
 ];
