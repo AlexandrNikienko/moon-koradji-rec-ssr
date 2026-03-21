@@ -14,6 +14,7 @@ import { Artist } from '../core/models/artist.model';
 import { Release } from '../core/models/release.model';
 import { ReleaseCardComponent } from '../shared/release-card/release-card.component';
 import { DataSignalService } from '../core/services/data-signal';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
 	selector: 'app-release',
@@ -24,7 +25,8 @@ import { DataSignalService } from '../core/services/data-signal';
 		AudioPlayerComponent,
 		SharedVideoComponent,
 		PictureComponent,
-		ReleaseCardComponent
+		ReleaseCardComponent,
+		MatTooltipModule
 	],
 	templateUrl: './release.component.html',
 	styleUrls: ['release.component.scss'],
@@ -92,12 +94,13 @@ export class ReleaseComponent {
 		});
 	}
 
-	shareOnFacebook(): void {
+	shareOnFacebook(e: MouseEvent): void {
 		const release = this.release();
 		if (!release) return;
 		const shareUrl = 'https://www.facebook.com/sharer.php?u=' + 'https://www.moonkoradji.com/releases/' + release.releaseRoute;
-		console.log('Sharing on Facebook:', shareUrl);
+		//console.log('Sharing on Facebook:', shareUrl);
 		window.open(shareUrl, '_blank');
+		e.stopPropagation();
 	}
 
 	toggleCoverModal(): void {
