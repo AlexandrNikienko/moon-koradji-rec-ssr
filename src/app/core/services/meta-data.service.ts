@@ -1,5 +1,6 @@
 import { Injectable, inject } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { DOCUMENT } from '@angular/common';
 
 export interface iMeta {
 	title: string,
@@ -19,6 +20,7 @@ export interface iMeta {
 export class MetaDataService {
 	private meta = inject(Meta);
 	private title = inject(Title);
+	private document = inject(DOCUMENT);
 
 	setMetaData(meta: iMeta): void {
 		if (!meta) {
@@ -40,5 +42,22 @@ export class MetaDataService {
 		if (meta.ogImageHeight) {
 			this.meta.updateTag({property: 'og:image:height', content: meta.ogImageHeight});
 		}
+
+		// canonical
+  		this.setCanonical(meta.ogUrl);
+	}
+
+	// For Google indexing
+	private setCanonical(url: string): void {
+		const head = this.document.head;
+		let canonical = head.querySelector('link[rel="canonical"]');
+		
+		if (!canonical) {
+			canonical = this.document.createElement('link');
+			canonical.setAttribute('rel', 'canonical');
+			head.appendChild(canonical);
+		}
+		
+		canonical.setAttribute('href', url);
 	}
 }
