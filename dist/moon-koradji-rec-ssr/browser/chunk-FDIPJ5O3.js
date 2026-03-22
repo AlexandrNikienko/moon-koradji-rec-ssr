@@ -1,4 +1,4 @@
-import{a as N}from"./chunk-3ITIQSHM.js";import{a as A}from"./chunk-7EPHQ4ZU.js";import{b as E}from"./chunk-X6Z6KEGV.js";import"./chunk-CCMVT6NP.js";import{a as W}from"./chunk-NGKNF55X.js";import{Ca as v,Fa as _,Hb as x,Ja as z,Sb as b,Ta as H,Tb as P,ca as f,db as T,eb as L,jb as C,kb as j,lb as R,ma as D,mb as y,sc as G,ub as q}from"./chunk-EVZHMATN.js";var u=class{template=`<div class="crystalization">
+import{a as N}from"./chunk-3ITIQSHM.js";import{a as A}from"./chunk-7EPHQ4ZU.js";import{b as E}from"./chunk-X6Z6KEGV.js";import"./chunk-CCMVT6NP.js";import{a as W}from"./chunk-APDTFPJT.js";import{Ca as v,Fa as _,Hb as x,Ja as z,Sb as b,Ta as H,Tb as P,ca as f,db as T,eb as L,jb as C,kb as j,lb as R,ma as D,mb as y,sc as G,ub as q}from"./chunk-EVZHMATN.js";var u=class{template=`<div class="crystalization">
 					<div class="crystalization__glow"></div>
 					<div class="crystalization__overlay"></div>
 					<canvas class="crystalization__canvas"></canvas>

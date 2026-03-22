@@ -70,6 +70,8 @@ export class ArtistComponent {
 			ogType: 'profile'
 		}
 
+		console.log('Meta data object set:', metaDataObj);
+
 		this.metaData.setMetaData(metaDataObj);
 
 		// JSON-LD

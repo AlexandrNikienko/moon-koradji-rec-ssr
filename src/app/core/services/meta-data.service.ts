@@ -6,6 +6,8 @@ export interface iMeta {
 	description: string,
 	ogTitle: string,
 	ogImage: string,
+	ogImageWidth?: string,
+	ogImageHeight?: string,
 	ogUrl: string,
 	ogDescription: string
 	ogType?: string
@@ -31,6 +33,12 @@ export class MetaDataService {
 		this.meta.updateTag({property: 'og:description', content: meta.ogDescription});
 		if (meta.ogType) {
 			this.meta.updateTag({property: 'og:type', content: meta.ogType});
+		}
+		if (meta.ogImageWidth) {
+			this.meta.updateTag({property: 'og:image:width', content: meta.ogImageWidth});
+		}
+		if (meta.ogImageHeight) {
+			this.meta.updateTag({property: 'og:image:height', content: meta.ogImageHeight});
 		}
 	}
 }

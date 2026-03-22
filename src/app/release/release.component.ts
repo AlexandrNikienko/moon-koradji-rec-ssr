@@ -113,7 +113,9 @@ export class ReleaseComponent {
 			title: `${release.releaseTitle} | Moon Koradji Records`,
 			description: releaseDesc,
 			ogTitle: release.releaseTitle,
-			ogImage: 'https://www.moonkoradji.com/assets/images/release-cover/' + release.releaseCover.default,
+			ogImage: 'https://www.moonkoradji.com/assets/images/release-cover/' + release.releaseCover.webp2x,
+			ogImageWidth: '1000',
+			ogImageHeight: '1000',
 			ogUrl: 'https://www.moonkoradji.com/releases/' + release.releaseRoute,
 			ogDescription: releaseDesc,
 			ogType: 'music.album'
@@ -130,7 +132,7 @@ export class ReleaseComponent {
 			'@id': `https://www.moonkoradji.com/releases/${release.releaseRoute}/#release`,
 			'name': release.releaseTitle,
 			'url': `https://www.moonkoradji.com/releases/${release.releaseRoute}`,
-			'image': `https://www.moonkoradji.com/assets/images/release-cover/${release.releaseCover.default}`,
+			'image': `https://www.moonkoradji.com/assets/images/release-cover/${release.releaseCover.webp2x}`,
 			'datePublished': release.releaseDate,
 			'recordLabel': {
 				'@id': 'https://www.moonkoradji.com/#organization'
