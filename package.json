@@ -4,7 +4,6 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "_build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:moon-koradji-rec-ssr": "node dist/moon-koradji-rec-ssr/server/server.mjs",
