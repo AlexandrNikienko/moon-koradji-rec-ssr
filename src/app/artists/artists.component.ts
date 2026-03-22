@@ -67,11 +67,11 @@ export class ArtistsComponent {
 
 	private metaDataObj: iMeta = {
 		title: 'Innovative Sounds of Psychedelic Trance: Meet Our Talented Artists and DJs',
-		description: 'Independent ukrainian psytrance label founded in 2007 by Oleksandr Nikiienko aka DJ Omsun.',
-		ogTitle: 'Moon Koradji Records - Worl Wide Psychedelic',
+		description: 'Independent Ukrainian psytrance label founded in 2007 by Oleksandr Nikiienko aka DJ Omsun.',
+		ogTitle: 'Moon Koradji Records - World Wide Psychedelic',
 		ogImage: 'https://www.moonkoradji.com/assets/images/mk_square.jpg',
 		ogUrl: 'https://www.moonkoradji.com/artists',
-		ogDescription: 'Independent ukrainian psytrance label founded in 2007 by Oleksandr Nikiienko aka DJ Omsun.'
+		ogDescription: 'Independent Ukrainian psytrance label founded in 2007 by Oleksandr Nikiienko aka DJ Omsun.'
 	}
 
 	artistsWithLetters = computed<artistsWithLetters[]>(() => {

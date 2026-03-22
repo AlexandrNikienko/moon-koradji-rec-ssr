@@ -1,4 +1,4 @@
-import { Component, inject, Signal, effect, ChangeDetectionStrategy } from '@angular/core';
+import { Component, inject, Signal, effect, ChangeDetectionStrategy, computed } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -7,6 +7,7 @@ import { MetaDataService, iMeta } from './../core/services/meta-data.service';
 import { ReleaseCardComponent } from './../shared/release-card/release-card.component';
 import { HeadingComponent } from './../layout/heading/heading.component';
 import { Release } from '../core/models/release.model';
+import { JsonLdService } from '../core/services/json-ld.service';
 
 @Component({
     imports: [
@@ -23,19 +24,44 @@ import { Release } from '../core/models/release.model';
 export class ReleasesComponent {
 	private dataSignalService = inject(DataSignalService);
 	private metaData = inject(MetaDataService);
+	private jsonLd = inject(JsonLdService);
 	
 	public releases: Signal<Release[]> = this.dataSignalService.getData<Release>('releases');
 
-	private metaDataObj: iMeta = {
-		title: 'Our Catalogue | Moon Koradji Records',
-		description: 'Independent ukrainian psytrance label founded in 2007 by Oleksandr Nikiienko aka DJ Omsun.',
-		ogTitle: 'Moon Koradji Records - Worl Wide Psychedelic',
-		ogImage: 'https://www.moonkoradji.com/assets/images/mk_square.jpg',
-		ogUrl: 'https://www.moonkoradji.com/releases',
-		ogDescription: 'Independent ukrainian psytrance label founded in 2007 by Oleksandr Nikiienko aka DJ Omsun.'
-	}
+	latestRelease = computed<Release | null>(() =>
+		this.releases().length > 0 ? this.releases()[0] : null
+	);
 
 	constructor() {
-		this.metaData.setMetaData(this.metaDataObj);
+		effect(() => {
+			const latest = this.latestRelease();
+			if (!latest) return;
+
+			this.metaData.setMetaData({
+				title: 'Our Catalogue | Moon Koradji Records',
+				description: 'Independent Ukrainian psytrance label founded in 2007 by Oleksandr Nikiienko aka DJ Omsun.',
+				ogTitle: 'Our Catalogue | Moon Koradji Records',
+				ogImage: 'https://www.moonkoradji.com/assets/images/release-cover/' + (latest.releaseCover.webp2x || latest.releaseCover.webp || latest.releaseCover.default),
+				ogImageWidth: '500',
+				ogImageHeight: '500',
+				ogUrl: 'https://www.moonkoradji.com/releases',
+				ogDescription: 'Independent Ukrainian psytrance label founded in 2007 by DJ Omsun.',
+				ogType: 'website'
+			});
+
+			this.jsonLd.setJsonLd({
+				'@context': 'https://schema.org',
+				'@type': 'ItemList',
+				'name': 'Moon Koradji Records Catalogue',
+				'url': 'https://www.moonkoradji.com/releases',
+				'numberOfItems': this.releases().length,
+				'itemListElement': this.releases().map((r, i) => ({
+					'@type': 'ListItem',
+					'position': i + 1,
+					'url': `https://www.moonkoradji.com/releases/${r.releaseRoute}`,
+					'name': r.releaseTitle
+				}))
+			});
+		});
 	}
 }
