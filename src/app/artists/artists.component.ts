@@ -93,12 +93,12 @@ export class ArtistsComponent {
 			this.metaData.setMetaData({
 				title: 'Innovative Sounds of Psychedelic Trance: Meet Our Talented Artists and DJs',
 				description: 'Independent Ukrainian psytrance label founded in 2007 by Oleksandr Nikiienko aka DJ Omsun.',
-				ogTitle: 'Meet Our Talented Artists and DJs | Moon Koradji Records',
+				ogTitle: 'Moon Koradji Records | World Wide Psychedelic',
+				ogDescription: 'Meet Our Talented Artists and DJs',
 				ogImage: 'https://www.moonkoradji.com/assets/images/mk_square.jpg',
 				ogImageWidth: '250',
 				ogImageHeight: '250',
 				ogUrl: 'https://www.moonkoradji.com/artists',
-				ogDescription: 'Independent Ukrainian psytrance label founded in 2007 by DJ Omsun.',
 				ogType: 'website'
 			});
 

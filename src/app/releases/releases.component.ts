@@ -36,17 +36,17 @@ export class ReleasesComponent {
 		effect(() => {
 			const latest = this.latestRelease();
 			const releases = this.releases();
-			if (!latest) return;
+			if (!latest || !releases) return;
 
 			this.metaData.setMetaData({
 				title: 'Our Catalogue | Moon Koradji Records',
 				description: 'Independent Ukrainian psytrance label founded in 2007 by Oleksandr Nikiienko aka DJ Omsun.',
-				ogTitle: 'Our Catalogue | Moon Koradji Records',
-				ogImage: 'https://www.moonkoradji.com/assets/images/release-cover/' + (latest.releaseCover.webp2x || latest.releaseCover.webp || latest.releaseCover.default),
+				ogTitle: 'Moon Koradji Records | World Wide Psychedelic',
+				ogDescription: 'Enjoy Our Psychedelic Catalogue',
+				ogImage: 'https://www.moonkoradji.com/assets/images/release-cover/' + (latest.releaseCover.webp || latest.releaseCover.default),
 				ogImageWidth: '500',
 				ogImageHeight: '500',
 				ogUrl: 'https://www.moonkoradji.com/releases',
-				ogDescription: 'Independent Ukrainian psytrance label founded in 2007 by DJ Omsun.',
 				ogType: 'website'
 			});
 
