@@ -4,7 +4,7 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 
 import { MetaDataService, iMeta } from './../core/services/meta-data.service';
 import { DataSignalService } from '../core/services/data-signal';
-import { WelcomeComponent } from '../welcome/welcome.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 import { HeadingComponent } from '../layout/heading/heading.component';
 import { Release } from '../core/models/release.model';
 import { HeroComponent } from './hero/hero';

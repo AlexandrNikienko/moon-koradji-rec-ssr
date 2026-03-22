@@ -1,10 +1,7 @@
 import { HeadingComponent } from './../../layout/heading/heading.component';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, Signal, inject } from "@angular/core";
-
-import { DataSignalService } from './../../core/services/data-signal';
-import { PodcastAdv } from '../../core/models/podcast-adv.model';
+import { ChangeDetectionStrategy, Component } from "@angular/core";
 
 @Component({
     imports: [CommonModule, RouterModule, HeadingComponent],
@@ -14,7 +11,5 @@ import { PodcastAdv } from '../../core/models/podcast-adv.model';
   	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PodcastComponent {
-	private dataSignalService = inject(DataSignalService);
-
-	podcast: Signal<PodcastAdv[]> = this.dataSignalService.getData<PodcastAdv>('podcast');
+	
 }
