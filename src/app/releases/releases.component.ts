@@ -35,6 +35,7 @@ export class ReleasesComponent {
 	constructor() {
 		effect(() => {
 			const latest = this.latestRelease();
+			const releases = this.releases();
 			if (!latest) return;
 
 			this.metaData.setMetaData({
@@ -42,8 +43,8 @@ export class ReleasesComponent {
 				description: 'Independent Ukrainian psytrance label founded in 2007 by Oleksandr Nikiienko aka DJ Omsun.',
 				ogTitle: 'Our Catalogue | Moon Koradji Records',
 				ogImage: 'https://www.moonkoradji.com/assets/images/release-cover/' + (latest.releaseCover.webp2x || latest.releaseCover.webp || latest.releaseCover.default),
-				ogImageWidth: '500',
-				ogImageHeight: '500',
+				ogImageWidth: '1000',
+				ogImageHeight: '1000',
 				ogUrl: 'https://www.moonkoradji.com/releases',
 				ogDescription: 'Independent Ukrainian psytrance label founded in 2007 by DJ Omsun.',
 				ogType: 'website'
@@ -54,8 +55,8 @@ export class ReleasesComponent {
 				'@type': 'ItemList',
 				'name': 'Moon Koradji Records Catalogue',
 				'url': 'https://www.moonkoradji.com/releases',
-				'numberOfItems': this.releases().length,
-				'itemListElement': this.releases().map((r, i) => ({
+				'numberOfItems': releases.length,
+				'itemListElement': releases.map((r, i) => ({
 					'@type': 'ListItem',
 					'position': i + 1,
 					'url': `https://www.moonkoradji.com/releases/${r.releaseRoute}`,

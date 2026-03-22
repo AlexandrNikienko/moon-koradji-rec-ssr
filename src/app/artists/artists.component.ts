@@ -1,4 +1,4 @@
-import { Component, inject, computed, Signal, signal } from '@angular/core';
+import { Component, inject, computed, Signal, signal, effect, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { MatSelectModule } from '@angular/material/select';
@@ -9,6 +9,7 @@ import { DataSignalService } from '../core/services/data-signal';
 import { HeadingComponent } from './../layout/heading/heading.component';
 import { MetaDataService, iMeta } from './../core/services/meta-data.service';
 import { Artist } from '../core/models/artist.model';
+import { JsonLdService } from '../core/services/json-ld.service';
 
 type ArtistStatus = 'All' | 'Active' | 'Inactive' | 'Featured' | 'Has Podcast';
 
@@ -23,11 +24,13 @@ type artistsWithLetters = Artist & { letter: string | null };
 	],
     selector: 'app-artists',
     templateUrl: './artists.component.html',
-    styleUrls: ['artists.scss']
+    styleUrls: ['artists.scss'],
+	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ArtistsComponent {
 	private dataSignalService = inject(DataSignalService);
 	private metaData = inject(MetaDataService);
+	private jsonLd = inject(JsonLdService);
 
 	private allArtists: Signal<Artist[]> = this.dataSignalService.getData<Artist>('artists');
 
@@ -65,15 +68,6 @@ export class ArtistsComponent {
 		this.filteredArtists().filter(a => a.role === 'dj')
 	);
 
-	private metaDataObj: iMeta = {
-		title: 'Innovative Sounds of Psychedelic Trance: Meet Our Talented Artists and DJs',
-		description: 'Independent Ukrainian psytrance label founded in 2007 by Oleksandr Nikiienko aka DJ Omsun.',
-		ogTitle: 'Moon Koradji Records - World Wide Psychedelic',
-		ogImage: 'https://www.moonkoradji.com/assets/images/mk_square.jpg',
-		ogUrl: 'https://www.moonkoradji.com/artists',
-		ogDescription: 'Independent Ukrainian psytrance label founded in 2007 by Oleksandr Nikiienko aka DJ Omsun.'
-	}
-
 	artistsWithLetters = computed<artistsWithLetters[]>(() => {
 		let startLetter = '';
 
@@ -86,8 +80,42 @@ export class ArtistsComponent {
 		});
 	});
 
+	featuredArtists = computed<Artist[]>(() =>
+		this.allArtists().filter(a => a.featured)
+	);
+
 	constructor() {
-		this.metaData.setMetaData(this.metaDataObj);
+		effect(() => {
+			const all = this.allArtists();
+			const featured = this.featuredArtists();
+			if (!all.length || !featured.length) return;
+
+			this.metaData.setMetaData({
+				title: 'Innovative Sounds of Psychedelic Trance: Meet Our Talented Artists and DJs',
+				description: 'Independent Ukrainian psytrance label founded in 2007 by Oleksandr Nikiienko aka DJ Omsun.',
+				ogTitle: 'Meet Our Talented Artists and DJs | Moon Koradji Records',
+				ogImage: 'https://www.moonkoradji.com/assets/images/mk_square.jpg',
+				ogImageWidth: '250',
+				ogImageHeight: '250',
+				ogUrl: 'https://www.moonkoradji.com/artists',
+				ogDescription: 'Independent Ukrainian psytrance label founded in 2007 by DJ Omsun.',
+				ogType: 'website'
+			});
+
+			this.jsonLd.setJsonLd({
+				'@context': 'https://schema.org',
+				'@type': 'ItemList',
+				'name': 'Moon Koradji Records Artists & DJs',
+				'url': 'https://www.moonkoradji.com/artists',
+				'numberOfItems': all.length,
+				'itemListElement': featured.map((a, i) => ({
+					'@type': 'ListItem',
+					'position': i + 1,
+					'url': `https://www.moonkoradji.com/artists/${a.artistRoute}`,
+					'name': a.artistName
+				}))
+			});
+		});
 	}
 
 	private filterArtists(
