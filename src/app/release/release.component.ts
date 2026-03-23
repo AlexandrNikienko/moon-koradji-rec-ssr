@@ -202,9 +202,9 @@ export class ReleaseComponent {
 			title: `${release.releaseTitle} | Moon Koradji Records`,
 			description: releaseDesc,
 			ogTitle: release.releaseTitle,
-			ogImage: 'https://www.moonkoradji.com/assets/images/release-cover/' + release.releaseCover.webp2x,
-			ogImageWidth: '1000',
-			ogImageHeight: '1000',
+			ogImage: 'https://www.moonkoradji.com/assets/images/release-cover/' + release.releaseCover.default,
+			ogImageWidth: '250',
+			ogImageHeight: '250',
 			ogUrl: 'https://www.moonkoradji.com/releases/' + release.releaseRoute,
 			ogDescription: releaseDesc,
 			ogType: 'music.album'
