@@ -105,10 +105,99 @@ export class ReleaseComponent {
 		this.coverModalOpen.set(!this.coverModalOpen());
 	}
 
+	setJsonLdForRelease(release: Release): void {
+		const releaseDesc = Array.isArray(release.releaseDescription)
+			? release.releaseDescription.reduce((desc, par) => desc + par.paragraph, '')
+			: '';
+
+		const isCompilation = !!release.compiledBy || release.releaseTitle.startsWith('VA');
+
+		const schema: any = {
+			'@context': 'https://schema.org',
+			'@type': 'MusicAlbum',
+			'@id': `https://www.moonkoradji.com/releases/${release.releaseRoute}/#release`,
+			'name': release.releaseTitle,
+			'url': `https://www.moonkoradji.com/releases/${release.releaseRoute}`,
+			'image': `https://www.moonkoradji.com/assets/images/release-cover/${release.releaseCover.webp2x || release.releaseCover.webp || release.releaseCover.default}`,
+			'description': releaseDesc,
+			'datePublished': release.releaseDate,
+			'recordLabel': {
+				'@id': 'https://www.moonkoradji.com/#organization'
+			}
+		};
+
+		// byArtist and performer
+		if (isCompilation) {
+			schema['byArtist'] = {
+				'@type': 'MusicGroup',
+				'name': 'Various Artists'
+			};
+			if (release.artists?.length) {
+				schema['performer'] = release.artists.map(name => ({
+					'@type': 'MusicGroup',
+					'name': name,
+					'url': `https://www.moonkoradji.com/artists/${name.toLowerCase().replace(/\s+/g, '-')}`
+				}));
+			}
+		} else {
+			if (release.artists?.length) {
+				schema['byArtist'] = release.artists.map(name => ({
+					'@type': 'MusicGroup',
+					'name': name,
+					'url': `https://www.moonkoradji.com/artists/${name.toLowerCase().replace(/\s+/g, '-')}`
+				}));
+			}
+		}
+
+		// compiledBy
+		if (release.compiledBy) {
+			schema['producer'] = {
+				'@type': 'Person',
+				'name': release.compiledBy
+			};
+		}
+
+		// releaseAuthor — solo releases
+		if (release.releaseAuthor) {
+			schema['author'] = {
+				'@type': 'Person',
+				'name': release.releaseAuthor
+			};
+		}
+
+		// mastering credit
+		if (release.masteredBy) {
+			schema['creditText'] = `Mastered by ${release.masteredBy}`;
+		}
+
+		// artwork
+		if (release.artworkBy) {
+			schema['thumbnail'] = {
+				'@type': 'ImageObject',
+				'url': `https://www.moonkoradji.com/assets/images/release-cover/${release.releaseCover.default}`,
+				'creditText': `Artwork by ${release.artworkBy}`
+			};
+		}
+
+		// catalog number
+		if (release.releaseNumber) {
+			schema['catalogNumber'] = release.releaseNumber;
+		}
+
+		// streaming links as sameAs
+		const sameAs: string[] = [];
+		if (release.bandcampLink) sameAs.push(release.bandcampLink);
+		if (release.streamingLinks?.spotify) sameAs.push(release.streamingLinks.spotify);
+		if (release.streamingLinks?.appleMusic) sameAs.push(release.streamingLinks.appleMusic);
+		if (release.streamingLinks?.beatport) sameAs.push(release.streamingLinks.beatport);
+		if (sameAs.length) schema['sameAs'] = sameAs;
+
+		this.jsonLd.setJsonLd(schema);
+	}
+
 	setMetaData(release: Release): void {
 		const releaseDesc = release.releaseDescription ? release.releaseDescription.reduce((desc, par) => desc + par.paragraph, '') : '';
 
-		// Meta data tags
 		const metaDataObj: iMeta = {
 			title: `${release.releaseTitle} | Moon Koradji Records`,
 			description: releaseDesc,
@@ -125,18 +214,6 @@ export class ReleaseComponent {
 
 		this.metaData.setMetaData(metaDataObj);
 
-		// JSON-LD
-		this.jsonLd.setJsonLd({
-			'@context': 'https://schema.org',
-			'@type': 'MusicAlbum',
-			'@id': `https://www.moonkoradji.com/releases/${release.releaseRoute}/#release`,
-			'name': release.releaseTitle,
-			'url': `https://www.moonkoradji.com/releases/${release.releaseRoute}`,
-			'image': `https://www.moonkoradji.com/assets/images/release-cover/${release.releaseCover.webp2x}`,
-			'datePublished': release.releaseDate,
-			'recordLabel': {
-				'@id': 'https://www.moonkoradji.com/#organization'
-			}
-		});
+		this.setJsonLdForRelease(release);
 	}
 }
