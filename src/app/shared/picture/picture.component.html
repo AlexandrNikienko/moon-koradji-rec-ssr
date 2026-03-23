@@ -22,7 +22,8 @@
   <img
     [class]="class()"
     [src]="IMAGEFOLDER + imageFolder() + cover().default"
-    alt=""
-    loading="lazy"
-    >
+    alt="Cover image"
+    [loading]="priority() ? 'eager' : 'lazy'"
+    [attr.fetchpriority]="priority() ? 'high' : null"
+  >
 </picture>

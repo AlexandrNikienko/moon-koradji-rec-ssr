@@ -1,0 +1,49 @@
+/* contact.component.scss */
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  &__intro {
+    margin-bottom: 2rem;
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    mat-form-field {
+      width: 100%;
+    }
+
+    button {
+      align-self: flex-start;
+      min-width: 160px;
+    }
+  }
+
+  &__success {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+
+    mat-icon {
+      color: #4caf50;
+      font-size: 2rem;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  &__error {
+    color: #f44336;
+    font-size: 0.875rem;
+  }
+}

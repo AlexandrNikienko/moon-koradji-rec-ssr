@@ -1,0 +1,74 @@
+<!-- contact.component.html -->
+<mk-heading title="Contact" />
+
+<section class="contact">
+  <div class="contact__intro">
+    <p>Demo submissions, booking requests, press and general inquiries — we'd love to hear from you.</p>
+    <p>You can also reach us directly at <a href="mailto:info@moonkoradji.com">info@moonkoradji.com</a></p>
+  </div>
+
+  @if (status() === 'success') {
+    <div class="contact__success">
+      <mat-icon>check_circle</mat-icon>
+      <p>Message sent! We'll get back to you soon.</p>
+    </div>
+  } @else {
+    <form class="contact__form" (ngSubmit)="onSubmit()" [formGroup]="form">
+
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" placeholder="Your name or artist name">
+        @if (getError('name')) {
+          <mat-error>{{ getError('name') }}</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" type="email" placeholder="your@email.com">
+        @if (getError('email')) {
+          <mat-error>{{ getError('email') }}</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Subject</mat-label>
+        <input matInput formControlName="subject" placeholder="Demo submission / Booking / Other">
+        @if (getError('subject')) {
+          <mat-error>{{ getError('subject') }}</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Message</mat-label>
+        <textarea
+          matInput
+          formControlName="message"
+          placeholder="Tell us more..."
+          rows="6">
+        </textarea>
+        @if (getError('message')) {
+          <mat-error>{{ getError('message') }}</mat-error>
+        }
+      </mat-form-field>
+
+      <button
+        mat-flat-button
+        type="submit"
+        [disabled]="status() === 'sending'">
+        @if (status() === 'sending') {
+          <mat-spinner diameter="20" />
+        } @else {
+          Send Message
+        }
+      </button>
+
+      @if (status() === 'error') {
+        <p class="contact__error">
+          Something went wrong. Please try again or email us directly.
+        </p>
+      }
+
+    </form>
+  }
+</section>

@@ -30,6 +30,10 @@ export const routes: Route[] = [
 		path: 'about',
 		loadComponent: () => import('./about/about.component').then(x => x.AboutComponent)
 	},
+	{
+		path: 'contact',
+		loadComponent: () => import('./contact/contact').then(x => x.ContactComponent)
+	},
 	{ 
 		path: '404',
 		loadComponent: () => import('./layout/not-found/not-found').then(x => x.NotFoundComponent)

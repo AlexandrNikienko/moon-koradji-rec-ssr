@@ -11,7 +11,7 @@
       </div>
 
       <app-picture [cover]="release().releaseCover" [class]="'release-cover'"
-        [imageFolder]="'release-cover/'" (click)="toggleCoverModal()"></app-picture>
+        [imageFolder]="'release-cover/'" (click)="toggleCoverModal()" [priority]="true"></app-picture>
     </div>
 
     <a class="s-go-back" routerLink="/releases">

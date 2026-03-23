@@ -13,4 +13,5 @@ export class PictureComponent {
 	class = input<string>();
 	imageFolder = input<string>();
 	IMAGEFOLDER = IMAGEFOLDER;
+	priority = input<boolean>(false);
 }
