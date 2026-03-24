@@ -41,7 +41,7 @@
 
 @if (artistsWithLetters().length) {
 <section class="artists-wrapper mb-16">
-	@for (item of artistsWithLetters(); track item.id) {
+	@for (item of artistsWithLetters(); track item.artistRoute) {
 	@if (item.letter) {
 	<div class="letter-separator">
 		{{ item.letter }}
@@ -77,7 +77,7 @@
 
 @if (djs().length) {
 <section class="artists-wrapper">
-	@for (item of djs(); track item.id) {
+	@for (item of djs(); track item.artistRoute) {
 	<div class="artist-item mb-16">
 		<a [routerLink]="['/artists', item.artistRoute]" class="artist-item__link">
 			<p class="artist-item__name">{{item.artistName}}

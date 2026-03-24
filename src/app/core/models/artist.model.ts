@@ -3,7 +3,6 @@ import { Release } from './release.model';
 
 export type Role = 'artist' | 'dj';
 export interface Artist {
-    id: string;
     artistRoute: string;
     artistName: string;
     artistRealName: string;

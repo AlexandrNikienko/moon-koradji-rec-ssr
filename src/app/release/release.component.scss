@@ -266,9 +266,11 @@
 	font-size: .7rem;
 	border-radius: 6px;
 	transition: .1s;
+	color: rgba(white, 0.6);
 
 	&:hover {
 		background-color: rgba(255, 255, 255, 0.2);
+		color: rgba(white, 0.9);
 	}
 
 	@include mobile {

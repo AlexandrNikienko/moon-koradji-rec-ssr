@@ -22,7 +22,7 @@
   <img
     [class]="class()"
     [src]="IMAGEFOLDER + imageFolder() + cover().default"
-    alt="Cover image"
+    [alt]="alt()"
     [loading]="priority() ? 'eager' : 'lazy'"
     [attr.fetchpriority]="priority() ? 'high' : null"
   >

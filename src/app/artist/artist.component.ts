@@ -11,6 +11,7 @@ import { SafeHtmlPipe } from '../core/pipes/safe-html.pipe';
 import { map } from 'rxjs/operators';
 import { DataSignalService } from '../core/services/data-signal';
 import { JsonLdService } from '../core/services/json-ld.service';
+import { Release } from '../core/models/release.model';
 
 @Component({
     imports: [
@@ -34,11 +35,21 @@ export class ArtistComponent {
 		{ initialValue: null }
 	);
 
-	allArtists: Signal<Artist[]> = this.dataSignalService.getData<Artist>('artists');
+	private allReleases: Signal<Release[]> = this.dataSignalService.getData<Release>('releases');
+	private allArtists: Signal<Artist[]> = this.dataSignalService.getData<Artist>('artists');
 
 	artist = computed<Artist | null>(() =>
 		this.allArtists().find(a => a.artistRoute === this.artistRoute()) ?? null
 	);
+
+	artistReleases = computed<Release[]>(() => {
+		const artist = this.artist();
+		if (!artist) return [];
+		
+		return this.allReleases().filter(r => 
+			r.artists?.includes(artist.artistName)
+		);
+	});
 
 	constructor() {
 		effect(() => {
@@ -70,7 +81,7 @@ export class ArtistComponent {
 			ogType: 'profile'
 		}
 
-		console.log('Meta data object set:', metaDataObj);
+		// console.log('Meta data object set:', metaDataObj);
 
 		this.metaData.setMetaData(metaDataObj);
 

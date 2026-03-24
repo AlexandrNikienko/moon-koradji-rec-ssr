@@ -10,7 +10,7 @@
         <span class="fas fa-share fa-2x"></span>
       </div>
 
-      <app-picture [cover]="release().releaseCover" [class]="'release-cover'"
+      <app-picture [cover]="release().releaseCover" [alt]="'Cover image for ' + release().releaseTitle" [class]="'release-cover'"
         [imageFolder]="'release-cover/'" (click)="toggleCoverModal()" [priority]="true"></app-picture>
     </div>
 
@@ -161,7 +161,8 @@
     <button class="cover-modal__close" (click)="toggleCoverModal()" aria-label="Close modal">
       <i class="fas fa-times"></i>
     </button>
-    <app-picture [cover]="release().releaseCover" [class]="'release-cover-zoom'"
+    
+    <app-picture [cover]="release().releaseCover" [alt]="'Cover image for ' + release().releaseTitle" [class]="'release-cover-zoom'"
       [imageFolder]="'release-cover/'"></app-picture>
   </div>
 </div>

@@ -54,17 +54,18 @@
 		</div>
 	</div>
 
-	@if (artist().releases) {
+	@if (artistReleases().length > 0) {
 		<div class="s-involved row">
 			<div class="small-title">Releases with {{artist().artistName}}</div>
 
-			@for (release of artist().releases; track release) {
+			@for (release of artistReleases(); track release) {
 				<div class="s-involved__item col-lg-2 col-md-3 col-sm-3 col-xs-3">
-					<a class="s-involved__link " [routerLink]="['/releases', release.cdLink]">
+					<a class="s-involved__link " [routerLink]="['/releases', release.releaseRoute]">
 						<div class="s-involved__image"
-							[ngStyle]="{'background-image': 'url(/assets/images/release-cover/' + release.cdCover + ')'}">
+							[ngStyle]="{'background-image': `url(/assets/images/release-cover/${release.releaseCover.default}`}">
 						</div>
-						<div class="s-involved__name">{{release.cdName}}</div>
+
+						<div class="s-involved__name">{{release.releaseTitle}}</div>
 					</a>
 				</div>
 			}
@@ -76,6 +77,7 @@
 			@for (mix of artist().mixes; track mix) {
 				<div class="s-mixes__item">
 					<p class="s-mix-year">{{mix.year}}</p>
+					
 					<div class="s-mix-block" [innerHTML]="mix.embedCode | safe: 'html'"></div>
 				</div>
 			}
