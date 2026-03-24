@@ -16,14 +16,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Shadow Enuin 2",
-					"cdCover": "mkcd003_shadow_enuin_2.jpg",
-					"cdLink": "va-shadow-enuin-2"
-				}
-			]
+			"artistSoundcloud": ""
 		},
 		{
 			"artistRoute": "acid-goblins",
@@ -42,13 +35,6 @@
 			],
 			"artistFacebook": "",
 			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Shadow Enuin: at the Earth's edge",
-					"cdCover": "mkcd001_shadow_enuin.jpg",
-					"cdLink": "va-shadow-enuin"
-				}
-			],
 			"inactive": true
 		},
 		{
@@ -69,23 +55,6 @@
 			],
 			"artistFacebook": "https://www.facebook.com/adans0nia/",
 			"artistSoundcloud": "https://soundcloud.com/adansonia",
-			"releases": [
-				{
-					"cdName": "VA Blackout 2: Luminous Darkness",
-					"cdCover": "mkrl020_blackout_2.jpg",
-					"cdLink": "va-blackout-2"
-				},
-				{
-					"cdName": "VA Neural Embers",
-					"cdCover": "mkcd012_neural_embers.jpg",
-					"cdLink": "va-neural-embers"
-				},
-				{
-					"cdName": "VA Illusorium",
-					"cdCover": "mkcd011_illusorium.jpg",
-					"cdLink": "va-illusorium"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2020",
@@ -112,14 +81,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/Akkma/",
-			"artistSoundcloud": "https://soundcloud.com/akkma",
-			"releases": [
-				{
-					"cdName": "VA Blackout",
-					"cdCover": "mkdg005_blackout.jpg",
-					"cdLink": "va-blackout"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/akkma"
 		},
 		{
 			"artistRoute": "already-maged",
@@ -141,34 +103,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/Already-Maged-179276062095555/",
-			"artistSoundcloud": "https://soundcloud.com/alreadymaged",
-			"releases": [
-				{
-					"cdName": "VA Blackout 2: Luminous Darkness",
-					"cdCover": "mkrl020_blackout_2.jpg",
-					"cdLink": "va-blackout-2"
-				},
-				{
-					"cdName": "VA Blackout",
-					"cdCover": "mkdg005_blackout.jpg",
-					"cdLink": "va-blackout"
-				},
-				{
-					"cdName": "VA Mind Games",
-					"cdCover": "mkcd010_mind_games.jpg",
-					"cdLink": "va-mind-games"
-				},
-				{
-					"cdName": "VA Legendarium",
-					"cdCover": "mkcd004_legendarium.jpg",
-					"cdLink": "va-legendarium"
-				},
-				{
-					"cdName": "VA Infinity Keepers",
-					"cdCover": "mkcd002_infinity_keepers.jpg",
-					"cdLink": "va-infinity-keepers"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/alreadymaged"
 		},
 		{
 			"artistRoute": "amorphous",
@@ -187,13 +122,6 @@
 			],
 			"artistFacebook": "",
 			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Shadow Enuin 2",
-					"cdCover": "mkcd003_shadow_enuin_2.jpg",
-					"cdLink": "va-shadow-enuin-2"
-				}
-			],
 			"inactive": true
 		},
 		{
@@ -215,14 +143,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Shadow Enuin 2",
-					"cdCover": "mkcd003_shadow_enuin_2.jpg",
-					"cdLink": "va-shadow-enuin-2"
-				}
-			]
+			"artistSoundcloud": ""
 		},
 		{
 			"artistRoute": "argaleth",
@@ -243,14 +164,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/Argaleth",
-			"artistSoundcloud": "soundcloud.com/argaleth",
-			"releases": [
-				{
-					"cdName": "VA Alphaum",
-					"cdCover": "mkrl024_alphaum.jpg",
-					"cdLink": "va-alphaum"
-				}
-			]
+			"artistSoundcloud": "soundcloud.com/argaleth"
 		},
 		{
 			"artistRoute": "ascoil-sun",
@@ -268,14 +182,7 @@
 				}
 			],
 			"artistFacebook": "http://www.facebook.com/pages/Ascoil-Sun/68864121431?ref=ts",
-			"artistSoundcloud": "http://soundcloud.com/ascoilsun",
-			"releases": [
-				{
-					"cdName": "Ascoil Sun - Emergence",
-					"cdCover": "mkcd005_ascoil_sun.jpg",
-					"cdLink": "ascoil-sun-emergence"
-				}
-			]
+			"artistSoundcloud": "http://soundcloud.com/ascoilsun"
 		},
 		{
 			"artistRoute": "attoya",
@@ -293,19 +200,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Intropix",
-					"cdCover": "mkcd009_intropix.jpg",
-					"cdLink": "va-intropix"
-				},
-				{
-					"cdName": "VA Legendarium",
-					"cdCover": "mkcd004_legendarium.jpg",
-					"cdLink": "va-legendarium"
-				}
-			]
+			"artistSoundcloud": ""
 		},
 		{
 			"artistRoute": "baphomet-engine",
@@ -326,19 +221,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/baphometengine",
-			"artistSoundcloud": "https://soundcloud.com/baphomet-engine",
-			"releases": [
-				{
-					"cdName": "EP Bapholot on Earth",
-					"cdCover": "mkdg001_bapholot_on_earth.jpg",
-					"cdLink": "ep-bapholot-on-earth"
-				},
-				{
-					"cdName": "VA Infinity Keepers 2: depth perception",
-					"cdCover": "mkcd007_infinity_keepers_2.jpg",
-					"cdLink": "va-infinity-keepers-2"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/baphomet-engine"
 		},
 		{
 			"artistRoute": "battle-of-the-future-buddhas",
@@ -356,13 +239,6 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/Battle-of-the-Future-Buddhas-116409421764915/",
-			"releases": [
-				{
-					"cdName": "VA Intropix",
-					"cdCover": "mkcd009_intropix.jpg",
-					"cdLink": "va-intropix"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2019",
@@ -386,14 +262,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/Bodhi1320",
-			"artistSoundcloud": "https://soundcloud.com/bodhi1320",
-			"releases": [
-				{
-					"cdName": "VA Blackout 2: Luminous Darkness",
-					"cdCover": "mkrl020_blackout_2.jpg",
-					"cdLink": "va-blackout-2"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/bodhi1320"
 		},
 		{
 			"artistRoute": "captain-kirk",
@@ -411,14 +280,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/CaptainKirkTrance/",
-			"artistSoundcloud": "https://soundcloud.com/captain_kirk",
-			"releases": [
-				{
-					"cdName": "VA Legendarium",
-					"cdCover": "mkcd004_legendarium.jpg",
-					"cdLink": "va-legendarium"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/captain_kirk"
 		},
 		{
 			"artistRoute": "claw",
@@ -442,14 +304,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/CLAW.cy",
-			"artistSoundcloud": "https://soundcloud.com/c-l-a-w",
-			"releases": [
-				{
-					"cdName": "VA Alphaum",
-					"cdCover": "mkrl024_alphaum.jpg",
-					"cdLink": "va-alphaum"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/c-l-a-w"
 		},
 		{
 			"artistRoute": "critter",
@@ -464,14 +319,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/critterpsytrance",
-			"artistSoundcloud": "https://soundcloud.com/crittermusic",
-			"releases": [
-				{
-					"cdName": "VA Blackout",
-					"cdCover": "mkdg005_blackout.jpg",
-					"cdLink": "va-blackout"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/crittermusic"
 		},
 		{
 			"artistRoute": "digitalian",
@@ -492,14 +340,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "https://soundcloud.com/digitalian-teruki",
-			"releases": [
-				{
-					"cdName": "VA Shadow Enuin 2",
-					"cdCover": "mkcd003_shadow_enuin_2.jpg",
-					"cdLink": "va-shadow-enuin-2"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/digitalian-teruki"
 		},
 		{
 			"artistRoute": "digital-talk",
@@ -520,14 +361,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/digital.talk.project",
-			"artistSoundcloud": "https://soundcloud.com/digitaltalk",
-			"releases": [
-				{
-					"cdName": "N3XU5 - Chrome",
-					"cdCover": "mkrl027_nexus_chrome.jpg",
-					"cdLink": "nexus-chrome"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/digitaltalk"
 		},
 		{
 			"artistRoute": "digitalist",
@@ -545,14 +379,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Infinity Keepers",
-					"cdCover": "mkcd002_infinity_keepers.jpg",
-					"cdLink": "va-infinity-keepers"
-				}
-			]
+			"artistSoundcloud": ""
 		},
 		{
 			"artistRoute": "distorted-goblin",
@@ -572,28 +399,6 @@
 			],
 			"artistFacebook": "https://www.facebook.com/Distorted-Goblin-287801394154/",
 			"artistSoundcloud": "https://soundcloud.com/distorted-goblin",
-			"releases": [
-				{
-					"cdName": "VA Blackout 2: Luminous Darkness",
-					"cdCover": "mkrl020_blackout_2.jpg",
-					"cdLink": "va-blackout-2"
-				},
-				{
-					"cdName": "VA Blackout",
-					"cdCover": "mkdg005_blackout.jpg",
-					"cdLink": "va-blackout"
-				},
-				{
-					"cdName": "VA Mind Games",
-					"cdCover": "mkcd010_mind_games.jpg",
-					"cdLink": "va-mind-games"
-				},
-				{
-					"cdName": "VA Shadow Enuin 2",
-					"cdCover": "mkcd003_shadow_enuin_2.jpg",
-					"cdLink": "va-shadow-enuin-2"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2019",
@@ -620,14 +425,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Legendarium",
-					"cdCover": "mkcd004_legendarium.jpg",
-					"cdLink": "va-legendarium"
-				}
-			]
+			"artistSoundcloud": ""
 		},
 		{
 			"artistRoute": "drury-nevil",
@@ -651,14 +449,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "https://soundcloud.com/drury_nevil",
-			"releases": [
-				{
-					"cdName": "VA Shadow Enuin: at the Earth's edge",
-					"cdCover": "mkcd001_shadow_enuin.jpg",
-					"cdLink": "va-shadow-enuin"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/drury_nevil"
 		},
 		{
 			"artistRoute": "dylalien",
@@ -673,14 +464,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Infinity Keepers 2: depth perception",
-					"cdCover": "mkcd007_infinity_keepers_2.jpg",
-					"cdLink": "va-infinity-keepers-2"
-				}
-			]
+			"artistSoundcloud": ""
 		},
 		{
 			"artistRoute": "enichkin",
@@ -695,14 +479,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "https://soundcloud.com/enichkin",
-			"releases": [
-				{
-					"cdName": "VA Infinity Keepers 2: depth perception",
-					"cdCover": "mkcd007_infinity_keepers_2.jpg",
-					"cdLink": "va-infinity-keepers-2"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/enichkin"
 		},
 		{
 			"artistRoute": "faeyan",
@@ -723,14 +500,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/faeyanmusic",
-			"artistSoundcloud": "https://soundcloud.com/faeyan",
-			"releases": [
-				{
-					"cdName": "VA Blackout 2: Luminous Darkness",
-					"cdCover": "mkrl020_blackout_2.jpg",
-					"cdLink": "va-blackout-2"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/faeyan"
 		},
 		{
 			"artistRoute": "fafazz",
@@ -747,21 +517,14 @@
 					"paragraph": "Rooted in the underground rave scene, he started producing techno and performing live hardware sets at just 15 years old. In 2010, his discovery of Psytrance led him to expand his musical horizons, launching a psychedelic trance project that would shape his artistic journey. By 2013, he had joined Funky Freaks Records, later stepping into a co-manager role."
 				},
 				{
-					"paragraph": "Fafazz’s sound is driven by duality—blending love, compassion, and gratitude with darkness, political struggle, and raw energy. Beyond production, he is deeply involved in music collectives, including Rêves Éphémères and Sub.conscience, fostering underground culture and artistic expression."
+					"paragraph": "Fafazz’s sound is driven by duality — blending love, compassion, and gratitude with darkness, political struggle, and raw energy. Beyond production, he is deeply involved in music collectives, including Rêves Éphémères and Sub.conscience, fostering underground culture and artistic expression."
 				},
 				{
-					"paragraph": "His DJ sets are a genre-blurring experience, weaving together techno, psy techno, chillout, tribe, and bass music—an invitation to a unique and immersive dancefloor journey."
+					"paragraph": "His DJ sets are a genre-blurring experience, weaving together techno, psy techno, chillout, tribe, and bass music — an invitation to a unique and immersive dancefloor journey."
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/Fafazz-451644938181352",
-			"artistSoundcloud": "https://soundcloud.com/fafazz",
-			"releases": [
-				{
-					"cdName": "VA Alphaum",
-					"cdCover": "mkrl024_alphaum.jpg",
-					"cdLink": "va-alphaum"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/fafazz"
 		},
 		{
 			"artistRoute": "fearkiller",
@@ -780,13 +543,6 @@
 			],
 			"artistFacebook": "",
 			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Infinity Keepers",
-					"cdCover": "mkcd002_infinity_keepers.jpg",
-					"cdLink": "va-infinity-keepers"
-				}
-			],
 			"inactive": true
 		},
 		{
@@ -802,14 +558,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Illusorium",
-					"cdCover": "mkcd011_illusorium.jpg",
-					"cdLink": "va-illusorium"
-				}
-			]
+			"artistSoundcloud": ""
 		},
 		{
 			"artistRoute": "gappeq",
@@ -827,14 +576,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/GappeqParvatiRecords",
-			"artistSoundcloud": "https://soundcloud.com/gappeq",
-			"releases": [
-				{
-					"cdName": "VA Alphaum",
-					"cdCover": "mkrl024_alphaum.jpg",
-					"cdLink": "va-alphaum"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/gappeq"
 		},
 		{
 			"artistRoute": "ghreg-on-earth",
@@ -855,19 +597,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/ghreg",
-			"artistSoundcloud": "https://soundcloud.com/ghregon3arth",
-			"releases": [
-				{
-					"cdName": "EP Bapholot on Earth",
-					"cdCover": "mkdg001_bapholot_on_earth.jpg",
-					"cdLink": "ep-bapholot-on-earth"
-				},
-				{
-					"cdName": "VA Infinity Keepers 2: depth perception",
-					"cdCover": "mkcd007_infinity_keepers_2.jpg",
-					"cdLink": "va-infinity-keepers-2"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/ghregon3arth"
 		},
 		{
 			"artistRoute": "gidra",
@@ -885,14 +615,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/gridlord.gidra",
-			"artistSoundcloud": "https://soundcloud.com/gidra",
-			"releases": [
-				{
-					"cdName": "VA Shadow Enuin: at the Earth's edge",
-					"cdCover": "mkcd001_shadow_enuin.jpg",
-					"cdLink": "va-shadow-enuin"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/gidra"
 		},
 		{
 			"artistRoute": "gnohm",
@@ -914,13 +637,6 @@
 			],
 			"artistFacebook": "https://www.facebook.com/profile.php?id=100083214642945",
 			"artistSoundcloud": "https://soundcloud.com/gnohmbaba",
-			"releases": [
-				{
-					"cdName": "VA Blackout",
-					"cdCover": "mkdg005_blackout.jpg",
-					"cdLink": "va-blackout"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2021",
@@ -944,14 +660,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/gu.takumiyamaguchi",
-			"artistSoundcloud": "https://soundcloud.com/gu-jp",
-			"releases": [
-				{
-					"cdName": "N3XU5 - Chrome",
-					"cdCover": "mkrl027_nexus_chrome.jpg",
-					"cdLink": "nexus-chrome"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/gu-jp"
 		},
 		{
 			"artistRoute": "ingraval",
@@ -967,13 +676,6 @@
 			],
 			"artistFacebook": "https://www.facebook.com/ingraval",
 			"artistSoundcloud": "https://soundcloud.com/ingraval",
-			"releases": [
-				{
-					"cdName": "VA Blackout",
-					"cdCover": "mkdg005_blackout.jpg",
-					"cdLink": "va-blackout"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2023",
@@ -999,18 +701,6 @@
 			],
 			"artistFacebook": "https://www.facebook.com/inzectmusic/",
 			"artistSoundcloud": "https://soundcloud.com/inzect",
-			"releases": [
-				{
-					"cdName": "VA Neural Embers",
-					"cdCover": "mkcd012_neural_embers.jpg",
-					"cdLink": "va-neural-embers"
-				},
-				{
-					"cdName": "VA Mind Games",
-					"cdCover": "mkcd010_mind_games.jpg",
-					"cdLink": "va-mind-games"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2022",
@@ -1037,18 +727,6 @@
 			],
 			"artistFacebook": "https://www.facebook.com/irukanji.psy",
 			"artistSoundcloud": "https://soundcloud.com/irukanji25",
-			"releases": [
-				{
-					"cdName": "VA Alphaum",
-					"cdCover": "mkrl024_alphaum.jpg",
-					"cdLink": "va-alphaum"
-				},
-				{
-					"cdName": "Irukanji - Springwald",
-					"cdCover": "mkrl019_irukanji_springwald.jpg",
-					"cdLink": "irukanji-springwald"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2021",
@@ -1084,14 +762,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/christer.lundstrom.5",
-			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Intropix",
-					"cdCover": "mkcd009_intropix.jpg",
-					"cdLink": "va-intropix"
-				}
-			]
+			"artistSoundcloud": ""
 		},
 		{
 			"artistRoute": "kanka",
@@ -1112,19 +783,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/frank.ottersen.1",
-			"artistSoundcloud": "https://soundcloud.com/fotters",
-			"releases": [
-				{
-					"cdName": "VA Mind Games",
-					"cdCover": "mkcd010_mind_games.jpg",
-					"cdLink": "va-mind-games"
-				},
-				{
-					"cdName": "VA Intropix",
-					"cdCover": "mkcd009_intropix.jpg",
-					"cdLink": "va-intropix"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/fotters"
 		},
 		{
 			"artistRoute": "karash",
@@ -1146,18 +805,6 @@
 			],
 			"artistFacebook": "https://www.facebook.com/karash79",
 			"artistSoundcloud": "https://soundcloud.com/karash",
-			"releases": [
-				{
-					"cdName": "VA Alphaum",
-					"cdCover": "mkrl024_alphaum.jpg",
-					"cdLink": "va-alphaum"
-				},
-				{
-					"cdName": "VA Infinity Keepers",
-					"cdCover": "mkcd002_infinity_keepers.jpg",
-					"cdLink": "va-infinity-keepers"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2021",
@@ -1183,18 +830,6 @@
 			],
 			"artistFacebook": "",
 			"artistSoundcloud": "https://soundcloud.com/katastrof",
-			"releases": [
-				{
-					"cdName": "VA Blackout 2: Luminous Darkness",
-					"cdCover": "mkrl020_blackout_2.jpg",
-					"cdLink": "va-blackout-2"
-				},
-				{
-					"cdName": "Katastrof - Bent",
-					"cdCover": "mkrl021_katastrof_bent.jpg",
-					"cdLink": "katastrof-bent"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2024",
@@ -1215,14 +850,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "https://soundcloud.com/kerlivin",
-			"releases": [
-				{
-					"cdName": "VA Legendarium",
-					"cdCover": "mkcd004_legendarium.jpg",
-					"cdLink": "va-legendarium"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/kerlivin"
 		},
 		{
 			"artistRoute": "kiriyama",
@@ -1240,13 +868,6 @@
 				},
 				{
 					"paragraph": "As goes for the Kiriyama sound of today, Alex's style has expanded since the start much thanks to his travels having performed in more than 20 countries ranging from Japan in the East to the American Pacific Coast in the West through which he has discovered new sources of inspiration. Thus, it's become increasingly more difficult to categorise his music as the style floats across different genres. Although it's common that people think of Kiriyama as a producer of nocturnal trance music, one could say that today Alex's sound pertains to the Scandinavian goa trance part of the psychedelic music spectrum."
-				}
-			],
-			"releases": [
-				{
-					"cdName": "VA Intropix",
-					"cdCover": "mkcd009_intropix.jpg",
-					"cdLink": "va-intropix"
 				}
 			],
 			"inactive": true
@@ -1267,14 +888,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/KirnaSaundi/",
-			"artistSoundcloud": "http://soundcloud.com/kirna",
-			"releases": [
-				{
-					"cdName": "Kirna - In Space!",
-					"cdCover": "mkcd006_kirna.jpg",
-					"cdLink": "kirna-in-space!"
-				}
-			]
+			"artistSoundcloud": "http://soundcloud.com/kirna"
 		},
 		{
 			"artistRoute": "kluster",
@@ -1293,19 +907,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "https://soundcloud.com/user-150320964",
-			"releases": [
-				{
-					"cdName": "VA Alphaum",
-					"cdCover": "mkrl024_alphaum.jpg",
-					"cdLink": "va-alphaum"
-				},
-				{
-					"cdName": "Kluster - Mental Rotation",
-					"cdCover": "mkrl022_kluster_mental_rotation.jpg",
-					"cdLink": "kluster-mental-rotation"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/user-150320964"
 		},
 		{
 			"artistRoute": "krapul",
@@ -1323,14 +925,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/profile.php?id=100063616065552",
-			"artistSoundcloud": "https://soundcloud.com/krapul84",
-			"releases": [
-				{
-					"cdName": "VA Blackout 2: Luminous Darkness",
-					"cdCover": "mkrl020_blackout_2.jpg",
-					"cdLink": "va-blackout-2"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/krapul84"
 		},
 		{
 			"artistRoute": "krussedull",
@@ -1349,13 +944,6 @@
 			],
 			"artistFacebook": "https://www.facebook.com/krussedull",
 			"artistSoundcloud": "https://soundcloud.com/krussedulltunes",
-			"releases": [
-				{
-					"cdName": "VA Shadow Enuin 2",
-					"cdCover": "mkcd003_shadow_enuin_2.jpg",
-					"cdLink": "va-shadow-enuin-2"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2019",
@@ -1385,14 +973,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Shadow Enuin: at the Earth's edge",
-					"cdCover": "mkcd001_shadow_enuin.jpg",
-					"cdLink": "va-shadow-enuin"
-				}
-			]
+			"artistSoundcloud": ""
 		},
 		{
 			"artistRoute": "LAB",
@@ -1416,14 +997,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Infinity Keepers 2: depth perception",
-					"cdCover": "mkcd007_infinity_keepers_2.jpg",
-					"cdLink": "va-infinity-keepers-2"
-				}
-			]
+			"artistSoundcloud": ""
 		},
 		{
 			"artistRoute": "loom",
@@ -1444,14 +1018,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/Slide.Loom.Official.Music",
-			"artistSoundcloud": "https://soundcloud.com/loompsy",
-			"releases": [
-				{
-					"cdName": "VA Blackout",
-					"cdCover": "mkdg005_blackout.jpg",
-					"cdLink": "va-blackout"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/loompsy"
 		},
 		{
 			"artistRoute": "magma-ohm",
@@ -1469,14 +1036,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Infinity Keepers",
-					"cdCover": "mkcd002_infinity_keepers.jpg",
-					"cdLink": "va-infinity-keepers"
-				}
-			]
+			"artistSoundcloud": ""
 		},
 		{
 			"artistRoute": "mendrion",
@@ -1494,14 +1054,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/mendrionlive",
-			"artistSoundcloud": "https://soundcloud.com/mendrionlive",
-			"releases": [
-				{
-					"cdName": "VA Blackout",
-					"cdCover": "mkdg005_blackout.jpg",
-					"cdLink": "va-blackout"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/mendrionlive"
 		},
 		{
 			"artistRoute": "mik-ha",
@@ -1516,14 +1069,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/profile.php?id=100010396533228",
-			"artistSoundcloud": "https://soundcloud.com/mik-ha-2",
-			"releases": [
-				{
-					"cdName": "VA Illusorium",
-					"cdCover": "mkcd011_illusorium.jpg",
-					"cdLink": "va-illusorium"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/mik-ha-2"
 		},
 		{
 			"artistRoute": "mind-distortion-system",
@@ -1544,14 +1090,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/mind-distortion-system-31918098391",
-			"artistSoundcloud": "https://soundcloud.com/mind-distortion-system",
-			"releases": [
-				{
-					"cdName": "VA Infinity Keepers 2: depth perception",
-					"cdCover": "mkcd007_infinity_keepers_2.jpg",
-					"cdLink": "va-infinity-keepers-2"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/mind-distortion-system"
 		},
 		{
 			"artistRoute": "molchun",
@@ -1570,23 +1109,6 @@
 			],
 			"artistFacebook": "https://www.facebook.com/evgeniy.molchun",
 			"artistSoundcloud": "https://soundcloud.com/molchun",
-			"releases": [
-				{
-					"cdName": "VA Neural Embers",
-					"cdCover": "mkcd012_neural_embers.jpg",
-					"cdLink": "va-neural-embers"
-				},
-				{
-					"cdName": "VA Illusorium",
-					"cdCover": "mkcd011_illusorium.jpg",
-					"cdLink": "va-illusorium"
-				},
-				{
-					"cdName": "VA Mind Games",
-					"cdCover": "mkcd010_mind_games.jpg",
-					"cdLink": "va-mind-games"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2021",
@@ -1618,14 +1140,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "https://soundcloud.com/molokowmusic",
-			"releases": [
-				{
-					"cdName": "VA Legendarium",
-					"cdCover": "mkcd004_legendarium.jpg",
-					"cdLink": "va-legendarium"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/molokowmusic"
 		},
 		{
 			"artistRoute": "mubali",
@@ -1643,14 +1158,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "https://soundcloud.com/mubali",
-			"releases": [
-				{
-					"cdName": "VA Shadow Enuin: at the Earth's edge",
-					"cdCover": "mkcd001_shadow_enuin.jpg",
-					"cdLink": "va-shadow-enuin"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/mubali"
 		},
 		{
 			"featured": true,
@@ -1669,19 +1177,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/N3xu5psychedelic",
-			"artistSoundcloud": "https://soundcloud.com/n3xu5",
-			"releases": [
-				{
-					"cdName": "N3XU5 - Chrome",
-					"cdCover": "mkrl027_nexus_chrome.jpg",
-					"cdLink": "nexus-chrome"
-				},
-				{
-					"cdName": "VA Alphaum",
-					"cdCover": "mkrl024_alphaum.jpg",
-					"cdLink": "va-alphaum"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/n3xu5"
 		},
 		{
 			"artistRoute": "noise-gust",
@@ -1703,13 +1199,6 @@
 			],
 			"artistFacebook": "https://www.facebook.com/noisegust",
 			"artistSoundcloud": "https://soundcloud.com/noisegust",
-			"releases": [
-				{
-					"cdName": "VA Blackout",
-					"cdCover": "mkdg005_blackout.jpg",
-					"cdLink": "va-blackout"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2024",
@@ -1741,13 +1230,6 @@
 			],
 			"artistFacebook": "https://facebook.com/NoizeBug",
 			"artistSoundcloud": "https://soundcloud.com/noizebug",
-			"releases": [
-				{
-					"cdName": "VA Illusorium",
-					"cdCover": "mkcd011_illusorium.jpg",
-					"cdLink": "va-illusorium"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2023",
@@ -1774,14 +1256,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "https://soundcloud.com/nolm",
-			"releases": [
-				{
-					"cdName": "VA Intropix",
-					"cdCover": "mkcd009_intropix.jpg",
-					"cdLink": "va-intropix"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/nolm"
 		},
 		{
 			"artistRoute": "ocelot",
@@ -1803,33 +1278,6 @@
 			],
 			"artistFacebook": "",
 			"artistSoundcloud": "https://soundcloud.com/aaronpeacock",
-			"releases": [
-				{
-					"cdName": "oCeLoT - Iconoclast",
-					"cdCover": "mkdg002_ocelot.jpg",
-					"cdLink": "ocelot-iconoclast"
-				},
-				{
-					"cdName": "EP Bapholot on Earth",
-					"cdCover": "mkdg001_bapholot_on_earth.jpg",
-					"cdLink": "ep-bapholot-on-earth"
-				},
-				{
-					"cdName": "oCeLoT - Night & Day",
-					"cdCover": "mkcd008_ocelot.jpg",
-					"cdLink": "ocelot-night-and-day"
-				},
-				{
-					"cdName": "VA Infinity Keepers 2: depth perception",
-					"cdCover": "mkcd007_infinity_keepers_2.jpg",
-					"cdLink": "va-infinity-keepers-2"
-				},
-				{
-					"cdName": "VA Infinity Keepers",
-					"cdCover": "mkcd002_infinity_keepers.jpg",
-					"cdLink": "va-infinity-keepers"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2022",
@@ -1857,14 +1305,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "https://soundcloud.com/odr",
-			"releases": [
-				{
-					"cdName": "VA Mind Games",
-					"cdCover": "mkcd010_mind_games.jpg",
-					"cdLink": "va-mind-games"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/odr"
 		},
 		{
 			"artistRoute": "oil",
@@ -1886,18 +1327,6 @@
 			],
 			"artistFacebook": "",
 			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Legendarium",
-					"cdCover": "mkcd004_legendarium.jpg",
-					"cdLink": "va-legendarium"
-				},
-				{
-					"cdName": "VA Infinity Keepers",
-					"cdCover": "mkcd002_infinity_keepers.jpg",
-					"cdLink": "va-infinity-keepers"
-				}
-			],
 			"inactive": true
 		},
 		{
@@ -1917,18 +1346,6 @@
 			],
 			"artistFacebook": "",
 			"artistSoundcloud": "https://soundcloud.com/oliwav",
-			"releases": [
-				{
-					"cdName": "VA Illusorium",
-					"cdCover": "mkcd011_illusorium.jpg",
-					"cdLink": "va-illusorium"
-				},
-				{
-					"cdName": "VA Infinity Keepers",
-					"cdCover": "mkcd002_infinity_keepers.jpg",
-					"cdLink": "va-infinity-keepers"
-				}
-			],
 			"inactive": true
 		},
 		{
@@ -1953,19 +1370,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "https://soundcloud.com/oliwav",
-			"releases": [
-				{
-					"cdName": "VA Blackout",
-					"cdCover": "mkdg005_blackout.jpg",
-					"cdLink": "va-blackout"
-				},
-				{
-					"cdName": "Oliwave - Alive Memory",
-					"cdCover": "mkdg004_oliwave_alive_memory.jpg",
-					"cdLink": "oliwave-alive-memory"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/oliwav"
 		},
 		{
 			"artistRoute": "pandors's-box",
@@ -1990,18 +1395,6 @@
 			],
 			"artistFacebook": "",
 			"artistSoundcloud": "https://soundcloud.com/pandorasboxmusic",
-			"releases": [
-				{
-					"cdName": "VA Shadow Enuin 2",
-					"cdCover": "mkcd003_shadow_enuin_2.jpg",
-					"cdLink": "va-shadow-enuin-2"
-				},
-				{
-					"cdName": "VA Shadow Enuin: at the Earth's edge",
-					"cdCover": "mkcd001_shadow_enuin.jpg",
-					"cdLink": "va-shadow-enuin"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2020",
@@ -2026,23 +1419,6 @@
 			],
 			"artistFacebook": "https://www.facebook.com/parahalu",
 			"artistSoundcloud": "https://soundcloud.com/para-halu",
-			"releases": [
-				{
-					"cdName": "Para Halu - Histora Plethora",
-					"cdCover": "mkrl025_para_halu_histora_plethora.jpg",
-					"cdLink": "para-halu-histora-plethora"
-				},
-				{
-					"cdName": "VA Alphaum",
-					"cdCover": "mkrl024_alphaum.jpg",
-					"cdLink": "va-alphaum"
-				},
-				{
-					"cdName": "VA Blackout 2: Luminous Darkness",
-					"cdCover": "mkrl020_blackout_2.jpg",
-					"cdLink": "va-blackout-2"
-				}
-			],
 			"featured": true
 		},
 		{
@@ -2061,14 +1437,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Shadow Enuin: at the Earth's edge",
-					"cdCover": "mkcd001_shadow_enuin.jpg",
-					"cdLink": "va-shadow-enuin"
-				}
-			]
+			"artistSoundcloud": ""
 		},
 		{
 			"artistRoute": "purosurpo",
@@ -2084,18 +1453,6 @@
 			],
 			"artistFacebook": "",
 			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Mind Games",
-					"cdCover": "mkcd010_mind_games.jpg",
-					"cdLink": "va-mind-games"
-				},
-				{
-					"cdName": "VA Shadow Enuin 2",
-					"cdCover": "mkcd003_shadow_enuin_2.jpg",
-					"cdLink": "va-shadow-enuin-2"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2019",
@@ -2126,13 +1483,6 @@
 			],
 			"artistFacebook": "https://www.facebook.com/saikozaurus.music/",
 			"artistSoundcloud": "https://soundcloud.com/saikozaurus",
-			"releases": [
-				{
-					"cdName": "VA Illusorium",
-					"cdCover": "mkcd011_illusorium.jpg",
-					"cdLink": "va-illusorium"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2020",
@@ -2159,19 +1509,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/mizuki.ni",
-			"artistSoundcloud": "https://soundcloud.com/mizukinishi",
-			"releases": [
-				{
-					"cdName": "VA Blackout 2: Luminous Darkness",
-					"cdCover": "mkrl020_blackout_2.jpg",
-					"cdLink": "va-blackout-2"
-				},
-				{
-					"cdName": "VA Blackout",
-					"cdCover": "mkdg005_blackout.jpg",
-					"cdLink": "va-blackout"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/mizukinishi"
 		},
 		{
 			"artistRoute": "schizobot",
@@ -2187,13 +1525,6 @@
 			],
 			"artistFacebook": "",
 			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Infinity Keepers",
-					"cdCover": "mkcd002_infinity_keepers.jpg",
-					"cdLink": "va-infinity-keepers"
-				}
-			],
 			"inactive": true
 		},
 		{
@@ -2212,19 +1543,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/nomadsoulmusic",
-			"artistSoundcloud": "https://soundcloud.com/seb-namaskar",
-			"releases": [
-				{
-					"cdName": "VA Alphaum",
-					"cdCover": "mkrl024_alphaum.jpg",
-					"cdLink": "va-alphaum"
-				},
-				{
-					"cdName": "VA Blackout 2: Luminous Darkness",
-					"cdCover": "mkrl020_blackout_2.jpg",
-					"cdLink": "va-blackout-2"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/seb-namaskar"
 		},
 		{
 			"artistRoute": "shiibashunsuke",
@@ -2243,19 +1562,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/shiibashunsuke.vertebralleaf",
-			"artistSoundcloud": "https://soundcloud.com/vertebralleaf",
-			"releases": [
-				{
-					"cdName": "Shiibashunsuke - Abstract Selection",
-					"cdCover": "mkrl023_shiibashunsuke_abstract_selection.jpg",
-					"cdLink": "shiibashunsuke-abstract-selection"
-				},
-				{
-					"cdName": "Shiibashunsuke - Innermatics",
-					"cdCover": "mkrl018_shiibashunsuke_innermatics.jpg",
-					"cdLink": "shiibashunsuke-innermatics"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/vertebralleaf"
 		},
 		{
 			"artistRoute": "shotu",
@@ -2273,14 +1580,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Shadow Enuin: at the Earth's edge",
-					"cdCover": "mkcd001_shadow_enuin.jpg",
-					"cdLink": "va-shadow-enuin"
-				}
-			]
+			"artistSoundcloud": ""
 		},
 		{
 			"artistRoute": "silent-horror",
@@ -2301,19 +1601,7 @@
 				}
 			],
 			"artistFacebook": "http://www.facebook.com/SilentHorror",
-			"artistSoundcloud": "http://soundcloud.com/shunya-silent_horror",
-			"releases": [
-				{
-					"cdName": "VA Infinity Keepers 2: depth perception",
-					"cdCover": "mkcd007_infinity_keepers_2.jpg",
-					"cdLink": "va-infinity-keepers-2"
-				},
-				{
-					"cdName": "VA Infinity Keepers",
-					"cdCover": "mkcd002_infinity_keepers.jpg",
-					"cdLink": "va-infinity-keepers"
-				}
-			]
+			"artistSoundcloud": "http://soundcloud.com/shunya-silent_horror"
 		},
 		{
 			"artistRoute": "simon-hayes",
@@ -2331,14 +1619,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/simonhayesmusic",
-			"artistSoundcloud": "https://soundcloud.com/simonhayesmusic",
-			"releases": [
-				{
-					"cdName": "VA Blackout",
-					"cdCover": "mkdg005_blackout.jpg",
-					"cdLink": "va-blackout"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/simonhayesmusic"
 		},
 		{
 			"artistRoute": "solarythm",
@@ -2356,14 +1637,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/profile.php?id=100063733659223",
-			"artistSoundcloud": "https://soundcloud.com/j-r-mie-kagan",
-			"releases": [
-				{
-					"cdName": "VA Blackout 2: Luminous Darkness",
-					"cdCover": "mkrl020_blackout_2.jpg",
-					"cdLink": "va-blackout-2"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/j-r-mie-kagan"
 		},
 		{
 			"artistRoute": "suddha",
@@ -2375,13 +1649,6 @@
 			"artistDescription": [
 				{
 					"paragraph": "Psychedelic trance artist from Nantes, based in Arâches, Rhone-Alpes, France."
-				}
-			],
-			"releases": [
-				{
-					"cdName": "VA Shadow Enuin: at the Earth's edge",
-					"cdCover": "mkcd001_shadow_enuin.jpg",
-					"cdLink": "va-shadow-enuin"
 				}
 			],
 			"inactive": true
@@ -2400,19 +1667,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "https://soundcloud.com/taakelur",
-			"releases": [
-				{
-					"cdName": "Taakelur - Totem",
-					"cdCover": "mkrl026_taakelur_totem.jpg",
-					"cdLink": "taakelur-totem"
-				},
-				{
-					"cdName": "VA Mind Games",
-					"cdCover": "mkcd010_mind_games.jpg",
-					"cdLink": "va-mind-games"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/taakelur"
 		},
 		{
 			"artistRoute": "taigan-sunset",
@@ -2427,24 +1682,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/taigan.sunset?fref=ts",
-			"artistSoundcloud": "https://soundcloud.com/taigan-sunset",
-			"releases": [
-				{
-					"cdName": "VA Mind Games",
-					"cdCover": "mkcd010_mind_games.jpg",
-					"cdLink": "va-mind-games"
-				},
-				{
-					"cdName": "VA Infinity Keepers 2",
-					"cdCover": "mkcd007_infinity_keepers_2.jpg",
-					"cdLink": "va-infinity-keepers-2"
-				},
-				{
-					"cdName": "VA Legendarium",
-					"cdCover": "mkcd004_legendarium.jpg",
-					"cdLink": "va-legendarium"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/taigan-sunset"
 		},
 		{
 			"artistRoute": "tersius",
@@ -2465,19 +1703,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/tersius.papendorp",
-			"artistSoundcloud": "https://soundcloud.com/tersius",
-			"releases": [
-				{
-					"cdName": "VA Mind Games",
-					"cdCover": "mkcd010_mind_games.jpg",
-					"cdLink": "va-mind-games"
-				},
-				{
-					"cdName": "VA Legendarium",
-					"cdCover": "mkcd004_legendarium.jpg",
-					"cdLink": "va-legendarium"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/tersius"
 		},
 		{
 			"artistRoute": "time-for-slime",
@@ -2492,19 +1718,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/timeforslimemusic",
-			"artistSoundcloud": "https://soundcloud.com/timeforslime",
-			"releases": [
-				{
-					"cdName": "VA Illusorium",
-					"cdCover": "mkcd011_illusorium.jpg",
-					"cdLink": "va-illusorium"
-				},
-				{
-					"cdName": "VA Intropix",
-					"cdCover": "mkcd009_intropix.jpg",
-					"cdLink": "va-intropix"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/timeforslime"
 		},
 		{
 			"artistRoute": "total",
@@ -2519,14 +1733,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Alphaum",
-					"cdCover": "mkrl024_alphaum.jpg",
-					"cdLink": "va-alphaum"
-				}
-			]
+			"artistSoundcloud": ""
 		},
 		{
 			"artistRoute": "traskel",
@@ -2552,23 +1759,6 @@
 			],
 			"artistFacebook": "",
 			"artistSoundcloud": "https://soundcloud.com/traskeltrans",
-			"releases": [
-				{
-					"cdName": "VA Illusorium",
-					"cdCover": "mkcd011_illusorium.jpg",
-					"cdLink": "va-illusorium"
-				},
-				{
-					"cdName": "VA Intropix",
-					"cdCover": "mkcd009_intropix.jpg",
-					"cdLink": "va-intropix"
-				},
-				{
-					"cdName": "VA Shadow Enuin 2",
-					"cdCover": "mkcd003_shadow_enuin_2.jpg",
-					"cdLink": "va-shadow-enuin-2"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2019",
@@ -2601,19 +1791,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Intropix",
-					"cdCover": "mkcd009_intropix.jpg",
-					"cdLink": "va-intropix"
-				},
-				{
-					"cdName": "VA Legendarium",
-					"cdCover": "mkcd004_legendarium.jpg",
-					"cdLink": "va-legendarium"
-				}
-			]
+			"artistSoundcloud": ""
 		},
 		{
 			"artistRoute": "trold",
@@ -2628,14 +1806,7 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "https://soundcloud.com/trold",
-			"releases": [
-				{
-					"cdName": "VA Illusorium",
-					"cdCover": "mkcd011_illusorium.jpg",
-					"cdLink": "va-illusorium"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/trold"
 		},
 		{
 			"artistRoute": "tromo",
@@ -2653,14 +1824,7 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/tromo.music",
-			"artistSoundcloud": "https://soundcloud.com/tromo",
-			"releases": [
-				{
-					"cdName": "VA Shadow Enuin: at the Earth's edge",
-					"cdCover": "mkcd001_shadow_enuin.jpg",
-					"cdLink": "va-shadow-enuin"
-				}
-			]
+			"artistSoundcloud": "https://soundcloud.com/tromo"
 		},
 		{
 			"artistRoute": "uttu",
@@ -2679,18 +1843,6 @@
 			],
 			"artistFacebook": "https://www.facebook.com/uttuforest",
 			"artistSoundcloud": "https://soundcloud.com/uttumusic",
-			"releases": [
-				{
-					"cdName": "VA Illusorium",
-					"cdCover": "mkcd011_illusorium.jpg",
-					"cdLink": "va-illusorium"
-				},
-				{
-					"cdName": "VA Mind Games",
-					"cdCover": "mkcd010_mind_games.jpg",
-					"cdLink": "va-mind-games"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2020",
@@ -2713,13 +1865,6 @@
 			],
 			"artistFacebook": "",
 			"artistSoundcloud": "",
-			"releases": [
-				{
-					"cdName": "VA Infinity Keepers 2: depth perception",
-					"cdCover": "mkcd007_infinity_keepers_2.jpg",
-					"cdLink": "va-infinity-keepers-2"
-				}
-			],
 			"inactive": true
 		},
 		{
@@ -2739,13 +1884,6 @@
 			],
 			"artistFacebook": "https://www.facebook.com/TheWeirdbass",
 			"artistSoundcloud": "https://soundcloud.com/theweirdbass",
-			"releases": [
-				{
-					"cdName": "VA Blackout 2: Luminous Darkness",
-					"cdCover": "mkrl020_blackout_2.jpg",
-					"cdLink": "va-blackout-2"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2025",
@@ -2771,33 +1909,6 @@
 			],
 			"artistFacebook": "https://www.facebook.com/Whrikk-165180250222659",
 			"artistSoundcloud": "https://soundcloud.com/whrikk",
-			"releases": [
-				{
-					"cdName": "VA Alphaum",
-					"cdCover": "mkrl024_alphaum.jpg",
-					"cdLink": "va-alphaum"
-				},
-				{
-					"cdName": "VA Infinity Keepers 2: depth perception",
-					"cdCover": "mkcd007_infinity_keepers_2.jpg",
-					"cdLink": "va-infinity-keepers-2"
-				},
-				{
-					"cdName": "VA Legendarium",
-					"cdCover": "mkcd004_legendarium.jpg",
-					"cdLink": "va-legendarium"
-				},
-				{
-					"cdName": "VA Shadow Enuin 2",
-					"cdCover": "mkcd003_shadow_enuin_2.jpg",
-					"cdLink": "va-shadow-enuin-2"
-				},
-				{
-					"cdName": "VA Shadow Enuin: at the Earth's edge",
-					"cdCover": "mkcd001_shadow_enuin.jpg",
-					"cdLink": "va-shadow-enuin"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2021",
@@ -2823,13 +1934,6 @@
 			],
 			"artistFacebook": "https://www.facebook.com/Ziuloiramlive",
 			"artistSoundcloud": "https://soundcloud.com/ziuloiram",
-			"releases": [
-				{
-					"cdName": "Ziul Oiram - Eternal Shadow",
-					"cdCover": "mkdg003_ziul_oiram_eternal_shadow.jpg",
-					"cdLink": "ziul-oiram-eternal-shadow"
-				}
-			],
 			"mixes": [
 				{
 					"year": "2025",
