@@ -37,17 +37,34 @@ export class ScrollToTopComponent {
     destroyRef = inject(DestroyRef);
     platformId = inject(PLATFORM_ID);
 
+    private lastScrollY = 0;
+
     constructor() {
-        if (isPlatformBrowser(this.platformId)) {
-            fromEvent(window, 'scroll')
-                .pipe(
-                    throttleTime(200),
-                    takeUntilDestroyed(this.destroyRef)
-                )
-                .subscribe(() => {
-                    this.showScrollBtn.set(window.scrollY > 100);
-                });
-        }
+    if (isPlatformBrowser(this.platformId)) {
+        fromEvent(window, 'scroll')
+        .pipe(
+            throttleTime(200),
+            takeUntilDestroyed(this.destroyRef)
+        )
+        .subscribe(() => {
+            const currentScrollY = window.scrollY;
+            const scrollingDown = currentScrollY > this.lastScrollY;
+
+            if(scrollingDown) {
+                //console.log('scrolling down', currentScrollY);
+                if (currentScrollY > 500) {
+                    this.showScrollBtn.set(true);
+                }
+            } else {
+                //console.log('scrolling up', currentScrollY);
+                if (currentScrollY <= 500) {
+                    this.showScrollBtn.set(false);
+                }
+            }
+
+            this.lastScrollY = currentScrollY;
+        });
+    }
     }
 
     scrollToTop(): void {

@@ -1,4 +1,6 @@
-<div class="scroll-to-top"
-	(click)="scrollToTop()"
-	[hidden]="!showScrollBtn()"
-	[@animate]="goToTop() ? 'to' : 'from'"></div>
+@if (showScrollBtn()) {
+  <div class="scroll-to-top"
+    (click)="scrollToTop()"
+    [@animate]="goToTop() ? 'to' : 'from'">
+  </div>
+}
