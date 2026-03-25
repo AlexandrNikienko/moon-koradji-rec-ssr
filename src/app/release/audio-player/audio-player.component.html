@@ -1,3 +1,5 @@
-<app-shared-loader></app-shared-loader>
-
-<div [innerHTML]="embedAudio() | safe: 'html'"></div>
+@defer (on idle; when embedAudio().length > 0) {
+    <div [innerHTML]="embedAudio() | safe: 'html'"></div>
+} @loading (after 100ms; minimum 400ms) {
+    <app-shared-loader></app-shared-loader>
+}
