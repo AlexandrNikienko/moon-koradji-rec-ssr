@@ -205,8 +205,8 @@ export class ReleaseComponent {
 			ogImage: release.facebookShareThumb ? 
 				'https://www.moonkoradji.com/assets/images/release-cover/' + release.facebookShareThumb : 
 				'https://www.moonkoradji.com/assets/images/release-cover/' + (release.releaseCover.webp2x || release.releaseCover.webp || release.releaseCover.default),
-			ogImageWidth: '1000',
-			ogImageHeight: '1000',
+			ogImageWidth: release.facebookShareThumb ? '1200' : '1000',
+			ogImageHeight: release.facebookShareThumb ? '630' : '1000',
 			ogUrl: 'https://www.moonkoradji.com/releases/' + release.releaseRoute,
 			ogDescription: releaseDesc,
 			ogType: 'music.album'
