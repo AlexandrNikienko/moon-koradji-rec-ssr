@@ -1,3 +1,4 @@
+import { ReleaseType } from '../../releases/releases.component';
 import { Artist } from './artist.model';
 import { Paragraph } from './paragraph.model';
 
@@ -36,6 +37,7 @@ export interface Release {
 	},
 	facebookShareThumb?: string;
 	albumBandcampId?: string;
+	releaseType: ReleaseType;
 }
 
 interface ReleaseCover {

@@ -1,8 +1,28 @@
-<mk-heading [title]="'Releases (' + releases().length + ')'" [subTitle]="'Purchase digital downloads or physical copies of our releases'"/>
+<mk-heading [title]="'Releases (' + filteredReleases().length + ')'" [subTitle]="'Purchase digital downloads or physical copies of our releases'"/>
 
-@if (releases()) {
+<div class="filter">
+  <mat-form-field appearance="outline">
+    <mat-label>Release type</mat-label>
+    <mat-select [(ngModel)]="choosenType">
+      @for (type of typeList; track type) {
+        <mat-option [value]="type">{{ type }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Access</mat-label>
+    <mat-select [(ngModel)]="choosenAccess">
+      @for (access of accessList; track access) {
+        <mat-option [value]="access">{{ access }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+</div>
+
+@if (filteredReleases()) {
 	<div class="releases">
-		@for (release of releases(); track release.releaseNumber) {
+		@for (release of filteredReleases(); track release.releaseNumber) {
 			<app-release-card [releaseItem]="release" [hidden]="release.hidden"/>
 		}
 	</div>

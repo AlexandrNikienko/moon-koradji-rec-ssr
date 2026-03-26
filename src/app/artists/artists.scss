@@ -105,40 +105,6 @@ mk-heading {
 	}
 }
 
-.filter {
-	display: flex;
-	gap: 1rem;
-	margin-bottom: 2rem;
-
-	&__list {
-		list-style: none;
-		margin-bottom: 0;
-		padding-left: 0;
-		padding-top: 8px;
-		font-size: 12px;
-
-		.far, .fas {
-			font-size: 10px;
-		}
-	}
-
-	&__list-item {
-		position: relative;
-	}
-
-	.mat-mdc-slide-toggle {
-		margin-left: 1rem;
-	}
-
-	::ng-deep .mdc-label {
-		color: white
-	}
-
-	@include mobile {
-		flex-direction: column;
-	}
-}
-
 .far, .fas {
 	display: inline-block;
 	width: 12px;

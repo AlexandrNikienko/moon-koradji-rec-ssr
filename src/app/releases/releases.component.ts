@@ -1,4 +1,4 @@
-import { Component, inject, Signal, effect, ChangeDetectionStrategy, computed } from '@angular/core';
+import { Component, inject, Signal, effect, ChangeDetectionStrategy, computed, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -8,13 +8,20 @@ import { ReleaseCardComponent } from './../shared/release-card/release-card.comp
 import { HeadingComponent } from './../layout/heading/heading.component';
 import { Release } from '../core/models/release.model';
 import { JsonLdService } from '../core/services/json-ld.service';
+import { MatSelectModule } from '@angular/material/select';
+import { FormsModule } from '@angular/forms';
+
+export type ReleaseType = 'All' | 'VA' | 'EP' | 'Album';
+export type ReleaseAccess = 'All' | 'Free' | 'CD';
 
 @Component({
     imports: [
         CommonModule,
         RouterModule,
         HeadingComponent,
-        ReleaseCardComponent
+        ReleaseCardComponent,
+		MatSelectModule,
+		FormsModule
     ],
     selector: 'app-releases',
     templateUrl: './releases.component.html',
@@ -31,6 +38,30 @@ export class ReleasesComponent {
 	latestRelease = computed<Release | null>(() =>
 		this.releases().length > 0 ? this.releases()[0] : null
 	);
+
+	choosenType = signal<ReleaseType>('All');
+	choosenAccess = signal<ReleaseAccess>('All');
+
+	typeList: ReleaseType[] = ['All', 'VA', 'EP', 'Album'];
+	accessList: ReleaseAccess[] = ['All', 'Free', 'CD'];
+
+	filteredReleases = computed<Release[]>(() => {
+		let result = this.releases();
+		const type = this.choosenType();
+		const access = this.choosenAccess();
+
+		if (type !== 'All') {
+			result = result.filter(r => r.releaseType === type);
+		}
+
+		if (access === 'Free') {
+			result = result.filter(r => r.isFree);
+		} else if (access === 'CD') {
+			result = result.filter(r => r.releaseNumber?.startsWith('MKCD'));
+		}
+
+		return result;
+	});
 
 	constructor() {
 		effect(() => {

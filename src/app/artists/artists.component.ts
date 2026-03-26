@@ -20,7 +20,7 @@ type artistsWithLetters = Artist & { letter: string | null };
 		HeadingComponent,
 		RouterModule,
 		MatSelectModule,
-		FormsModule,
+		FormsModule
 	],
     selector: 'app-artists',
     templateUrl: './artists.component.html',
