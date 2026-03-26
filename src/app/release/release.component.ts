@@ -175,7 +175,14 @@ export class ReleaseComponent {
 			schema['thumbnail'] = {
 				'@type': 'ImageObject',
 				'url': `https://www.moonkoradji.com/assets/images/release-cover/${release.releaseCover.default}`,
-				'creditText': `Artwork by ${release.artworkBy}`
+				'creditText': `Artwork by ${release.artworkBy}`,
+				'creator': {
+					'@type': 'Person',
+					'name': release.artworkBy
+				},
+				'copyrightNotice': `© ${release.releaseYear} ${release.artworkBy}`,
+				'license': 'https://www.moonkoradji.com/legal',
+				'acquireLicensePage': 'https://www.moonkoradji.com/legal'
 			};
 		}
 

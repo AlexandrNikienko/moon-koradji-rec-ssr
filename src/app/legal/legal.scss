@@ -1,0 +1,33 @@
+.legal {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  &__section {
+    margin-bottom: 2.5rem;
+
+    h2 {
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+
+    p {
+      margin-bottom: 0.75rem;
+      line-height: 1.7;
+      opacity: 0.85;
+    }
+
+    blockquote {
+      border-left: 3px solid currentColor;
+      padding-left: 1rem;
+      margin: 1rem 0;
+      opacity: 0.7;
+      font-style: italic;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+}

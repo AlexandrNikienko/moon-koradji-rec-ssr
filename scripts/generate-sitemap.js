@@ -15,6 +15,7 @@ const staticPages = [
   { url: '/releases',priority: '0.8', changefreq: 'monthly' },
   { url: '/podcasts', priority: '0.5', changefreq: 'yearly'  },
   { url: '/about',   priority: '0.4', changefreq: 'yearly'  },
+  { url: '/legal', priority: '0.3', changefreq: 'yearly' }
 //   { url: '/contact', priority: '0.4', changefreq: 'yearly'  },
 ];
 
