@@ -20,8 +20,8 @@
   </div>
 
   <div class="col-lg-6 col-md-7 col-sm-12">
-    @if (release().embedAudio) {
-    <app-audio-player [embedAudio]="release().embedAudio"></app-audio-player>
+    @if (release().albumBandcampId) {
+    <app-audio-player [albumBandcampId]="release().albumBandcampId"></app-audio-player>
     }
   </div>
 

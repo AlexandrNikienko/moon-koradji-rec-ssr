@@ -35,6 +35,7 @@ export interface Release {
 		beatport?: string;
 	},
 	facebookShareThumb?: string;
+	albumBandcampId?: string;
 }
 
 interface ReleaseCover {
