@@ -69,7 +69,7 @@ export class ArtistComponent {
 	}
 
 	setMetaData(artist: Artist): void {
-		const artistDesc = artist.artistDescription.reduce((desc, par) => desc + par.paragraph, '');		
+		const artistDesc = artist.artistDescription.reduce((desc, par) => desc + par.paragraph + ' ', '');		
 
 		const metaDataObj: iMeta = {
 			title: `${artist.artistName} | Moon Koradji Records`,

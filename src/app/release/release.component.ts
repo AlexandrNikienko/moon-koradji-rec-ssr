@@ -196,7 +196,7 @@ export class ReleaseComponent {
 	}
 
 	setMetaData(release: Release): void {
-		const releaseDesc = release.releaseDescription ? release.releaseDescription.reduce((desc, par) => desc + par.paragraph, '') : '';
+		const releaseDesc = release.releaseDescription ? release.releaseDescription.reduce((desc, par) => desc + par.paragraph + ' ', '') : '';
 
 		const metaDataObj: iMeta = {
 			title: `${release.releaseTitle} | Moon Koradji Records`,
