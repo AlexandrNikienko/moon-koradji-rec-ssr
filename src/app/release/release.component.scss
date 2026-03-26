@@ -51,20 +51,12 @@
 }
 
 .release-credits {
-	margin-bottom: 20px;
-
 	&__paragraph {
 		margin-bottom: 6px;
 		flex: 1 1 100%;
 		line-height: normal;
-	}
-
-	&__paragraph {
 		font-style: italic;
-
-		&.dark-color {
-			color: #bbb;
-		}
+		color: #bbb;
 	}
 }
 

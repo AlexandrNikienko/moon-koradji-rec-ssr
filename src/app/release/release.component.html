@@ -102,33 +102,45 @@
 
     <div class="release-credits text-align-right">
       @if (release().compiledBy) {
-      <p class="release-credits__paragraph dark-color">
+      <p class="release-credits__paragraph">
         Compiled by <a
           routerLink="{{'/artists/' + release().compiledBy.replace(' ', '-').toLowerCase()}}">{{release().compiledBy}}</a>
       </p>
       }
 
       @if (release().releaseAuthor) {
-      <p class="release-credits__paragraph dark-color">
+      <p class="release-credits__paragraph">
         W&P by {{release().releaseAuthor}}
       </p>
       }
 
       @if (release().masteredBy) {
-      <p class="release-credits__paragraph dark-color">
+      <p class="release-credits__paragraph">
         Mastering by {{release().masteredBy}}
       </p>
       }
 
       @if (release().artworkBy) {
-      <p class="release-credits__paragraph dark-color">
+      <p class="release-credits__paragraph">
         Artwork by {{release().artworkBy}}
       </p>
       }
 
-      <p class="release-credits__paragraph dark-color">
+      <p class="release-credits__paragraph">
         Release date: {{release().releaseDate || "Coming soon" }}
       </p>
+
+      @if (release().tracklist) {
+        <details style="color: #111">
+          <summary>Tracklist</summary>
+
+          <ol>
+            @for (track of release().tracklist; track $index) {
+              <li>{{track}}</li>
+            }
+          </ol>
+        </details>
+      }
     </div>
 
     @if (involvedArtists().length > 0) {
