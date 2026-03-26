@@ -5,6 +5,7 @@
 			"isNew": true,
 			"releaseNumber": "MKRL027",
 			"releaseYear": "2026",
+			"releaaseType": "EP",
 			"releaseDate": "February 12th, 2026",
 			"releaseTitle": "N3XU5 - Chrome",
 			"releaseSubTitle": "listen & purchase",
@@ -51,6 +52,7 @@
 		{
 			"releaseNumber": "MKRL026",
 			"releaseYear": "2025",
+			"releaaseType": "EP",
 			"releaseDate": "November 11, 2025",
 			"releaseTitle": "Taakelur - Totem",
 			"releaseSubTitle": "listen & purchase",
@@ -93,6 +95,7 @@
 		{
 			"releaseNumber": "MKRL025",
 			"releaseYear": "2025",
+			"releaseType": "EP",
 			"releaseDate": "June 6, 2025",
 			"releaseTitle": "Para Halu - Histora Plethora",
 			"releaseSubTitle": "listen & purchase",
@@ -133,6 +136,7 @@
 		{
 			"releaseNumber": "MKRL024",
 			"releaseYear": "2025",
+			"releaseType": "VA",
 			"releaseDate": "Apr 24, 2025",
 			"releaseTitle": "VA Alphaum",
 			"releaseSubTitle": "listen & purchase",
@@ -188,6 +192,7 @@
 		{
 			"releaseNumber": "MKRL023",
 			"releaseYear": "2025",
+			"releaseType": "Album",
 			"releaseDate": "Mar 27, 2025",
 			"releaseTitle": "Shiibashunsuke - Abstract Selection",
 			"releaseSubTitle": "listen & purchase",
@@ -227,6 +232,7 @@
 		{
 			"releaseNumber": "MKRL022",
 			"releaseYear": "2025",
+			"releaseType": "EP",
 			"releaseDate": "Feb 21, 2025",
 			"releaseTitle": "Kluster - Mental Rotation",
 			"releaseSubTitle": "listen & purchase",
@@ -264,6 +270,7 @@
 		{
 			"releaseNumber": "MKRL021",
 			"releaseYear": "2024",
+			"releaseType": "Album",
 			"releaseDate": "Sep 6, 2024",
 			"releaseTitle": "Katastrof - Bent",
 			"releaseSubTitle": "listen & purchase",
@@ -304,6 +311,7 @@
 		{
 			"releaseNumber": "MKRL020",
 			"releaseYear": "2024",
+			"releaseType": "VA",
 			"releaseDate": "Aug 07, 2024",
 			"releaseTitle": "VA Blackout 2: Luminous Darkness",
 			"releaseSubTitle": "listen & purchase",
@@ -338,6 +346,7 @@
 		{
 			"releaseNumber": "MKRL019",
 			"releaseYear": "2024",
+			"releaseType": "EP",
 			"releaseDate": "Apr 05, 2024",
 			"releaseTitle": "Irukanji - Springwald",
 			"releaseSubTitle": "listen & purchase",
@@ -381,6 +390,7 @@
 		{
 			"releaseNumber": "MKRL018",
 			"releaseYear": "2023",
+			"releaseType": "EP",
 			"releaseDate": "Dec 01, 2023",
 			"releaseTitle": "Shiibashunsuke - Innermatics",
 			"releaseSubTitle": "listen & purchase",
@@ -418,6 +428,7 @@
 		{
 			"releaseNumber": "MKDG005",
 			"releaseYear": "2023",
+			"releaseType": "VA",
 			"releaseDate": "Sep 23, 2023",
 			"releaseTitle": "VA Blackout",
 			"releaseSubTitle": "listen & purchase",
@@ -451,6 +462,7 @@
         {
             "releaseNumber": "MKDG004",
             "releaseYear": "2023",
+            "releaseType": "Album",
             "releaseDate": "Apr 05, 2023",
             "releaseTitle": "Oliwave - Alive Memory",
             "releaseSubTitle": "listen & purchase",
@@ -490,6 +502,7 @@
 		{
             "releaseNumber": "MKDG003",
             "releaseYear": "2022",
+            "releaseType": "EP",
             "releaseDate": "Dec 20, 2022",
             "releaseTitle": "Ziul Oiram - Eternal Shadow",
             "releaseSubTitle": "listen & purchase",
@@ -528,6 +541,7 @@
         {
             "releaseNumber": "MKCD012",
             "releaseYear": "2020",
+            "releaseType": "VA",
             "releaseDate": "May 15, 2020",
             "releaseTitle": "VA Neural Embers",
             "releaseSubTitle": "listen & purchase",
@@ -565,6 +579,7 @@
             "isFree": true,
             "releaseNumber": "MKDG002",
             "releaseYear": "2019",
+            "releaseType": "Album",
             "releaseDate": "November 20, 2019",
             "releaseTitle": "Ocelot - Iconoclast",
             "releaseSubTitle": "listen & download",
@@ -604,6 +619,7 @@
             "isFree": true,
             "releaseNumber": "MKDG001",
             "releaseYear": "2019",
+            "releaseType": "EP",
             "releaseDate": "October 01, 2019",
             "releaseTitle": "EP «Bapholot On Earth»",
             "releaseSubTitle": "listen & download",
@@ -637,6 +653,7 @@
         {
             "releaseNumber": "MKCD011",
             "releaseYear": "2019",
+            "releaseType": "VA",
             "releaseDate": "September 19, 2019",
             "releaseTitle": "VA Illusorium",
             "releaseSubTitle": "listen & purchase",
@@ -670,6 +687,7 @@
         {
             "releaseNumber": "MKCD010",
             "releaseYear": "2017",
+            "releaseType": "VA",
             "releaseDate": "February 15, 2017",
             "releaseTitle": "VA Mind Games",
             "releaseSubTitle": "listen & purchase",
@@ -712,6 +730,7 @@
         {
             "releaseNumber": "MKCD009",
             "releaseYear": "2013",
+            "releaseType": "VA",
             "releaseDate": "December 9, 2013",
             "releaseTitle": "VA Intropix",
             "releaseSubTitle": "listen & purchase",
@@ -754,6 +773,7 @@
         {
             "releaseNumber": "MKCD008",
             "releaseYear": "2013",
+            "releaseType": "Album",
             "releaseDate": "May 13th, 2013",
             "releaseTitle": "Ocelot - Night & Day",
             "releaseSubTitle": "listen & purchase",
@@ -797,6 +817,7 @@
         {
             "releaseNumber": "MKCD007",
             "releaseYear": "2012",
+            "releaseType": "VA",
             "releaseDate": "July 4, 2012",
             "releaseTitle": "VA Infinity Keepers 2: Depth Perception",
             "releaseSubTitle": "listen & purchase",
@@ -854,6 +875,7 @@
         {
             "releaseNumber": "MKCD006",
             "releaseYear": "2012",
+            "releaseType": "Album",
             "releaseDate": "April 18, 2012",
             "releaseTitle": "Kirna - In Space!",
             "releaseSubTitle": "listen & purchase",
@@ -893,6 +915,7 @@
         {
             "releaseNumber": "MKCD005",
             "releaseYear": "2012",
+            "releaseType": "Album",
             "releaseDate": "January 11, 2012",
             "releaseTitle": "Ascoil Sun - Emergence",
             "releaseSubTitle": "listen & purchase",
@@ -936,6 +959,7 @@
         {
             "releaseNumber": "MKCD004",
             "releaseYear": "2010",
+            "releaseType": "VA",
             "releaseDate": "December 3, 2010",
             "releaseTitle": "VA Legendarium",
             "releaseSubTitle": "listen & purchase",
@@ -975,6 +999,7 @@
         {
             "releaseNumber": "MKCD003",
             "releaseYear": "2009",
+            "releaseType": "VA",
             "releaseDate": "April 24, 2009",
             "releaseTitle": "VA Shadow Enuin 2",
             "releaseSubTitle": "listen & purchase",
@@ -1011,6 +1036,7 @@
         {
             "releaseNumber": "MKCD002",
             "releaseYear": "2008",
+            "releaseType": "VA",
             "releaseDate": "September 26, 2008",
             "releaseTitle": "VA Infinity Keepers",
             "releaseSubTitle": "listen & purchase",
@@ -1050,6 +1076,7 @@
         {
             "releaseNumber": "MKCD001",
             "releaseYear": "2008",
+            "releaseType": "VA",
             "releaseDate": "April 8, 2008",
             "releaseTitle": "VA Shadow Enuin: at the Earth's edge",
             "releaseSubTitle": "listen & purchase",
