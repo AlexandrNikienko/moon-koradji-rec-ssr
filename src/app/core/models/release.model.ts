@@ -33,7 +33,8 @@ export interface Release {
 		spotify?: string;
 		appleMusic?: string;
 		beatport?: string;
-	}
+	},
+	facebookShareThumb?: string;
 }
 
 interface ReleaseCover {
