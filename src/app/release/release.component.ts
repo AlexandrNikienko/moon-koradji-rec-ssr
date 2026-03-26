@@ -180,7 +180,7 @@ export class ReleaseComponent {
 					'@type': 'Person',
 					'name': release.artworkBy
 				},
-				'copyrightNotice': `© ${release.releaseYear} ${release.artworkBy}`,
+				'copyrightNotice': `© ${release.releaseYear} Moon Koradji Records`,
 				'license': 'https://www.moonkoradji.com/legal',
 				'acquireLicensePage': 'https://www.moonkoradji.com/legal'
 			};
