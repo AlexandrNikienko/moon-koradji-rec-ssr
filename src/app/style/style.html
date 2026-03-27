@@ -1,0 +1,79 @@
+@if (style()) {
+<div class="row">
+  <div class="offset-lg-1 col-lg-10">
+    <mk-heading [title]="style().styleName" />
+
+    <!-- HERO -->
+    <section class="style-hero">
+      <p class="style-hero__description">{{ style().styleDescription }}</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="style-about">
+      <h2>About {{ style().styleName }}</h2>
+      <div class="style-about__paragraphs">
+        @for (p of style().styleAbout; track $index) {
+        <p>{{ p.paragraph }}</p>
+        }
+      </div>
+    </section>
+
+    <!-- RELEASES -->
+    @if (styleReleases().length) {
+    <section class="style-releases style-section">
+      <div class="style-section__header">
+        <h2>Examples of {{ style().styleName }} Releases</h2>
+      </div>
+
+      <div class="_releases style-releases__grid">
+        @for (release of styleReleases(); track release.releaseRoute) {
+        <app-release-card [releaseItem]="release" />
+        }
+      </div>
+    </section>
+    }
+
+    <!-- ARTISTS -->
+    @if (styleArtists().length) {
+    <section class="style-artists style-section">
+      <div class="style-section__header">
+        <h2>Examples of {{ style().styleName }} Artists</h2>
+      </div>
+
+      <ul class="style-artists__list">
+        @for (artist of styleArtists(); track artist.artistRoute) {
+        <li class="style-artists__item">
+          <a [routerLink]="['/artists', artist.artistRoute]">
+            <svg>
+              <use [attr.xlink:href]="'assets/images/flags-sprite.svg#' + artist.flag"></use>
+            </svg>
+
+            <span>{{ artist.artistName }}</span>
+          </a>
+        </li>
+        }
+      </ul>
+    </section>
+    }
+
+    <!-- RELATED STYLES -->
+    @if (relatedStyles().length) {
+    <section class="style-related style-section">
+      <div class="style-section__header">
+        <h2>Explore More Styles</h2>
+      </div>
+
+      <ul class="style-related__list">
+        @for (related of relatedStyles(); track related.styleRoute) {
+        <li class="style-related__item">
+          <a [routerLink]="['/styles', related.styleRoute]">
+            {{ related.styleName }}
+          </a>
+        </li>
+        }
+      </ul>
+    </section>
+    }
+  </div>
+</div>
+}

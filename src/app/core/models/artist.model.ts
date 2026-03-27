@@ -20,4 +20,5 @@ export interface Artist {
 	featured?: boolean;
 	inactive?: boolean;
 	role?: Role;
+    styles?: string[];
 }

@@ -16,7 +16,8 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": ""
+			"artistSoundcloud": "",
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "acid-goblins",
@@ -60,7 +61,8 @@
 					"year": "2020",
 					"embedCode": "<iframe width=\"100%\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/832046740\"></iframe>"
 				}
-			]
+			],
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "akkma",
@@ -103,7 +105,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/Already-Maged-179276062095555/",
-			"artistSoundcloud": "https://soundcloud.com/alreadymaged"
+			"artistSoundcloud": "https://soundcloud.com/alreadymaged",
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "amorphous",
@@ -143,7 +146,8 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": ""
+			"artistSoundcloud": "",
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "argaleth",
@@ -200,7 +204,8 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": ""
+			"artistSoundcloud": "",
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "baphomet-engine",
@@ -221,7 +226,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/baphometengine",
-			"artistSoundcloud": "https://soundcloud.com/baphomet-engine"
+			"artistSoundcloud": "https://soundcloud.com/baphomet-engine",
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "battle-of-the-future-buddhas",
@@ -262,7 +268,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/Bodhi1320",
-			"artistSoundcloud": "https://soundcloud.com/bodhi1320"
+			"artistSoundcloud": "https://soundcloud.com/bodhi1320",
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "captain-kirk",
@@ -304,7 +311,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/CLAW.cy",
-			"artistSoundcloud": "https://soundcloud.com/c-l-a-w"
+			"artistSoundcloud": "https://soundcloud.com/c-l-a-w",
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "critter",
@@ -343,27 +351,6 @@
 			"artistSoundcloud": "https://soundcloud.com/digitalian-teruki"
 		},
 		{
-			"artistRoute": "digital-talk",
-			"artistName": "Digital Talk",
-			"artistRealName": "Julien Fougea & Jean Luc Achintre",
-			"artistCountry": "France",
-			"flag": "fr",
-			"artistAvatar": "artist_digital_talk.jpg",
-			"artistDescription": [
-				{
-					"paragraph": "Digital Talk is Julien Fougea and Luc Achintre, a unique psytrance duo. After experimenting with different aspects of acoustic music, these two childhood friends were drawn into the 90s techno scene."
-				},
-				{
-					"paragraph": "In 1996, alongside their respective projects Mandukya and The Crow, they created the visionary band Droidsect with two other friends. Over five years, they unleashed a huge amount of unreleased tunes, mostly played at underground parties in Goa. The project ended quickly, but a new kind of trance music was born."
-				},
-				{
-					"paragraph": "Building on their previous work while adding new musical directions, Julien and Luc joined forces to create Digital Talk in 2002. The French duo soon began performing at electronic music events all over the globe…"
-				}
-			],
-			"artistFacebook": "https://www.facebook.com/digital.talk.project",
-			"artistSoundcloud": "https://soundcloud.com/digitaltalk"
-		},
-		{
 			"artistRoute": "digitalist",
 			"artistName": "Digitalist",
 			"artistRealName": "Thomas Franske",
@@ -379,7 +366,8 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": ""
+			"artistSoundcloud": "",
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "distorted-goblin",
@@ -404,7 +392,8 @@
 					"year": "2019",
 					"embedCode": "<iframe width=\"100%\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/671844947\"></iframe>"
 				}
-			]
+			],
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "drone-bixie",
@@ -425,7 +414,8 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": ""
+			"artistSoundcloud": "",
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "drury-nevil",
@@ -449,7 +439,8 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "https://soundcloud.com/drury_nevil"
+			"artistSoundcloud": "https://soundcloud.com/drury_nevil",
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "dylalien",
@@ -460,7 +451,16 @@
 			"artistAvatar": "artist_dylalien.jpg",
 			"artistDescription": [
 				{
-					"paragraph": ""
+					"paragraph": "Dylalien is a San Francisco–based composer and electronic music producer crafting hypnotic, psychedelic journeys for adventurous dancefloors."
+				},
+				{
+					"paragraph": "A longtime contributor to California’s underground music culture, he helped build a scene of transformative outdoor gatherings that blended ritual, community, and deep psychedelic sound. Over the years, his performances have carried his sound to dancefloors around the world, including appearances at Boom Festival, Symbiosis Gathering, and events near Mount Fuji, where his sets are known for immersive storytelling, hypnotic grooves, and playful unpredictability."
+				},
+				{
+					"paragraph": "Leaving rigid genre boundaries behind, his current work explores the intersection of hypnotic techno rhythms, psychedelic atmospheres, and unexpected twists designed to keep listeners suspended between groove and imagination."
+				},
+				{
+					"paragraph": "When not in the studio or behind the decks, he can usually be found eating vegetables, petting pugs, and studying the mysterious ways of the 忍び (shinobi). He is also developing a playful new musical project inspired by his pug companion, Kirk the Pug, bringing even more surreal charm and canine wisdom to future dancefloors."
 				}
 			],
 			"artistFacebook": "",
@@ -500,7 +500,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/faeyanmusic",
-			"artistSoundcloud": "https://soundcloud.com/faeyan"
+			"artistSoundcloud": "https://soundcloud.com/faeyan",
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "fafazz",
@@ -576,7 +577,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/GappeqParvatiRecords",
-			"artistSoundcloud": "https://soundcloud.com/gappeq"
+			"artistSoundcloud": "https://soundcloud.com/gappeq",
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "ghreg-on-earth",
@@ -597,7 +599,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/ghreg",
-			"artistSoundcloud": "https://soundcloud.com/ghregon3arth"
+			"artistSoundcloud": "https://soundcloud.com/ghregon3arth",
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "gidra",
@@ -681,7 +684,8 @@
 					"year": "2023",
 					"embedCode": "<iframe width=\"100%\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1686910104\"></iframe>"
 				}
-			]
+			],
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "inzect",
@@ -710,7 +714,8 @@
 					"year": "2019",
 					"embedCode": "<iframe width=\"100%\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/660957449\"></iframe>"
 				}
-			]
+			],
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "irukanji",
@@ -762,7 +767,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/christer.lundstrom.5",
-			"artistSoundcloud": ""
+			"artistSoundcloud": "",
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "kanka",
@@ -783,7 +789,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/frank.ottersen.1",
-			"artistSoundcloud": "https://soundcloud.com/fotters"
+			"artistSoundcloud": "https://soundcloud.com/fotters",
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "karash",
@@ -810,7 +817,8 @@
 					"year": "2021",
 					"embedCode": "<iframe width=\"100%\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1098566617\"></iframe>"
 				}
-			]
+			],
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "katastrof",
@@ -835,7 +843,8 @@
 					"year": "2024",
 					"embedCode": "<iframe width=\"100%\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1944166323\"></iframe>"
 				}
-			]
+			],
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "kerlivin",
@@ -850,7 +859,8 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "https://soundcloud.com/kerlivin"
+			"artistSoundcloud": "https://soundcloud.com/kerlivin",
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "kiriyama",
@@ -907,7 +917,8 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "https://soundcloud.com/user-150320964"
+			"artistSoundcloud": "https://soundcloud.com/user-150320964",
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "krapul",
@@ -925,7 +936,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/profile.php?id=100063616065552",
-			"artistSoundcloud": "https://soundcloud.com/krapul84"
+			"artistSoundcloud": "https://soundcloud.com/krapul84",
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "krussedull",
@@ -1018,7 +1030,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/Slide.Loom.Official.Music",
-			"artistSoundcloud": "https://soundcloud.com/loompsy"
+			"artistSoundcloud": "https://soundcloud.com/loompsy",
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "magma-ohm",
@@ -1054,7 +1067,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/mendrionlive",
-			"artistSoundcloud": "https://soundcloud.com/mendrionlive"
+			"artistSoundcloud": "https://soundcloud.com/mendrionlive",
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "mik-ha",
@@ -1119,7 +1133,8 @@
 					"embedCode": "<iframe width=\"100%\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/810824971\"></iframe>"
 				}
 			],
-			"featured": true
+			"featured": true,
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "molokow",
@@ -1177,7 +1192,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/N3xu5psychedelic",
-			"artistSoundcloud": "https://soundcloud.com/n3xu5"
+			"artistSoundcloud": "https://soundcloud.com/n3xu5",
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "noise-gust",
@@ -1208,7 +1224,8 @@
 					"year": "2020",
 					"embedCode": "<iframe width=\"100%\" height=\"166\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/889197328\"></iframe>"
 				}
-			]
+			],
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "noizebug",
@@ -1287,7 +1304,8 @@
 					"year": "2020",
 					"embedCode": "<iframe width=\"100%\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/747751603\"></iframe>"
 				}
-			]
+			],
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "odr",
@@ -1400,7 +1418,8 @@
 					"year": "2020",
 					"embedCode": "<iframe width=\"100%\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/893685196\"></iframe>"
 				}
-			]
+			],
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "para-halu",
@@ -1419,7 +1438,8 @@
 			],
 			"artistFacebook": "https://www.facebook.com/parahalu",
 			"artistSoundcloud": "https://soundcloud.com/para-halu",
-			"featured": true
+			"featured": true,
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "phobos-azazel",
@@ -1458,7 +1478,8 @@
 					"year": "2019",
 					"embedCode": "<iframe width=\"100%\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/699088777\"></iframe>"
 				}
-			]
+			],
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "saikozaurus",
@@ -1488,7 +1509,8 @@
 					"year": "2020",
 					"embedCode": "<iframe width=\"100%\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/881420572\"></iframe>"
 				}
-			]
+			],
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "savage-scream",
@@ -1509,7 +1531,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/mizuki.ni",
-			"artistSoundcloud": "https://soundcloud.com/mizukinishi"
+			"artistSoundcloud": "https://soundcloud.com/mizukinishi",
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "schizobot",
@@ -1543,7 +1566,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/nomadsoulmusic",
-			"artistSoundcloud": "https://soundcloud.com/seb-namaskar"
+			"artistSoundcloud": "https://soundcloud.com/seb-namaskar",
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "shiibashunsuke",
@@ -1562,7 +1586,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/shiibashunsuke.vertebralleaf",
-			"artistSoundcloud": "https://soundcloud.com/vertebralleaf"
+			"artistSoundcloud": "https://soundcloud.com/vertebralleaf",
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "shotu",
@@ -1601,7 +1626,8 @@
 				}
 			],
 			"artistFacebook": "http://www.facebook.com/SilentHorror",
-			"artistSoundcloud": "http://soundcloud.com/shunya-silent_horror"
+			"artistSoundcloud": "http://soundcloud.com/shunya-silent_horror",
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "simon-hayes",
@@ -1667,7 +1693,8 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": "https://soundcloud.com/taakelur"
+			"artistSoundcloud": "https://soundcloud.com/taakelur",
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "taigan-sunset",
@@ -1682,7 +1709,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/taigan.sunset?fref=ts",
-			"artistSoundcloud": "https://soundcloud.com/taigan-sunset"
+			"artistSoundcloud": "https://soundcloud.com/taigan-sunset",
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "tersius",
@@ -1718,7 +1746,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/timeforslimemusic",
-			"artistSoundcloud": "https://soundcloud.com/timeforslime"
+			"artistSoundcloud": "https://soundcloud.com/timeforslime",
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "total",
@@ -1764,7 +1793,8 @@
 					"year": "2019",
 					"embedCode": "<iframe width=\"100%\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/643850325\"></iframe>"
 				}
-			]
+			],
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "troglodytes",
@@ -1791,7 +1821,8 @@
 				}
 			],
 			"artistFacebook": "",
-			"artistSoundcloud": ""
+			"artistSoundcloud": "",
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"artistRoute": "trold",
@@ -1914,7 +1945,8 @@
 					"year": "2021",
 					"embedCode": "<iframe width=\"100%\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/953119021\"></iframe>"
 				}
-			]
+			],
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"artistRoute": "ziul-oiram",
@@ -1939,7 +1971,8 @@
 					"year": "2025",
 					"embedCode": "<iframe width=\"100%\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2039236964\"></iframe>"
 				}
-			]
+			],
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"role": "dj",

@@ -38,6 +38,7 @@ export interface Release {
 	facebookShareThumb?: string;
 	albumBandcampId?: string;
 	releaseType: ReleaseType;
+	styles?: string[];
 }
 
 interface ReleaseCover {

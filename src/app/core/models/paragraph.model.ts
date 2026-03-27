@@ -1,3 +1,3 @@
 export interface Paragraph {
-    paragraph: string[];
+    paragraph: string;
 }

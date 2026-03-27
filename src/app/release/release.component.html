@@ -91,7 +91,7 @@
     <p class="small-title">About</p>
 
     <div class="release-description">
-      @for (description of release().releaseDescription; track description) {
+      @for (description of release().releaseDescription; track description.paragraph) {
       <p class="release-description__paragraph">
         {{description.paragraph}}
       </p>

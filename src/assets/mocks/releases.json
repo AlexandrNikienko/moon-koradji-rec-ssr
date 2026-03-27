@@ -48,7 +48,8 @@
 				"spotify": "https://open.spotify.com/album/55JsnewVxZIIzUcCbYiymM",
 				"appleMusic": "https://music.apple.com/ua/album/chrome/1885834490",
 				"beatport": ""
-			}
+			},
+			"styles": []
 		},
 		{
 			"releaseNumber": "MKRL026",
@@ -91,7 +92,8 @@
 				"spotify": "https://open.spotify.com/album/6FcrSnzzKQWken8xWtVga7",
 				"appleMusic": "https://music.apple.com/ua/album/totem-single/1852774934",
 				"beatport": "https://www.beatport.com/release/totem/5577503"
-			}
+			},
+			"styles": ["forest-psytrance"]
 		},
 		{
 			"releaseNumber": "MKRL025",
@@ -132,7 +134,8 @@
 				"spotify": "https://open.spotify.com/album/7CE1zOeyt4tgonvAmIOztO",
 				"appleMusic": "https://music.apple.com/ua/album/histora-plethora/1819906661",
 				"beatport": "https://www.beatport.com/release/histora-plethora/5123193"
-			}
+			},
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"releaseNumber": "MKRL024",
@@ -188,7 +191,8 @@
 				"spotify": "https://open.spotify.com/album/7AShCyJExAhhmkuFgdEJM8",
 				"appleMusic": "https://music.apple.com/ua/album/alphaum/1811131365",
 				"beatport": "https://www.beatport.com/release/alphaum/5061768"
-			}
+			},
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"releaseNumber": "MKRL023",
@@ -228,7 +232,8 @@
 				"spotify": "https://open.spotify.com/album/4AcGTYVpD7ZIEK0xSCra7x",
 				"appleMusic": "https://music.apple.com/ua/album/abstract-selection/1806120806",
 				"beatport": "https://www.beatport.com/release/abstract-selection/5018779"
-			}
+			},
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"releaseNumber": "MKRL022",
@@ -266,7 +271,8 @@
 				"spotify": "https://open.spotify.com/album/6HtP9ALI7DLXf1eySlG0FW",
 				"appleMusic": "https://music.apple.com/ua/album/mental-rotation/1798437730",
 				"beatport": "https://www.beatport.com/release/mental-rotation/4958550"
-			}
+			},
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"releaseNumber": "MKRL021",
@@ -307,7 +313,8 @@
 				"spotify": "https://open.spotify.com/album/0SaoF4Q8FKp1x01b2jcOqk",
 				"appleMusic": "https://music.apple.com/ua/album/bent/1768751165",
 				"beatport": "https://www.beatport.com/release/bent/4728630"
-			}
+			},
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"releaseNumber": "MKRL020",
@@ -342,7 +349,8 @@
 				"spotify": "https://open.spotify.com/album/0C83Jmf5S0vmTtbb07rlTM",
 				"appleMusic": "https://music.apple.com/ua/album/blackout-2-luminous-darkness/1762600913",
 				"beatport": "https://www.beatport.com/release/blackout-2-luminous-darkness/4689445"
-			}
+			},
+			"styles": ["forest-psytrance", "dark-psytrance"]
 		},
 		{
 			"releaseNumber": "MKRL019",
@@ -386,7 +394,8 @@
 				"spotify": "https://open.spotify.com/album/4zoRkNOdSIPFeEGAplrN8D",
 				"appleMusic": "https://music.apple.com/ua/album/springwald/1740151793",
 				"beatport": "https://www.beatport.com/release/springwald/4526440"
-			}
+			},
+			"styles": ["twilight-psytrance"]
 		},
 		{
 			"releaseNumber": "MKRL018",
@@ -424,7 +433,8 @@
 				"spotify": "https://open.spotify.com/album/1DLwX6RZSzzULhvh79woLi",
 				"appleMusic": "https://music.apple.com/ua/album/innermatics/1718077995",
 				"beatport": "https://www.beatport.com/release/innermatics/4350900"
-			}
+			},
+			"styles": ["dark-psytrance"]
 		},
 		{
 			"releaseNumber": "MKDG005",
@@ -458,7 +468,8 @@
 				"spotify": "https://open.spotify.com/album/5XGdgCQHZROcP0TCSCDUVF",
 				"appleMusic": "https://music.apple.com/ua/album/blackout/1709312274",
 				"beatport": "https://www.beatport.com/release/blackout/4282266"
-			}
+			},
+			"styles": ["forest-psytrance", "dark-psytrance"]
 		},
         {
             "releaseNumber": "MKDG004",
@@ -537,7 +548,8 @@
 				"spotify": "https://open.spotify.com/album/1XZG5qitiYlHlnxsLczZGa",
 				"appleMusic": "https://music.apple.com/ua/album/eternal-shadow-ep/1662982676",
 				"beatport": "https://www.beatport.com/release/eternal-shadow/3980840"
-			}
+			},
+			"styles": ["dark-psytrance"]
         },
         {
             "releaseNumber": "MKCD012",
@@ -574,7 +586,8 @@
 				"spotify": "https://open.spotify.com/album/3DQ0idyppXLm76Il9Y4RYh",
 				"appleMusic": "https://music.apple.com/ua/album/neural-embers/1512414276",
 				"beatport": "https://www.beatport.com/release/neural-embers/2960615"
-			}
+			},
+			"styles": ["forest-psytrance"]
 		},
         {
             "isFree": true,
@@ -614,7 +627,8 @@
 				"spotify": "https://open.spotify.com/album/2FIWqDP2SjO5YovHn0Lryb",
 				"appleMusic": "https://music.apple.com/ua/album/iconoclast/1681186126",
 				"beatport": ""
-			}
+			},
+			"styles": ["dark-psytrance"]
         },
         {
             "isFree": true,
@@ -649,7 +663,8 @@
 				"spotify": "https://open.spotify.com/album/3j2r1dY1slT431LhmTrNo6",
 				"appleMusic": "https://music.apple.com/ua/album/bapholot-on-earth-single/1483467787",
 				"beatport": "https://www.beatport.com/release/bapholot-on-earth/2743690"
-			}
+			},
+			"styles": ["dark-psytrance"]
         },
         {
             "releaseNumber": "MKCD011",
@@ -683,7 +698,8 @@
 				"spotify": "https://open.spotify.com/album/5gXeqgHtDYdynBv30ebTsX",
 				"appleMusic": "https://music.apple.com/ua/album/illusorium/1482677409",
 				"beatport": "https://www.beatport.com/release/illusorium/2730487"
-			}
+			},
+			"styles": ["forest-psytrance", "dark-psytrance"]
         },
         {
             "releaseNumber": "MKCD010",
@@ -726,7 +742,8 @@
 				"spotify": "https://open.spotify.com/album/3kH1Vfvp1Tba66skZ8Cz6Z",
 				"appleMusic": "https://music.apple.com/ua/album/mind-games/1214417374",
 				"beatport": "https://www.beatport.com/release/mind-games/1977070"
-			}
+			},
+			"styles": ["forest-psytrance"]
         },
         {
             "releaseNumber": "MKCD009",
@@ -769,7 +786,8 @@
 				"spotify": "https://open.spotify.com/album/2iF4fJYE4gtLIj6l9RVXjU",
 				"appleMusic": "https://music.apple.com/ua/album/intropix/1559559744",
 				"beatport": "https://www.beatport.com/release/intropix/3338369"
-			}
+			},
+			"styles": ["forest-psytrance"]
         },
         {
             "releaseNumber": "MKCD008",
@@ -813,7 +831,8 @@
 				"spotify": "https://open.spotify.com/album/2jKRt4YCfdWaikWqFhgFQe",
 				"appleMusic": "https://music.apple.com/ua/album/night-day/659466922",
 				"beatport": "https://www.beatport.com/release/night-day/1107336"
-			}
+			},
+			"styles": ["dark-psytrance"]
         },
         {
             "releaseNumber": "MKCD007",
@@ -871,7 +890,8 @@
 				"spotify": "https://open.spotify.com/album/7lHvci5AMNmYfTTc2kAXUj",
 				"appleMusic": "https://music.apple.com/ua/album/infinity-keepers-2-depth-perception/1551634159",
 				"beatport": "https://www.beatport.com/release/infinity-keepers-2-depth-perception/3275364"
-			}
+			},
+			"styles": ["dark-psytrance"]
         },
         {
             "releaseNumber": "MKCD006",
@@ -995,7 +1015,8 @@
 				"spotify": "https://open.spotify.com/album/4S0CwtFgi88gZfeRDSh1bd",
 				"appleMusic": "https://music.apple.com/ua/album/legendarium/1550330555",
 				"beatport": "https://www.beatport.com/release/legendarium/3262142"
-			}
+			},
+			"styles": ["forest-psytrance"]
         },
         {
             "releaseNumber": "MKCD003",
@@ -1032,7 +1053,8 @@
 				"spotify": "https://open.spotify.com/album/5rLNVhEwGbXWS8AfpDDtxo",
 				"appleMusic": "https://music.apple.com/ua/album/shadow-enuin-vol-2/1543495435",
 				"beatport": "https://www.beatport.com/release/shadow-enuin-vol-2/3216336"
-			}
+			},
+			"styles": ["forest-psytrance"]
         },
         {
             "releaseNumber": "MKCD002",
@@ -1072,7 +1094,8 @@
 				"spotify": "https://open.spotify.com/album/7I7NZ3pltrl6sDXmTZXByg",
 				"appleMusic": "https://music.apple.com/ua/album/infinity-keepers/1542963772",
 				"beatport": "https://www.beatport.com/release/infinity-keepers/3215256"
-			}
+			},
+			"styles": ["dark-psytrance"]
         },
         {
             "releaseNumber": "MKCD001",
@@ -1112,7 +1135,8 @@
 				"spotify": "https://open.spotify.com/album/12ZqxAjCkVHtcO825m0M9w",
 				"appleMusic": "https://music.apple.com/ua/album/shadow-enuin-at-the-earths-edge/1547981954",
 				"beatport": "https://www.beatport.com/release/shadow-enuin-at-the-earths-edge/3249063"
-			}
+			},
+			"styles": ["forest-psytrance"]
         }
     ]
 }

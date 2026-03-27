@@ -30,12 +30,16 @@ export const routes: Route[] = [
 		path: 'about',
 		loadComponent: () => import('./about/about.component').then(x => x.AboutComponent)
 	},
-	{
-		path: 'contact',
-		loadComponent: () => import('./contact/contact').then(x => x.ContactComponent)
-	},
+	// {
+	// 	path: 'contact',
+	// 	loadComponent: () => import('./contact/contact').then(x => x.ContactComponent)
+	// },
 	{	path: 'legal',
 		loadComponent: () => import('./legal/legal').then(m => m.LegalComponent)
+	},
+	{
+		path: 'styles/:styleRoute',
+		loadComponent: () => import('./style/style').then(m => m.StyleComponent)
 	},
 	{ 
 		path: '404',
