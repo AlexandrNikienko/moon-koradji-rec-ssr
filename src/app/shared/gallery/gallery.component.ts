@@ -1,5 +1,5 @@
 
-import { Component, OnInit, input, Inject, PLATFORM_ID, ChangeDetectionStrategy } from '@angular/core';
+import { Component, input, Inject, PLATFORM_ID, ChangeDetectionStrategy, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -9,7 +9,6 @@ import { PictureComponent } from '../picture/picture.component';
 
 // @ts-ignore
 import { register } from 'swiper/element/bundle';
-register();
 
 @Component({
     selector: 'app-shared-gallery',
@@ -19,62 +18,43 @@ register();
     styleUrls: ['gallery.component.scss'],
   	changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SharedGalleryComponent implements OnInit {
+export class SharedGalleryComponent implements AfterViewInit {
 	items = input<Gallery[]>();
+	private static registered = false;
+
+	@ViewChild('swiperEl') swiperEl!: ElementRef;
+	@ViewChild('buttonPrev') buttonPrev!: ElementRef;
+	@ViewChild('buttonNext') buttonNext!: ElementRef;
+
+	private swiperConfig = {
+		spaceBetween: 30,
+		loop: true, 
+		breakpoints: {
+			320: { slidesPerView: 1, slidesPerGroup: 1, spaceBetween: 20 },
+			640: { slidesPerView: 2, slidesPerGroup: 2, spaceBetween: 20 },
+			768: { slidesPerView: 3, slidesPerGroup: 3, spaceBetween: 30 },
+			1024: { slidesPerView: 4, slidesPerGroup: 4, spaceBetween: 30 }
+		}
+	};
 
 	constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
-	ngOnInit() {
+	ngAfterViewInit() {
 		if (!isPlatformBrowser(this.platformId)) return;
 
-		const swiperEl = document.querySelector('swiper-container') as any;
-		const buttonPrev = document.querySelector('.swiper-button-prev') as any;
-		const buttonNext = document.querySelector('.swiper-button-next') as any;
-
-		if (buttonPrev) {
-			buttonPrev.addEventListener('click', () => {
-				//@ts-ignore
-				swiperEl.swiper.slidePrev();
-			});
+		if (!SharedGalleryComponent.registered) {
+			register();
+			SharedGalleryComponent.registered = true;
 		}
 
-		if (buttonNext) {
-			buttonNext.addEventListener('click', () => {
-				//@ts-ignore
-				swiperEl.swiper.slideNext();
-			});
-		}
+		const swiperEl = this.swiperEl.nativeElement;
+		const buttonPrev = this.buttonPrev.nativeElement;
+		const buttonNext = this.buttonNext.nativeElement;
 
-		const swiperConfig = {
-			//a11y: true,
-			spaceBetween: 30,
-			// navigation: true,
-			loop: true,
-			breakpoints: {
-				320: {
-					slidesPerView: 1,
-					spaceBetween: 20,
-				},
-				640: {
-					slidesPerView: 2,
-					spaceBetween: 20,
-				},
-				768: {
-					slidesPerView: 3,
-					spaceBetween: 30,
-				},
-				1024: {
-					slidesPerView: 4,
-					spaceBetween: 30,
-				}
-			}
-		}
+		buttonPrev.addEventListener('click', () => swiperEl.swiper.slidePrev());
+		buttonNext.addEventListener('click', () => swiperEl.swiper.slideNext());
 
-		if (swiperEl) {
-			Object.assign(swiperEl, swiperConfig);
-
-			//@ts-ignore
-			swiperEl.initialize();
-		}
+		Object.assign(swiperEl, this.swiperConfig);
+		swiperEl.initialize();
 	}
 }

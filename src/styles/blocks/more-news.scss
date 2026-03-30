@@ -3,13 +3,14 @@
     border-left: 1px solid rgb(170, 170, 170);
 
     &__header {
-        font-size: 26px;
-        margin-bottom: 10px;
+        font-size: 1.5rem;
+        margin-bottom: .75rem;
     }
 
     &__link {
         display: table;
         margin-bottom: 15px;
+        cursor: pointer;
 
         &:hover {
             .news {
@@ -45,7 +46,7 @@
         width: 60px;
         height: 58px;
         border: 1px solid rgba(255, 255, 255, .5);
-        margin-right: 10px;
+        margin-right: .5rem;
         border-radius: 50% 0 50% 0;
         position: relative;
         transition: .3s;
@@ -65,7 +66,8 @@
     &__desc {
         white-space: normal;
         color: rgb(204, 204, 204);
-        font-size: 16px;
+        font-size: 1rem;
+        line-height: normal;
         display: table-cell;
         vertical-align: middle;
         position: relative;
@@ -85,10 +87,12 @@
     &__info {
         color: rgb(169, 169, 169);
         font-size: 13px;
+        margin: 0;
     }
 
     &__title {
-        transition: 0.3s;
+        margin: 0;
+        line-height: 1.2;
     }
 
     .glyphicon,

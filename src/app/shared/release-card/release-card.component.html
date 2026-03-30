@@ -1,6 +1,6 @@
 <div class="release-card">
   @if (releaseItem().releaseRoute) {
-  <a class="release-card__link" [routerLink]="['/releases', releaseItem().releaseRoute]"></a>
+  <a class="release-card__link" [routerLink]="['/releases', releaseItem().releaseRoute]" [aria-label]="releaseItem().releaseTitle"></a>
   }
 
   <app-picture [cover]="releaseItem().releaseCover" [alt]="'Cover image for ' + releaseItem().releaseTitle"

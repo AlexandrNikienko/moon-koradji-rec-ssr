@@ -1,5 +1,5 @@
-<div class="swiper-container">
-  <swiper-container>
+<div class="swiper-container" aria-label="Featured Artists">
+  <swiper-container #swiperEl>
     @for (item of items(); track item) {
       <swiper-slide>
         <a class="slide" routerLink="{{item.route}}">
@@ -7,15 +7,15 @@
             <app-picture [cover]="item.image" [alt]="'Photo of ' + item.name" [imageFolder]="'artists/featured/'"></app-picture>
           </div>
           
-          <div class="slide__text">
+          <span class="slide__text">
             {{item.name}}
-          </div>
+          </span>
         </a>
       </swiper-slide>
     }
   </swiper-container>
 
-  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-prev" #buttonPrev aria-label="Previous slide"></div>
 
-  <div class="swiper-button-next"></div>
+  <div class="swiper-button-next" #buttonNext aria-label="Next slide"></div>
 </div>
