@@ -16,15 +16,14 @@ const staticPages = [
   { url: '/podcasts', priority: '0.5', changefreq: 'yearly'  },
   { url: '/about',   priority: '0.4', changefreq: 'yearly'  },
   { url: '/legal', priority: '0.3', changefreq: 'yearly' }
-//   { url: '/contact', priority: '0.4', changefreq: 'yearly'  },
 ];
 
-// Artist pages — skip inactive artists
+// Artist pages
 const artistPages = artistsData.artists
-  .filter(a => !a.inactive && a.artistRoute)
+  .filter(a => a.artistRoute)
   .map(a => ({
     url: `/artists/${a.artistRoute}`,
-    priority: a.featured ? '0.9' : '0.7',
+    priority: a.featured ? '0.9' : a.inactive ? '0.3' : '0.7',
     changefreq: 'monthly',
   }));
 
@@ -33,7 +32,7 @@ const releasePages = releasesData.releases
   .filter(r => r.releaseRoute)
   .map(r => ({
     url: `/releases/${r.releaseRoute}`,
-    priority: r.isNew ? '1.0' : r.isHero ? '0.9' : '0.7',
+    priority: r.isHero ? '1.0' : (r.isNew && !r.isHero) ? '0.9' : '0.7',
     changefreq: 'yearly',
     lastmod: (() => {
       try {
@@ -62,6 +61,6 @@ fs.writeFileSync(outputPath, xml, 'utf8');
 
 console.log(`✅ Sitemap generated → ${outputPath}`);
 console.log(`   Static pages  : ${staticPages.length}`);
-console.log(`   Artist pages  : ${artistPages.length} (active only)`);
+console.log(`   Artist pages  : ${artistPages.length}`);
 console.log(`   Release pages : ${releasePages.length}`);
 console.log(`   Total URLs    : ${allPages.length}`);

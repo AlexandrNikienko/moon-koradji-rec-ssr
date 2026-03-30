@@ -1,0 +1,2 @@
+/artists/*/ /artists/:splat 301!
+/releases/*/ /releases/:splat 301!
