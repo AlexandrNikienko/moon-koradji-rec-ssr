@@ -34,21 +34,31 @@
 				</a>-->
 
 				@if (artist().artistFacebook) {
-					<a class="btn btn-link" href="{{artist().artistFacebook}}" target="_blank" title="Facebook page">
-						<i class="fab fa-facebook-square fa-2x"></i>
-					</a>
+				<a class="btn btn-link" href="{{artist().artistFacebook}}" target="_blank" [matTooltip]="'Facebook'"
+					[matTooltipPosition]="'above'" [matTooltipShowDelay]="100">
+					<i class="fab fa-facebook-square fa-2x"></i>
+				</a>
 				}
-
+				
 				@if (artist().artistSoundcloud) {
-					<a class="btn btn-link" href="{{artist().artistSoundcloud}}" target="_blank" title="SoundCloud page">
-						<i class="fab fa-soundcloud fa-2x"></i>
-					</a>
+				<a class="btn btn-link" href="{{artist().artistSoundcloud}}" target="_blank" [matTooltip]="'SoundCloud'"
+					[matTooltipPosition]="'above'" [matTooltipShowDelay]="100">
+					<i class="fab fa-soundcloud fa-2x"></i>
+				</a>
 				}
-
+				
+				@if (artist().artistInstagram) {
+				<a class="btn btn-link" href="{{artist().artistInstagram}}" target="_blank" [matTooltip]="'Instagram'"
+					[matTooltipPosition]="'above'" [matTooltipShowDelay]="100">
+					<i class="fab fa-instagram fa-2x"></i>
+				</a>
+				}
+				
 				@if (artist().artistMixcloud) {
-					<a class="btn btn-link" href="{{artist().artistMixcloud}}" target="_blank" title="Mixcloud page">
-						<i class="fab fa-mixcloud fa-2x"></i>
-					</a>
+				<a class="btn btn-link" href="{{artist().artistMixcloud}}" target="_blank" [matTooltip]="'Mixcloud'"
+					[matTooltipPosition]="'above'" [matTooltipShowDelay]="100">
+					<i class="fab fa-mixcloud fa-2x"></i>
+				</a>
 				}
 			</div>
 		</div>

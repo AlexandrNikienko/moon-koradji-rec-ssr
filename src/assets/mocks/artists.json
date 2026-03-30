@@ -464,7 +464,8 @@
 				}
 			],
 			"artistFacebook": "https://www.facebook.com/dylan.chillin",
-			"artistSoundcloud": "https://soundcloud.com/fractalcowboys"
+			"artistSoundcloud": "https://soundcloud.com/fractalcowboys",
+			"artistInstagram": "https://www.instagram.com/alienpugdj"
 		},
 		{
 			"artistRoute": "enichkin",
@@ -988,7 +989,7 @@
 			"artistSoundcloud": ""
 		},
 		{
-			"artistRoute": "LAB",
+			"artistRoute": "lab",
 			"artistName": "LAB",
 			"artistRealName": "Renato Moreira",
 			"artistCountry": "Portugal",

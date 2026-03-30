@@ -12,13 +12,15 @@ import { map } from 'rxjs/operators';
 import { DataSignalService } from '../core/services/data-signal';
 import { JsonLdService } from '../core/services/json-ld.service';
 import { Release } from '../core/models/release.model';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
     imports: [
         HeadingComponent,
         SafeHtmlPipe,
         CommonModule,
-        RouterModule
+        RouterModule,
+		MatTooltipModule
     ],
     templateUrl: 'artist.component.html',
     styleUrls: ['artist.component.scss']

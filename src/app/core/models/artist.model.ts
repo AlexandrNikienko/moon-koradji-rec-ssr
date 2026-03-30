@@ -1,5 +1,4 @@
 import { Paragraph } from './paragraph.model';
-import { Release } from './release.model';
 
 export type Role = 'artist' | 'dj';
 export interface Artist {
@@ -11,6 +10,7 @@ export interface Artist {
     artistDescription?: Paragraph[];
     artistFacebook?: string;
     artistSoundcloud?: string;
+    artistInstagram?: string;
     artistOfficial?: string;
     artistMixcloud?: string;
     mixes?: any[]; // TODO
