@@ -17,7 +17,7 @@
 
 @if (recentReleases().length > 0) {
   <section class="recent-releases-wrapper">
-    <mk-heading [title]="'Recent Releases'" [subTitle]="'New psychedelic trance music from Moon Koradji Records'" [route]="'/releases'"/>
+    <mk-heading [title]="'Recent Releases'" [subTitle]="'New psychedelic trance music from Moon Koradji Records'" [route]="'/releases'" [level]="2"/>
 
     <div class="recent-releases-inner">
       @for (release of recentReleases(); track $index) {
@@ -33,7 +33,7 @@
 
 @if (featuredGalleryItems()) {
   <section class="featured-artists-wrapper">
-    <mk-heading [title]="'Featured Artists'" [subTitle]="'Meet our talented featured artists'" [route]="'/artists'"/>
+    <mk-heading [title]="'Featured Artists'" [subTitle]="'Meet our talented featured artists'" [route]="'/artists'"[level]="2"/>
     
     <app-shared-gallery [items]="featuredGalleryItems()"/>
   </section>
@@ -100,13 +100,13 @@
 						<a class="news__link" [routerLink]="item.link">
 							<div class="news__image" [ngStyle]="{backgroundImage: 'url(' + item.image + ')'}"></div>
 
-							<h1 class="news__desc">
+							<div class="news__desc">
 								<span class="news__title">{{item.title}}</span>
 								<br>
 								@if (item.text) {
 								<span class="news__info">{{item.text}}</span>
 								}
-							</h1>
+							</div>
 						</a>
 						}
 				
@@ -114,13 +114,13 @@
 						<a class="news__link" [attr.href]="item.link" [attr.target]="item.target">
 							<div class="news__image" [ngStyle]="{backgroundImage: 'url(' + item.image + ')'}"></div>
               
-							<h1 class="news__desc">
+							<div class="news__desc">
 								<span class="news__title">{{item.title}}</span>
 								<br>
 								@if (item.text) {
 								<span class="news__info">{{item.text}}</span>
 								}
-							</h1>
+							</div>
 						</a>
 						}
 					</div>
@@ -172,7 +172,7 @@
 </section>
 
 <section class="events-wrapper">
-	<mk-heading [title]="'Upcoming Events'" [subTitle]="'Catch our talented artists live'" />
+	<mk-heading [title]="'Upcoming Events'" [subTitle]="'Catch our talented artists live'" [level]="2"/>
 
   <app-events />
 </section>
