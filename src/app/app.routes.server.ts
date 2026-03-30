@@ -17,7 +17,7 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Prerender,
     async getPrerenderParams() {
       return artistsData.artists
-        .filter(a => !a.inactive && a.artistRoute)
+        .filter(a => a.artistRoute)
         .map(a => ({ artistRoute: a.artistRoute }));
     }
   },
