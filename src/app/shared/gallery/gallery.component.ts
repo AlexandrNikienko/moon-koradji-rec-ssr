@@ -1,5 +1,5 @@
 
-import { Component, input, Inject, PLATFORM_ID, ChangeDetectionStrategy, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, input, Inject, PLATFORM_ID, ChangeDetectionStrategy, AfterViewInit, OnDestroy, ElementRef, viewChild } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -11,24 +11,27 @@ import { PictureComponent } from '../picture/picture.component';
 import { register } from 'swiper/element/bundle';
 
 @Component({
-    selector: 'app-shared-gallery',
-    imports: [CommonModule, RouterModule, PictureComponent],
-    schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    templateUrl: './gallery.component.html',
-    styleUrls: ['gallery.component.scss'],
-  	changeDetection: ChangeDetectionStrategy.OnPush
+	selector: 'app-shared-gallery',
+	imports: [CommonModule, RouterModule, PictureComponent],
+	schemas: [CUSTOM_ELEMENTS_SCHEMA],
+	templateUrl: './gallery.component.html',
+	styleUrls: ['gallery.component.scss'],
+	changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SharedGalleryComponent implements AfterViewInit {
+export class SharedGalleryComponent implements AfterViewInit, OnDestroy {
 	items = input<Gallery[]>();
 	private static registered = false;
 
-	@ViewChild('swiperEl') swiperEl!: ElementRef;
-	@ViewChild('buttonPrev') buttonPrev!: ElementRef;
-	@ViewChild('buttonNext') buttonNext!: ElementRef;
+	private prevHandler!: () => void;
+	private nextHandler!: () => void;
+
+	swiperEl = viewChild<ElementRef>('swiperEl');
+	buttonPrev = viewChild<ElementRef>('buttonPrev');
+	buttonNext = viewChild<ElementRef>('buttonNext');
 
 	private swiperConfig = {
 		spaceBetween: 30,
-		loop: true, 
+		loop: true,
 		breakpoints: {
 			320: { slidesPerView: 1, slidesPerGroup: 1, spaceBetween: 20 },
 			640: { slidesPerView: 2, slidesPerGroup: 2, spaceBetween: 20 },
@@ -37,7 +40,7 @@ export class SharedGalleryComponent implements AfterViewInit {
 		}
 	};
 
-	constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+	constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 
 	ngAfterViewInit() {
 		if (!isPlatformBrowser(this.platformId)) return;
@@ -47,14 +50,23 @@ export class SharedGalleryComponent implements AfterViewInit {
 			SharedGalleryComponent.registered = true;
 		}
 
-		const swiperEl = this.swiperEl.nativeElement;
-		const buttonPrev = this.buttonPrev.nativeElement;
-		const buttonNext = this.buttonNext.nativeElement;
+		this.prevHandler = () =>
+			this.swiperEl().nativeElement.swiper.slidePrev();
 
-		buttonPrev.addEventListener('click', () => swiperEl.swiper.slidePrev());
-		buttonNext.addEventListener('click', () => swiperEl.swiper.slideNext());
+		this.nextHandler = () =>
+			this.swiperEl().nativeElement.swiper.slideNext();
 
-		Object.assign(swiperEl, this.swiperConfig);
-		swiperEl.initialize();
+		this.buttonPrev().nativeElement.addEventListener('click', this.prevHandler);
+		this.buttonNext().nativeElement.addEventListener('click', this.nextHandler);
+
+		Object.assign(this.swiperEl().nativeElement, this.swiperConfig);
+		this.swiperEl().nativeElement.initialize();
+	}
+
+	ngOnDestroy() {
+		if (!isPlatformBrowser(this.platformId)) return;
+
+		this.buttonPrev()?.nativeElement.removeEventListener('click', this.prevHandler);
+		this.buttonNext()?.nativeElement.removeEventListener('click', this.nextHandler);
 	}
 }
