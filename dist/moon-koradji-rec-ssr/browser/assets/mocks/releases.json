@@ -520,8 +520,8 @@
             "releaseSubTitle": "listen & purchase",
             "releaseCover": {
 				"default": "mkdg003_ziul_oiram_eternal_shadow.jpg",
-				"webp": "",
-				"webp2x": ""
+				"webp": "mkdg003_ziul_oiram_eternal_shadow-500.webp",
+				"webp2x": "mkdg003_ziul_oiram_eternal_shadow-1000.webp"
 			},
             "releaseRoute": "ziul-oiram-eternal-shadow",
             "releaseDescription": [
@@ -676,7 +676,7 @@
             "releaseCover": {
 				"default": "mkcd011_illusorium.jpg",
 				"webp": "mkcd011_illusorium-500.webp",
-				"webp2x": ""
+				"webp2x": "mkcd011_illusorium-1000.webp"
 			},
             "releaseRoute": "va-illusorium",
             "releaseDescription": [
@@ -711,7 +711,7 @@
             "releaseCover": {
 				"default": "mkcd010_mind_games.jpg",
 				"webp": "mkcd010_mind_games-500.webp",
-				"webp2x": ""
+				"webp2x": "mkcd010_mind_games-1000.webp"
 			},
             "releaseRoute": "va-mind-games",
             "releaseDescription": [
@@ -755,7 +755,7 @@
             "releaseCover": {
 				"default": "mkcd009_intropix.jpg",
 				"webp": "mkcd009_intropix-500.webp",
-				"webp2x": ""
+				"webp2x": "mkcd009_intropix-1000.webp"
 			},
             "releaseRoute": "va-intropix",
             "releaseDescription": [
@@ -799,7 +799,7 @@
             "releaseCover": {
 				"default": "mkcd008_ocelot.jpg",
 				"webp": "mkcd008_ocelot-500.webp",
-				"webp2x": ""
+				"webp2x": "mkcd008_ocelot-1000.webp"
 			},
             "releaseRoute": "ocelot-night-and-day",
             "releaseDescription": [
@@ -844,7 +844,7 @@
             "releaseCover": {
 				"default": "mkcd007_infinity_keepers_2.jpg",
 				"webp": "mkcd007_infinity_keepers_2-500.webp",
-				"webp2x": ""
+				"webp2x": "mkcd007_infinity_keepers_2-1000.webp"
 			},
             "releaseRoute": "va-infinity-keepers-2",
             "releaseDescription": [
@@ -943,7 +943,7 @@
             "releaseCover": {
 				"default": "mkcd005_ascoil_sun.jpg",
 				"webp": "mkcd005_ascoil_sun-500.webp",
-				"webp2x": ""
+				"webp2x": "mkcd005_ascoil_sun-1000.webp"
 			},
             "releaseRoute": "ascoil-sun-emergence",
             "releaseDescription": [
@@ -987,7 +987,7 @@
             "releaseCover": {
 				"default": "mkcd004_legendarium.jpg",
 				"webp": "mkcd004_legendarium-500.webp",
-				"webp2x": ""
+				"webp2x": "mkcd004_legendarium-1000.webp"
 			},
             "releaseRoute": "va-legendarium",
             "releaseDescription": [
@@ -1028,7 +1028,7 @@
             "releaseCover": {
 				"default": "mkcd003_shadow_enuin_2.jpg",
 				"webp": "mkcd003_shadow_enuin_2-500.webp",
-				"webp2x": ""
+				"webp2x": "mkcd003_shadow_enuin_2-1000.webp"
 			},
             "releaseRoute": "va-shadow-enuin-2",
             "releaseDescription": [
@@ -1066,7 +1066,7 @@
             "releaseCover": {
 				"default": "mkcd002_infinity_keepers.jpg",
 				"webp": "mkcd002_infinity_keepers-500.webp",
-				"webp2x": ""
+				"webp2x": "mkcd002_infinity_keepers-1000.webp"
 			},
             "releaseRoute": "va-infinity-keepers",
             "releaseDescription": [
@@ -1107,7 +1107,7 @@
             "releaseCover": {
 				"default": "mkcd001_shadow_enuin.jpg",
 				"webp": "mkcd001_shadow_enuin-500.webp",
-				"webp2x": ""
+				"webp2x": "mkcd001_shadow_enuin-1000.webp"
 			},
             "releaseRoute": "va-shadow-enuin",
             "releaseDescription": [
