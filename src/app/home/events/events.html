@@ -5,16 +5,16 @@
 			@if (!event.hidden) {
 			<div class="event__item">
 				<div class="event__left">
-					<div class="event__date">{{event.date}}</div>
-					<div class="event__month">{{event.month}}</div>
-					<div class="event__year">{{event.year}}</div>
-					<div class="event__country">{{event.country}}</div>
+					<span class="event__date">{{event.date}}</span>
+					<span class="event__month">{{event.month}}</span>
+					<span class="event__year">{{event.year}}</span>
+					<span class="event__country">{{event.country}}</span>
 				</div>
 
 				<div class="event__right">
-					<div class="event__title">{{event.title}}</div>
+					<h3 class="event__title">{{event.title}}</h3>
 
-					<div class="event__info">{{event.info}}</div>
+					<p class="event__info">{{event.info}}</p>
 
 					<div class="event__artists">
 						@for (artist of event.artists; track artist) {
@@ -23,11 +23,11 @@
 						<span class="event__artist">and more</span>
 					</div>
 
-					<a class="btn" href="{{event.link}}" target="blank">More info</a>
+					<a class="btn" href="{{event.link}}" target="_blank" rel="noopener noreferrer">More info</a>
 				</div>
 
 				@if((futureEvents().length % 2 === 0 && even) || (futureEvents().length % 2 === 1 && odd)) {
-				<svg class="event__mushroom" xmlns="http://www.w3.org/2000/svg" version="1.0" width="1280.000000pt"
+				<svg class="event__mushroom" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" version="1.0" width="1280.000000pt"
 					height="838.000000pt" viewBox="0 0 1280.000000 838.000000" preserveAspectRatio="xMidYMid meet">
 					<g xmlns="http://www.w3.org/2000/svg"
 						transform="translate(0.000000,838.000000) scale(0.100000,-0.100000)" fill="url(#violetToCyan)"
@@ -104,7 +104,7 @@
 				</svg>
 				}
 				@if((futureEvents().length % 2 === 0 && odd) || (futureEvents().length % 2 === 1 && even) ) {
-				<svg class="event__mushroom2" xmlns="http://www.w3.org/2000/svg" version="1.0" width="1280.000000pt"
+				<svg class="event__mushroom2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" version="1.0" width="1280.000000pt"
 					height="640.000000pt" viewBox="0 0 1280.000000 640.000000" preserveAspectRatio="xMidYMid meet">
 					<g transform="translate(0.000000,640.000000) scale(0.100000,-0.100000)" fill="url(#violetToCyan)"
 						stroke="none">
@@ -117,12 +117,15 @@
 			}
 		}
 		<div class="event__item">
-			<div class="event__left"></div>
+			<div class="event__left" aria-hidden="true"></div>
+
 			<div class="event__right">
-				<div class="event__title">Here can be your event</div>
-				<div class="event__info">* if our artist(s) perform there</div>
+				<h3 class="event__title">Here can be your event</h3>
+
+				<p class="event__info">* if our artist(s) perform there</p>
 			</div>
-			<svg class="event__mushroom" xmlns="http://www.w3.org/2000/svg" version="1.0" width="1280.000000pt"
+
+			<svg class="event__mushroom" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" version="1.0" width="1280.000000pt"
 				height="838.000000pt" viewBox="0 0 1280.000000 838.000000" preserveAspectRatio="xMidYMid meet">
 				<g xmlns="http://www.w3.org/2000/svg"
 					transform="translate(0.000000,838.000000) scale(0.100000,-0.100000)" fill="#000" stroke="none">
