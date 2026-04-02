@@ -3,6 +3,50 @@
 		{
 			"isHero": true,
 			"isNew": true,
+			"releaseNumber": "MKRL028",
+			"releaseYear": "2026",
+			"releaaseType": "EP",
+			"releaseDate": "",
+			"releaseTitle": "Dylalien - B. Whalian",
+			"releaseSubTitle": "coming soon",
+			"releaseCover": {
+				"default": "mkrl028_dylalien_b_whalian.jpg",
+				"webp": "mkrl028_dylalien_b_whalian-500.webp",
+				"webp2x": "mkrl028_dylalien_b_whalian-1000.webp"
+			},
+			"facebookShareThumb": "",
+			"releaseRoute": "dylalien-b-whalian",
+			"releaseDescription": [
+				{   
+					"paragraph": "Coming soon."
+				},
+				{
+					"paragraph": ""
+				},
+				{
+					"paragraph": ""
+				}
+			],
+			"releaseAuthor": "Dylan Chillin",
+			"masteredBy": "",
+			"artworkBy": "Ozan",
+			"tracklist": [
+				""
+			],
+			"bandcampLink": "",
+			"albumBandcampId": "",
+			"artists": [
+				"Dylalien"
+			],
+			"_streamingLinks": {
+				"spotify": "",
+				"appleMusic": "",
+				"beatport": ""
+			},
+			"styles": []
+		},
+		{
+			"isNew": true,
 			"releaseNumber": "MKRL027",
 			"releaseYear": "2026",
 			"releaaseType": "EP",
