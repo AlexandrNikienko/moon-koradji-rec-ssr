@@ -4,20 +4,32 @@
 	<div class="artist-wrapper">
 		@if (artist().artistAvatar) {
 			<div class="artist-foto-wrapper">
-				<img class="artist-foto" src="/assets/images/artists/{{artist().artistAvatar}}" alt="{{artist().artistName}}">
+				<img class="artist-foto" src="/assets/images/artists/{{artist().artistAvatar}}" alt="{{artist().artistName}}" fetchpriority="high">
 			</div>
 		}
 
 		<div class="artist-details-wrapper">
-			<a class="s-go-back" routerLink="/artists">
-				<i class="fas fa-long-arrow-alt-left"></i>Go to Artists page
-			</a>
+			<div class="s-go-back" routerLink="/artists">
+				<i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>Go to Artists page
+			</div>
 
-			@if (artist().artistRealName) {
-				<div class="s-artist-details">Real name: {{artist().artistRealName}}</div>
+			@if (artist().artistRealName || artist().artistCountry) {
+			<dl class="artist-details-list">
+				@if (artist().artistRealName) {
+					<div>
+						<dt>Real name</dt>
+						<dd>{{artist().artistRealName}}</dd>
+					</div>
+				}
+				
+				@if (artist().artistCountry) {
+					<div>
+						<dt>Country</dt>
+						<dd>{{artist().artistCountry}}</dd>
+					</div>
+				}
+			</dl>
 			}
-
-			<div class="s-artist-details">Country: {{artist().artistCountry}}</div>
 
 			<div class="s-artist-description">
 				@for (description of artist().artistDescription; track description) {
@@ -35,29 +47,29 @@
 
 				@if (artist().artistFacebook) {
 				<a class="btn btn-link" href="{{artist().artistFacebook}}" target="_blank" [matTooltip]="'Facebook'"
-					[matTooltipPosition]="'above'" [matTooltipShowDelay]="100">
-					<i class="fab fa-facebook-square fa-2x"></i>
+					[matTooltipPosition]="'above'" [matTooltipShowDelay]="100" aria-label="Facebook">
+					<i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>
 				</a>
 				}
 				
 				@if (artist().artistSoundcloud) {
 				<a class="btn btn-link" href="{{artist().artistSoundcloud}}" target="_blank" [matTooltip]="'SoundCloud'"
-					[matTooltipPosition]="'above'" [matTooltipShowDelay]="100">
-					<i class="fab fa-soundcloud fa-2x"></i>
+					[matTooltipPosition]="'above'" [matTooltipShowDelay]="100" aria-label="SoundCloud">
+					<i class="fab fa-soundcloud fa-2x" aria-hidden="true"></i>
 				</a>
 				}
 				
 				@if (artist().artistInstagram) {
 				<a class="btn btn-link" href="{{artist().artistInstagram}}" target="_blank" [matTooltip]="'Instagram'"
-					[matTooltipPosition]="'above'" [matTooltipShowDelay]="100">
-					<i class="fab fa-instagram fa-2x"></i>
+					[matTooltipPosition]="'above'" [matTooltipShowDelay]="100" aria-label="Instagram">
+					<i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
 				</a>
 				}
 				
 				@if (artist().artistMixcloud) {
 				<a class="btn btn-link" href="{{artist().artistMixcloud}}" target="_blank" [matTooltip]="'Mixcloud'"
-					[matTooltipPosition]="'above'" [matTooltipShowDelay]="100">
-					<i class="fab fa-mixcloud fa-2x"></i>
+					[matTooltipPosition]="'above'" [matTooltipShowDelay]="100" aria-label="Mixcloud">
+					<i class="fab fa-mixcloud fa-2x" aria-hidden="true"></i>
 				</a>
 				}
 			</div>
@@ -66,17 +78,11 @@
 
 	@if (artistReleases().length > 0) {
 		<div class="s-involved row">
-			<div class="small-title">Releases with {{artist().artistName}}</div>
+			<h2 class="small-title">Releases with {{artist().artistName}}</h2>
 
-			@for (release of artistReleases(); track release) {
-				<div class="s-involved__item col-lg-2 col-md-3 col-sm-3 col-xs-3">
-					<a class="s-involved__link " [routerLink]="['/releases', release.releaseRoute]">
-						<div class="s-involved__image"
-							[ngStyle]="{'background-image': `url(/assets/images/release-cover/${release.releaseCover.default})`}">
-						</div>
-
-						<div class="s-involved__name">{{release.releaseTitle}}</div>
-					</a>
+			@for (release of artistReleases(); track release.releaseTitle) {
+				<div class="mb-16 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-6">
+					<app-release-card [releaseItem]="release"></app-release-card>
 				</div>
 			}
 		</div>

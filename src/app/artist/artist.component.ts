@@ -13,15 +13,18 @@ import { DataSignalService } from '../core/services/data-signal';
 import { JsonLdService } from '../core/services/json-ld.service';
 import { Release } from '../core/models/release.model';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { ReleaseCardComponent } from "../shared/release-card/release-card.component";
 
 @Component({
     imports: [
-        HeadingComponent,
-        SafeHtmlPipe,
-        CommonModule,
-        RouterModule,
-		MatTooltipModule
-    ],
+    HeadingComponent,
+    SafeHtmlPipe,
+    CommonModule,
+    RouterModule,
+    MatTooltipModule,
+    ReleaseCardComponent,
+	ReleaseCardComponent
+],
     templateUrl: 'artist.component.html',
     styleUrls: ['artist.component.scss']
 })

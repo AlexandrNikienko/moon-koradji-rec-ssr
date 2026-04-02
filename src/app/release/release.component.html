@@ -150,7 +150,7 @@
       @for (artist of involvedArtists(); track artist) {
       <div class="s-involved-artists__item">
         <a [routerLink]="['/artists', artist.artistRoute]" class="s-involved-artists__content">
-          <img class="s-involved-artists__image" [src]="`/assets/images/artists/m_${artist.artistAvatar}`" alt="Argaleth">
+          <img class="s-involved-artists__image" [src]="`/assets/images/artists/m_${artist.artistAvatar}`" [alt]="artist.artistName + ' avatar'">
 
           <div class="s-involved-artists__name">{{artist.artistName}}</div>
         </a>

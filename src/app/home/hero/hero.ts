@@ -28,7 +28,6 @@ export class HeroComponent {
 			// Remove ordinal suffixes (st, nd, rd, th)
 			const cleanedDate = release.releaseDate.replace(/(\d+)(st|nd|rd|th),/, '$1,');
 			const releaseDate = new Date(cleanedDate);
-
 			
 			if (isNaN(releaseDate.getTime())) {
 				return 'Coming Soon';

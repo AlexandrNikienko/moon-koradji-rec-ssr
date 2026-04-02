@@ -4,6 +4,7 @@
 	display: flex;
 	gap: 2rem;
 	flex-wrap: wrap;
+	margin-block-end: 4rem;
 }
 
 .artist-details-wrapper {
@@ -69,43 +70,26 @@
 	}
 }
 
-.s-involved {
-	clear: both;
-	padding-top: 4rem;
-
-	&__item {
-		margin-bottom: 1rem;
+.artist-details-list {
+	dd,
+	dt {
+		display: inline-block;
 	}
 
-	&__title {
-		width: 100%;
-		margin-bottom: 10px;
-		padding: 0 10px;
-		//color: #bbb;
-		font-size: 18px;
-	}
+	dt {
+		font-weight: bold;
+		margin-right: 1ch;
 
-	&__link {
-		&:hover {
-			text-decoration: none;
+		&::after {
+			content: ':';
 		}
 	}
 
-	&__image {
-		background-size: cover;
-		background-position: center;
-		border-radius: 3px;
-		margin-bottom: 5px;
-		box-shadow: 0 0 1px #fff;
-		transition: 0.3s;
+	dd {
+		margin-bottom: 0.5rem;
 
-		&:hover {
-			box-shadow: $brand-border;
-		}
-
-		&::before {
-			content: "";
-			padding-top: 100%;
+		&::after {
+			content: '';
 			display: block;
 		}
 	}
