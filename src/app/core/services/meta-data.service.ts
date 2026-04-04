@@ -9,6 +9,7 @@ export interface iMeta {
 	ogImage: string,
 	ogImageWidth?: string,
 	ogImageHeight?: string,
+	ogImageAlt?: string,
 	ogUrl: string,
 	ogDescription: string
 	ogType?: string
@@ -41,6 +42,9 @@ export class MetaDataService {
 		}
 		if (meta.ogImageHeight) {
 			this.meta.updateTag({property: 'og:image:height', content: meta.ogImageHeight});
+		}
+		if(meta.ogImageAlt) {
+			this.meta.updateTag({property: 'og:image:alt', content: meta.ogImageAlt});
 		}
 
 		// canonical

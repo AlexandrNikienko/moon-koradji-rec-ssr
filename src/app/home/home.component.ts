@@ -86,10 +86,20 @@ export class HomeComponent {
 			this.releaseCards().forEach(card =>
 				this.observer?.observe(card.nativeElement)
 			);
-		}
 
-		// this.jsonLDService.insertSchema(this.jsonLDService.orgSchema);
-		// this.metaData.setMetaData(this.metaDataObj);
+			this.metaData.setMetaData({
+				title: 'Moon Koradji Records - World Wide Psychedelic',
+				description: 'Ukrainian psytrance label founded in 2007 by DJ Omsun. Explore our releases, podcasts, and exclusive merchandise.',
+				ogTitle: 'Moon Koradji Records - World Wide Psychedelic',
+				ogImage: 'https://www.moonkoradji.com/assets/images/mk_square.jpg',
+				ogImageWidth: '250',
+				ogImageHeight: '250',
+				ogImageAlt: 'Moon Koradji Records Logo',
+				ogUrl: 'https://www.moonkoradji.com/',
+				ogDescription: 'Ukrainian psytrance label founded in 2007 by DJ Omsun. Explore our releases, podcasts, and exclusive merchandise.',
+				ogType: 'website'
+			});
+		}
 	)}
 
     private initScrollAnimation() {
