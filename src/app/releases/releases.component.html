@@ -18,12 +18,21 @@
       }
     </mat-select>
   </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Style</mat-label>
+    <mat-select [(ngModel)]="choosenStyle">
+      @for (style of styleList; track style) {
+        <mat-option [value]="style">{{ style }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
 </div>
 
 @if (filteredReleases()) {
-	<div class="releases">
-		@for (release of filteredReleases(); track release.releaseNumber) {
-			<app-release-card [releaseItem]="release" [hidden]="release.hidden"/>
-		}
-	</div>
+  <div class="releases">
+    @for (release of filteredReleases(); track release.releaseNumber) {
+      <app-release-card [releaseItem]="release" [hidden]="release.hidden"/>
+    }
+  </div>
 }

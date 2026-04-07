@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 
 export type ReleaseType = 'All' | 'VA' | 'EP' | 'Album';
 export type ReleaseAccess = 'All' | 'Free' | 'CD';
+export type ReleaseStyle = 'All' | 'Psychedelic Trance' | 'Dark Psytrance' | 'Forest Psytrance' | 'Twilight Psytrance' | 'Melodic Psytrance' | 'Suomi' | 'Chillout';
 
 @Component({
     imports: [
@@ -41,14 +42,17 @@ export class ReleasesComponent {
 
 	choosenType = signal<ReleaseType>('All');
 	choosenAccess = signal<ReleaseAccess>('All');
+	choosenStyle = signal<ReleaseStyle>('All');
 
 	typeList: ReleaseType[] = ['All', 'VA', 'EP', 'Album'];
 	accessList: ReleaseAccess[] = ['All', 'Free', 'CD'];
+	styleList: ReleaseStyle[] = ['All', 'Dark Psytrance', 'Forest Psytrance', 'Twilight Psytrance', 'Melodic Psytrance', 'Suomi', 'Chillout'];
 
 	filteredReleases = computed<Release[]>(() => {
 		let result = this.releases();
 		const type = this.choosenType();
 		const access = this.choosenAccess();
+		const style = this.choosenStyle();
 
 		if (type !== 'All') {
 			result = result.filter(r => r.releaseType === type);
@@ -58,6 +62,12 @@ export class ReleasesComponent {
 			result = result.filter(r => r.isFree);
 		} else if (access === 'CD') {
 			result = result.filter(r => r.releaseNumber?.startsWith('MKCD'));
+		}
+
+		if (style !== 'All') {
+			result = result.filter(r =>
+				r.styles?.some(s => s.split(', ').includes(style))
+			);
 		}
 
 		return result;
