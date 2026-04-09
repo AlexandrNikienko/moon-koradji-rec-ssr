@@ -126,6 +126,12 @@
       </p>
       }
 
+      @if (bpm()) {
+      <p class="release-credits__paragraph">
+        BPM: {{bpm()}}
+      </p>
+      }
+
       <p class="release-credits__paragraph">
         Release date: {{release().releaseDate || "Coming soon" }}
       </p>

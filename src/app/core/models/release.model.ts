@@ -39,6 +39,10 @@ export interface Release {
 	albumBandcampId?: string;
 	releaseType: ReleaseType;
 	styles?: string[];
+	bpmRange?: {
+		min: number;
+		max: number;
+	};
 }
 
 interface ReleaseCover {

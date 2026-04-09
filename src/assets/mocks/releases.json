@@ -28,7 +28,7 @@
 				}
 			],
 			"releaseAuthor": "Dylan Chillin",
-			"masteredBy": "",
+			"masteredBy": "Ankur / Dog Of Tears",
 			"artworkBy": "Ozan",
 			"tracklist": [
 				""
@@ -94,7 +94,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/chrome/1885834490",
 				"beatport": ""
 			},
-			"styles": ["Dark Psytrance"]
+			"styles": ["Dark Psytrance"],
+			"bpmRange": { "min": 148, "max": 150 }
 		},
 		{
 			"releaseNumber": "MKRL026",
@@ -138,7 +139,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/totem-single/1852774934",
 				"beatport": "https://www.beatport.com/release/totem/5577503"
 			},
-			"styles": ["Forest Psytrance"]
+			"styles": ["Forest Psytrance"],
+			"bpmRange": { "min": 148, "max": 148 }
 		},
 		{
 			"releaseNumber": "MKRL025",
@@ -180,7 +182,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/histora-plethora/1819906661",
 				"beatport": "https://www.beatport.com/release/histora-plethora/5123193"
 			},
-			"styles": ["Dark Psytrance"]
+			"styles": ["Dark Psytrance"],
+			"bpmRange": { "min": 150, "max": 152 }
 		},
 		{
 			"releaseNumber": "MKRL024",
@@ -237,7 +240,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/alphaum/1811131365",
 				"beatport": "https://www.beatport.com/release/alphaum/5061768"
 			},
-			"styles": ["Dark Psytrance"]
+			"styles": ["Dark Psytrance"],
+			"bpmRange": { "min": 148, "max": 153 }
 		},
 		{
 			"releaseNumber": "MKRL023",
@@ -278,7 +282,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/abstract-selection/1806120806",
 				"beatport": "https://www.beatport.com/release/abstract-selection/5018779"
 			},
-			"styles": ["Dark Psytrance"]
+			"styles": ["Dark Psytrance"],
+			"bpmRange": { "min": 146, "max": 148 }
 		},
 		{
 			"releaseNumber": "MKRL022",
@@ -317,7 +322,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/mental-rotation/1798437730",
 				"beatport": "https://www.beatport.com/release/mental-rotation/4958550"
 			},
-			"styles": ["Dark Psytrance"]
+			"styles": ["Dark Psytrance"],
+			"bpmRange": { "min": 142, "max": 148 }
 		},
 		{
 			"releaseNumber": "MKRL021",
@@ -359,7 +365,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/bent/1768751165",
 				"beatport": "https://www.beatport.com/release/bent/4728630"
 			},
-			"styles": ["Dark Psytrance, Forest Psytrance"]
+			"styles": ["Dark Psytrance, Forest Psytrance"],
+			"bpmRange": { "min": 147, "max": 148 }
 		},
 		{
 			"releaseNumber": "MKRL020",
@@ -395,7 +402,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/blackout-2-luminous-darkness/1762600913",
 				"beatport": "https://www.beatport.com/release/blackout-2-luminous-darkness/4689445"
 			},
-			"styles": ["Forest Psytrance", "Dark Psytrance"]
+			"styles": ["Forest Psytrance", "Dark Psytrance"],
+			"bpmRange": { "min": 147, "max": 152 }
 		},
 		{
 			"releaseNumber": "MKRL019",
@@ -440,7 +448,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/springwald/1740151793",
 				"beatport": "https://www.beatport.com/release/springwald/4526440"
 			},
-			"styles": ["Twilight Psytrance"]
+			"styles": ["Twilight Psytrance"],
+			"bpmRange": { "min": 149, "max": 150 }
 		},
 		{
 			"releaseNumber": "MKRL018",
@@ -479,7 +488,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/innermatics/1718077995",
 				"beatport": "https://www.beatport.com/release/innermatics/4350900"
 			},
-			"styles": ["Dark Psytrance"]
+			"styles": ["Dark Psytrance"],
+			"bpmRange": { "min": 150, "max": 150 }
 		},
 		{
 			"releaseNumber": "MKDG005",
@@ -514,7 +524,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/blackout/1709312274",
 				"beatport": "https://www.beatport.com/release/blackout/4282266"
 			},
-			"styles": ["Forest Psytrance", "Dark Psytrance"]
+			"styles": ["Forest Psytrance", "Dark Psytrance"],
+			"bpmRange": { "min": 149, "max": 155 }
 		},
         {
             "releaseNumber": "MKDG004",
@@ -555,7 +566,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/alive-memory/1681111870",
 				"beatport": "https://www.beatport.com/release/alive-memory/4086492"
 			},
-			"styles": ["Melodic Psytrance"]
+			"styles": ["Melodic Psytrance"],
+			"bpmRange": { "min": 135, "max": 145 }
         },
 		{
             "releaseNumber": "MKDG003",
@@ -595,7 +607,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/eternal-shadow-ep/1662982676",
 				"beatport": "https://www.beatport.com/release/eternal-shadow/3980840"
 			},
-			"styles": ["Dark Psytrance"]
+			"styles": ["Dark Psytrance"],
+			"bpmRange": { "min": 150, "max": 150 }
         },
         {
             "releaseNumber": "MKCD012",
@@ -633,7 +646,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/neural-embers/1512414276",
 				"beatport": "https://www.beatport.com/release/neural-embers/2960615"
 			},
-			"styles": ["Forest Psytrance"]
+			"styles": ["Forest Psytrance"],
+			"bpmRange": { "min": 148, "max": 151 }
 		},
         {
             "isFree": true,
@@ -674,7 +688,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/iconoclast/1681186126",
 				"beatport": ""
 			},
-			"styles": ["Dark Psytrance"]
+			"styles": ["Dark Psytrance"],
+			"bpmRange": { "min": 130, "max": 150 }
         },
         {
             "isFree": true,
@@ -710,7 +725,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/bapholot-on-earth-single/1483467787",
 				"beatport": "https://www.beatport.com/release/bapholot-on-earth/2743690"
 			},
-			"styles": ["Dark Psytrance"]
+			"styles": ["Dark Psytrance"],
+			"bpmRange": { "min": 148, "max": 150 }
         },
         {
             "releaseNumber": "MKCD011",
@@ -745,7 +761,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/illusorium/1482677409",
 				"beatport": "https://www.beatport.com/release/illusorium/2730487"
 			},
-			"styles": ["Forest Psytrance", "Dark Psytrance"]
+			"styles": ["Forest Psytrance", "Dark Psytrance"],
+			"bpmRange": { "min": 147, "max": 151 }
         },
         {
             "releaseNumber": "MKCD010",
@@ -756,7 +773,7 @@
             "releaseSubTitle": "listen & purchase",
             "releaseCover": {
 				"default": "mkcd010_mind_games.jpg",
-				"webp": "mkcd010_mind_games-500.webp",
+				"webp": "mkcd010_mind_games-500.webp", 
 				"webp2x": "mkcd010_mind_games-1000.webp"
 			},
             "releaseRoute": "va-mind-games",
@@ -789,7 +806,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/mind-games/1214417374",
 				"beatport": "https://www.beatport.com/release/mind-games/1977070"
 			},
-			"styles": ["Forest Psytrance"]
+			"styles": ["Forest Psytrance"],
+			"bpmRange": { "min": 145, "max": 156 }
         },
         {
             "releaseNumber": "MKCD009",
@@ -833,7 +851,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/intropix/1559559744",
 				"beatport": "https://www.beatport.com/release/intropix/3338369"
 			},
-			"styles": ["Forest Psytrance"]
+			"styles": ["Forest Psytrance"],
+			"bpmRange": { "min": 143, "max": 150 }
         },
         {
             "releaseNumber": "MKCD008",
@@ -878,7 +897,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/night-day/659466922",
 				"beatport": "https://www.beatport.com/release/night-day/1107336"
 			},
-			"styles": ["Dark Psytrance"]
+			"styles": ["Dark Psytrance"],
+			"bpmRange": { "min": 140, "max": 148 }
         },
         {
             "releaseNumber": "MKCD007",
@@ -937,7 +957,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/infinity-keepers-2-depth-perception/1551634159",
 				"beatport": "https://www.beatport.com/release/infinity-keepers-2-depth-perception/3275364"
 			},
-			"styles": ["Dark Psytrance"]
+			"styles": ["Dark Psytrance"],
+			"bpmRange": { "min": 145, "max": 154 }
         },
         {
             "releaseNumber": "MKCD006",
@@ -978,7 +999,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/in-space/526526500",
 				"beatport": "https://www.beatport.com/release/in-space/912629"
 			},
-			"styles": ["Suomi"]
+			"styles": ["Suomi"],
+			"bpmRange": { "min": 135, "max": 160 }
         },
         {
             "releaseNumber": "MKCD005",
@@ -1064,7 +1086,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/legendarium/1550330555",
 				"beatport": "https://www.beatport.com/release/legendarium/3262142"
 			},
-			"styles": ["Forest Psytrance, Dark Psytrance"]
+			"styles": ["Forest Psytrance, Dark Psytrance, Chillout"],
+			"bpmRange": { "min": 147, "max": 152 }
         },
         {
             "releaseNumber": "MKCD003",
@@ -1102,7 +1125,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/shadow-enuin-vol-2/1543495435",
 				"beatport": "https://www.beatport.com/release/shadow-enuin-vol-2/3216336"
 			},
-			"styles": ["Forest Psytrance, Dark Psytrance"]
+			"styles": ["Forest Psytrance, Dark Psytrance"],
+			"bpmRange": { "min": 146, "max": 151 }
         },
         {
             "releaseNumber": "MKCD002",
@@ -1143,7 +1167,8 @@
 				"appleMusic": "https://music.apple.com/ua/album/infinity-keepers/1542963772",
 				"beatport": "https://www.beatport.com/release/infinity-keepers/3215256"
 			},
-			"styles": ["Dark Psytrance"]
+			"styles": ["Dark Psytrance"],
+			"bpmRange": { "min": 148, "max": 160 }
         },
         {
             "releaseNumber": "MKCD001",
@@ -1184,7 +1209,9 @@
 				"appleMusic": "https://music.apple.com/ua/album/shadow-enuin-at-the-earths-edge/1547981954",
 				"beatport": "https://www.beatport.com/release/shadow-enuin-at-the-earths-edge/3249063"
 			},
-			"styles": ["Forest Psytrance, Dark Psytrance"]
+			"styles": ["Forest Psytrance, Dark Psytrance"],
+			"bpmRange": { "min": 146, "max": 152 }
+
         }
     ]
 }

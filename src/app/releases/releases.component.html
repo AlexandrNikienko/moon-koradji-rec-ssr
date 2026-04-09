@@ -27,6 +27,27 @@
       }
     </mat-select>
   </mat-form-field>
+
+  @if (showBpmFilter()) {
+    <div class="bpm-field mat-mdc-form-field mat-form-field-appearance-outline">
+      <label class="bpm-label">BPM: {{ bpmMin() ?? bpmBounds().min }} – {{ bpmMax() ?? bpmBounds().max }}</label>
+
+      <mat-slider
+        [min]="bpmBounds().min"
+        [max]="bpmBounds().max"
+        step="1"
+        discrete
+      >
+        <input matSliderStartThumb
+          [value]="bpmMin() ?? bpmBounds().min"
+          (valueChange)="bpmMin.set($event)">
+
+        <input matSliderEndThumb
+          [value]="bpmMax() ?? bpmBounds().max"
+          (valueChange)="bpmMax.set($event)">
+      </mat-slider>
+    </div>
+  }
 </div>
 
 @if (filteredReleases()) {

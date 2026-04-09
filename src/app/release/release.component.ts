@@ -57,6 +57,20 @@ export class ReleaseComponent {
 		this.releaseIndex() >= 0 ? this.allReleases()[this.releaseIndex()] : null
 	);
 
+	bpm = computed<number | string | null>(() => {
+		const release = this.release();
+
+		const min = Number(release?.bpmRange?.min);
+		const max = Number(release?.bpmRange?.max);
+
+		return min != null && max != null
+			? min === max
+				? min
+				: `${min} – ${max}`
+			: null;
+	});
+
+
 	nextRelease = computed<Release | null>(() => {
 		const i = this.releaseIndex();
 		return i > 0 ? this.allReleases()[i - 1] : null;
