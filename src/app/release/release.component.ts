@@ -141,6 +141,34 @@ export class ReleaseComponent {
 			}
 		};
 
+		// Tracklist with BPM
+		if (release.tracklist && release.tracklist.length > 0) {
+			schema['track'] = {
+				'@type': 'ItemList',
+				'numberOfItems': release.tracklist.length,
+				'itemListElement': release.tracklist.map((trackString, index) => {
+					// Витягуємо BPM з рядка "Artist - Title (xxx bpm)"
+					const bpmMatch = trackString.match(/\((\d+)\s*bpm\)/i);
+					const bpmValue = bpmMatch ? bpmMatch[1] : null;
+					
+					// Очищуємо назву треку від BPM для поля 'name'
+					const trackName = trackString.replace(/\s*\(\d+\s*bpm\)/i, '').trim();
+
+					return {
+						'@type': 'ListItem',
+						'position': index + 1,
+						'item': {
+							'@type': 'MusicRecording',
+							'name': trackName,
+							'description': bpmValue ? `${bpmValue} BPM` : undefined,
+							// Якщо у вас є посилання на прослуховування конкретного треку:
+							// 'url': `${schema.url}#track-${index + 1}`
+						}
+					};
+				})
+			};
+		}	
+
 		// byArtist and performer
 		if (isCompilation) {
 			schema['byArtist'] = {

@@ -25,7 +25,6 @@ export interface Release {
 	bandcamp24Link?: string;
 	videoLink?: string;
 	embedVideo?: string;
-	tracklist?: Array<object>;
 	embedAudio?: string;
 	artists: Array<string>;
 	hub?: string;
@@ -43,6 +42,7 @@ export interface Release {
 		min: number;
 		max: number;
 	};
+	tracklist: string[];
 }
 
 interface ReleaseCover {
