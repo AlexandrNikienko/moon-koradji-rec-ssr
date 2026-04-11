@@ -32,7 +32,7 @@ export class AboutComponent {
 			'url': 'https://www.moonkoradji.com/about',
 			'description': 'Independent psychedelic music label Moon Koradji Records was founded in Ukraine in 2007 by Oleksandr Nikiienko, aka DJ Omsun.',
 			'about': {
-				'@type': 'MusicLabel',
+				'@type': ['Organization', 'MusicGroup'],
 				'@id': 'https://www.moonkoradji.com/#organization',
 				'foundingDate': '2007',
 				'foundingLocation': {
