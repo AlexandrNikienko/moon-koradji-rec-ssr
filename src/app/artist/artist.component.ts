@@ -97,10 +97,7 @@ export class ArtistComponent {
 			'@id': `https://www.moonkoradji.com/artists/${artist.artistRoute}/#artist`,
 			'name': artist.artistName,
 			'url': `https://www.moonkoradji.com/artists/${artist.artistRoute}`,
-			'image': `https://www.moonkoradji.com/assets/images/artists/${artist.artistAvatar}`,
-			'recordLabel': {
-				'@id': 'https://www.moonkoradji.com/#organization'
-			}
+			'image': `https://www.moonkoradji.com/assets/images/artists/${artist.artistAvatar}`
 		});
 	}
 }
