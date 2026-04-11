@@ -127,31 +127,52 @@ export class ReleaseComponent {
 
 		const isCompilation = !!release.compiledBy || release.releaseTitle.startsWith('VA');
 
-		const schema: any = {
-			'@context': 'https://schema.org',
-			'@type': 'MusicAlbum',
+		const byArtist = release.artists?.length
+			? release.artists.map(name => ({
+				'@type': 'MusicGroup',
+				'name': name,
+				'url': `https://www.moonkoradji.com/artists/${name.toLowerCase().replace(/\s+/g, '-')}`
+			}))
+			: {
+				'@type': 'MusicGroup',
+				'name': isCompilation ? 'Various Artists' : release.releaseTitle
+			};
+
+		const musicRelease: any = {
+			'@type': 'MusicRelease',
 			'@id': `https://www.moonkoradji.com/releases/${release.releaseRoute}/#release`,
 			'name': release.releaseTitle,
 			'url': `https://www.moonkoradji.com/releases/${release.releaseRoute}`,
-			'image': `https://www.moonkoradji.com/assets/images/release-cover/${release.releaseCover.webp2x || release.releaseCover.webp || release.releaseCover.default}`,
-			'description': releaseDesc,
 			'datePublished': release.releaseDate,
 			'recordLabel': {
 				'@id': 'https://www.moonkoradji.com/#organization'
 			}
 		};
 
-		// Tracklist with BPM
-		if (release.tracklist && release.tracklist.length > 0) {
+		if (release.releaseNumber) {
+			musicRelease['catalogNumber'] = release.releaseNumber;
+		}
+
+		const schema: any = {
+			'@context': 'https://schema.org',
+			'@type': 'MusicAlbum',
+			'@id': `https://www.moonkoradji.com/releases/${release.releaseRoute}/#album`,
+			'name': release.releaseTitle,
+			'url': `https://www.moonkoradji.com/releases/${release.releaseRoute}`,
+			'image': `https://www.moonkoradji.com/assets/images/release-cover/${release.releaseCover.webp2x || release.releaseCover.webp || release.releaseCover.default}`,
+			'description': releaseDesc,
+			'byArtist': byArtist,
+			'albumRelease': musicRelease
+		};
+
+		// Tracklist
+		if (release.tracklist?.length) {
 			schema['track'] = {
 				'@type': 'ItemList',
 				'numberOfItems': release.tracklist.length,
 				'itemListElement': release.tracklist.map((trackString, index) => {
-					// Витягуємо BPM з рядка "Artist - Title (xxx bpm)"
 					const bpmMatch = trackString.match(/\((\d+)\s*bpm\)/i);
 					const bpmValue = bpmMatch ? bpmMatch[1] : null;
-					
-					// Очищуємо назву треку від BPM для поля 'name'
 					const trackName = trackString.replace(/\s*\(\d+\s*bpm\)/i, '').trim();
 
 					return {
@@ -160,36 +181,11 @@ export class ReleaseComponent {
 						'item': {
 							'@type': 'MusicRecording',
 							'name': trackName,
-							'description': bpmValue ? `${bpmValue} BPM` : undefined,
-							// Якщо у вас є посилання на прослуховування конкретного треку:
-							// 'url': `${schema.url}#track-${index + 1}`
+							...(bpmValue && { 'description': `${bpmValue} BPM` })
 						}
 					};
 				})
 			};
-		}	
-
-		// byArtist and performer
-		if (isCompilation) {
-			schema['byArtist'] = {
-				'@type': 'MusicGroup',
-				'name': 'Various Artists'
-			};
-			if (release.artists?.length) {
-				schema['performer'] = release.artists.map(name => ({
-					'@type': 'MusicGroup',
-					'name': name,
-					'url': `https://www.moonkoradji.com/artists/${name.toLowerCase().replace(/\s+/g, '-')}`
-				}));
-			}
-		} else {
-			if (release.artists?.length) {
-				schema['byArtist'] = release.artists.map(name => ({
-					'@type': 'MusicGroup',
-					'name': name,
-					'url': `https://www.moonkoradji.com/artists/${name.toLowerCase().replace(/\s+/g, '-')}`
-				}));
-			}
 		}
 
 		// compiledBy
@@ -200,7 +196,7 @@ export class ReleaseComponent {
 			};
 		}
 
-		// releaseAuthor — solo releases
+		// releaseAuthor
 		if (release.releaseAuthor) {
 			schema['author'] = {
 				'@type': 'Person',
@@ -208,7 +204,7 @@ export class ReleaseComponent {
 			};
 		}
 
-		// mastering credit
+		// mastering
 		if (release.masteredBy) {
 			schema['creditText'] = `Mastered by ${release.masteredBy}`;
 		}
@@ -229,18 +225,17 @@ export class ReleaseComponent {
 			};
 		}
 
-		// catalog number
-		if (release.releaseNumber) {
-			schema['catalogNumber'] = release.releaseNumber;
-		}
+		// streaming links
+		const sameAs: string[] = [
+			release.bandcampLink,
+			release.streamingLinks?.spotify,
+			release.streamingLinks?.appleMusic,
+			release.streamingLinks?.beatport
+		].filter(Boolean) as string[];
 
-		// streaming links as sameAs
-		const sameAs: string[] = [];
-		if (release.bandcampLink) sameAs.push(release.bandcampLink);
-		if (release.streamingLinks?.spotify) sameAs.push(release.streamingLinks.spotify);
-		if (release.streamingLinks?.appleMusic) sameAs.push(release.streamingLinks.appleMusic);
-		if (release.streamingLinks?.beatport) sameAs.push(release.streamingLinks.beatport);
-		if (sameAs.length) schema['sameAs'] = sameAs;
+		if (sameAs.length) {
+			schema['sameAs'] = sameAs;
+		}
 
 		this.jsonLd.setJsonLd(schema);
 	}
@@ -252,10 +247,10 @@ export class ReleaseComponent {
 			title: `${release.releaseTitle} | Moon Koradji Records`,
 			description: releaseDesc,
 			ogTitle: release.releaseTitle,
-			ogImage: release.facebookShareThumb ? 
-				'https://www.moonkoradji.com/assets/images/release-cover/' + release.facebookShareThumb : 
+			ogImage: release.facebookShareThumb ?
+				'https://www.moonkoradji.com/assets/images/release-cover/' + release.facebookShareThumb :
 				'https://www.moonkoradji.com/assets/images/release-cover/' + (release.releaseCover.webp2x || release.releaseCover.webp || release.releaseCover.default),
-			ogImageWidth: release.facebookShareThumb ? '1200' : 
+			ogImageWidth: release.facebookShareThumb ? '1200' :
 				release.releaseCover.webp2x ? '1000' : '500',
 			ogImageHeight: release.facebookShareThumb ? '630' : '1000',
 			ogUrl: 'https://www.moonkoradji.com/releases/' + release.releaseRoute,
