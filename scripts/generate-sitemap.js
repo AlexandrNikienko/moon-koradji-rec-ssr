@@ -7,6 +7,7 @@ const today = new Date().toISOString().split('T')[0];
 // Load data
 const artistsData = JSON.parse(fs.readFileSync('./src/assets/mocks/artists.json', 'utf8'));
 const releasesData = JSON.parse(fs.readFileSync('./src/assets/mocks/releases.json', 'utf8'));
+const stylesData = JSON.parse(fs.readFileSync('./src/assets/mocks/styles.json', 'utf8'));
 
 // Static pages
 const staticPages = [
