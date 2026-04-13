@@ -1,6 +1,6 @@
 @use '../../styles/_utils.scss' as *;
 
-@mixin logoRender($set: 100px) {
+@mixin logoRender($set: 80px) {
 	$width: 4 * $set;
 	$height: 6 * $set;
 
@@ -9,7 +9,7 @@
 		height: $height;
 		position: relative;
 		overflow: hidden;
-		margin-bottom: $set * 0.2;
+		margin-bottom: $set * 0.5;
 	}
 
 	.moon {
@@ -158,7 +158,7 @@
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	padding: 2rem $gap;
+	padding: 0 $gap 2rem;
 }
 
 @include logoRender();
