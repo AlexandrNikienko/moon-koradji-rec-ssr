@@ -1,6 +1,7 @@
 import { RenderMode, ServerRoute } from '@angular/ssr';
 import releasesData from '../assets/mocks/releases.json';
 import artistsData from '../assets/mocks/artists.json';
+import stylesData from '../assets/mocks/styles.json';
 
 export const serverRoutes: ServerRoute[] = [
   {
@@ -19,6 +20,15 @@ export const serverRoutes: ServerRoute[] = [
       return artistsData.artists
         .filter(a => a.artistRoute)
         .map(a => ({ artistRoute: a.artistRoute }));
+    }
+  },
+  {
+    path: 'styles/:styleRoute',
+    renderMode: RenderMode.Prerender,
+    async getPrerenderParams() {
+      return stylesData.styles
+        .filter(s => s.styleRoute)
+        .map(s => ({ styleRoute: s.styleRoute }));
     }
   },
   {

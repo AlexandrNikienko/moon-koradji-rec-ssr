@@ -33,7 +33,7 @@ const releasePages = releasesData.releases
   .map(r => ({
     url: `/releases/${r.releaseRoute}`,
     priority: r.isHero ? '1.0' : (r.isNew && !r.isHero) ? '0.9' : '0.7',
-    changefreq: 'yearly',
+    changefreq: 'monthly',
     lastmod: (() => {
       try {
         const d = new Date(r.releaseDate);
@@ -44,7 +44,15 @@ const releasePages = releasesData.releases
     })(),
   }));
 
-const allPages = [...staticPages, ...artistPages, ...releasePages];
+const stylesPages = stylesData.styles
+  .filter(s => s.styleRoute)
+  .map(s => ({
+    url: `/styles/${s.styleRoute}`,
+    priority: '0.6',
+    changefreq: 'monthly',
+  }));
+
+const allPages = [...staticPages, ...artistPages, ...releasePages, ...stylesPages];
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
