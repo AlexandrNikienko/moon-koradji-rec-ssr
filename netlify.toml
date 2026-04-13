@@ -3,6 +3,12 @@
   publish = "dist/moon-koradji-rec-ssr/browser"
 
 [[redirects]]
+  from = "/release/*"
+  to = "/releases/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/404"
   status = 404
