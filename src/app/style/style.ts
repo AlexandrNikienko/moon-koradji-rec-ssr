@@ -35,11 +35,14 @@ export class StyleComponent {
     this.allStyles().find(s => s.styleRoute === this.styleRoute()) ?? null
   );
 
-  styleReleases = computed(() =>
-    this.allReleases().filter(r =>
-      r.styles?.includes(this.styleRoute() ?? '')
-    )
-  );
+  styleReleases = computed(() => {
+    const label = this.styleRoute()
+        ?.split('-')
+        .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(' ') ?? '';
+
+    return this.allReleases().filter(r => r.styles?.includes(label));
+  });
 
   styleArtists = computed(() =>
     this.allArtists().filter(a =>

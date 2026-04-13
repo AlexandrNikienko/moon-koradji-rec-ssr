@@ -116,7 +116,7 @@
 
       @if (release().masteredBy) {
       <p class="release-credits__paragraph">
-        Mastering by {{release().masteredBy}}
+        Mastered by {{release().masteredBy}}
       </p>
       }
 
@@ -126,15 +126,24 @@
       </p>
       }
 
+      <p class="release-credits__paragraph">
+        Release date: {{release().releaseDate || "Coming soon" }}
+      </p>
+
       @if (bpm()) {
       <p class="release-credits__paragraph">
         BPM: {{bpm()}}
       </p>
       }
 
-      <p class="release-credits__paragraph">
-        Release date: {{release().releaseDate || "Coming soon" }}
-      </p>
+      @if(release().styles?.length > 0) {
+        <p class="release-credits__paragraph">
+          Styles: 
+          @for (style of release().styles; track style; let last = $last) {
+            <a [routerLink]="['/styles', style.toLocaleLowerCase().replace(' ', '-')]">{{style}}</a>@if (!last) {, }
+          }
+        </p>
+      }
 
       @if (release().tracklist) {
         <details class="release-credits__tracklist">
