@@ -50,12 +50,11 @@ export class ReleasesComponent {
     accessList: ReleaseAccess[] = ['All', 'Free', 'CD'];
     styleList: ReleaseStyle[] = ['All', 'Dark Psytrance', 'Forest Psytrance', 'Twilight Psytrance', 'Melodic Psytrance', 'Suomi', 'Chillout'];
 
+    // Always from all releases — used as filter limits
     bpmBounds = computed(() => {
         const ranges = this.releases()
             .filter(r => r.bpmRange)
             .map(r => r.bpmRange!);
-
-        //if (!ranges.length) return { min: 100, max: 180 };
 
         return {
             min: Math.min(...ranges.map(r => r.min)),
@@ -65,6 +64,29 @@ export class ReleasesComponent {
 
     bpmMin = signal<number | null>(null);
     bpmMax = signal<number | null>(null);
+
+    // From style-filtered releases only — used for BPM slider display
+    bpmBoundsForStyle = computed(() => {
+        let result = this.releases();
+        const style = this.choosenStyle();
+
+        if (style !== 'All') {
+            result = result.filter(r =>
+                r.styles?.some(s => s.split(', ').includes(style))
+            );
+        }
+
+        const ranges = result
+            .filter(r => r.bpmRange)
+            .map(r => r.bpmRange!);
+
+        if (!ranges.length) return { min: 0, max: 0 };
+
+        return {
+            min: Math.min(...ranges.map(r => r.min)),
+            max: Math.max(...ranges.map(r => r.max))
+        };
+    });
 
     showBpmFilter = computed(() => this.choosenStyle() !== 'Chillout');
 
