@@ -56,7 +56,7 @@ export class PodcastsComponent {
 						'@type': 'MusicPlaylist',
 						'name': 'Moon Koradji Records Podcasts',
 						'url': 'https://soundcloud.com/moon-koradji-records/sets/podcasts',
-						'byArtist': {
+						'author': {
 							'@id': 'https://www.moonkoradji.com/#organization'
 						}
 					}
@@ -68,7 +68,7 @@ export class PodcastsComponent {
 						'@type': 'MusicPlaylist',
 						'name': 'Moon Koradji Records on radiOzora',
 						'url': 'https://soundcloud.com/moon-koradji-records/sets/moon-koradji-records-on',
-						'byArtist': {
+						'author': {
 							'@id': 'https://www.moonkoradji.com/#organization'
 						}
 					}
