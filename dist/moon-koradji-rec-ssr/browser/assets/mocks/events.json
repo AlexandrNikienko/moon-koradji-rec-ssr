@@ -1,17 +1,6 @@
 {
     "events": [
 		{
-			"date": "25",
-			"month": "January",
-			"year": "2026",
-			"endDate": "2026-01-25",
-			"country": "Sweden",
-			"title": "Meners Celebration 2026",
-			"info": "Groove Events Stokholm & MindGamers presents",
-			"link": "https://facebook.com/events/s/meners-celebration-2026/1557904335236696/",
-			"artists": ["Whrikk", "Kluster"]
-		},
-		{
             "date": "17-24",
             "month": "August",
             "year": "2026",
@@ -21,6 +10,17 @@
 			"info": "Psytrance festival in Romanian mountains",
 			"link": "https://www.facebook.com/profile.php?id=100070371251345",
 			"artists": ["Whrikk", "Molchun", "Noise Gust", "DJ Zloj"]
+        },
+		{
+            "date": "19-22",
+            "month": "November",
+            "year": "2026",
+			"endDate": "2026-11-22",
+            "country": "Brazil",
+            "title": "Parvati Gathering",
+			"info": "Brazil edition",
+			"link": "https://www.facebook.com/profile.php?id=61569552061894",
+			"artists": ["Already Maged", "Inzect", "Molchun", "Ziul Oiram"]
         }
     ]
 }
