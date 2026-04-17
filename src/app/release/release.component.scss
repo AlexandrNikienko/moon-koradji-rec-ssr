@@ -59,10 +59,12 @@
 }
 
 .release-link {
-	display: inline-block;
-    padding: 8px 16px;
+	display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+    padding: .5rem 1rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+    border-radius: .5rem;
     background-color: rgba(255, 255, 255, 0.05);
     line-height: normal;
 	white-space: nowrap;
@@ -71,10 +73,6 @@
 	&:hover {
 		border-color: rgba(255, 255, 255, 0.3);
 		background-color: rgba(255, 255, 255, 0.1);
-	}
-
-	@include mobile {
-		font-size: 14px;
 	}
 }
 

@@ -33,6 +33,7 @@ export interface Release {
 		spotify?: string;
 		appleMusic?: string;
 		beatport?: string;
+		tidal?: string;
 	},
 	facebookShareThumb?: string;
 	albumBandcampId?: string;

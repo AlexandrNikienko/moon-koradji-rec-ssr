@@ -109,10 +109,10 @@ export class ReleaseComponent {
 
 	shareOnFacebook(): void {
 		const release = this.release();
-		console.log('Share the release:', release);
+		//console.log('Share the release:', release);
 		if (!release) return;
 		const shareUrl = 'https://www.facebook.com/sharer.php?u=' + 'https://www.moonkoradji.com/releases/' + release.releaseRoute;
-		console.log('Sharing on Facebook:', shareUrl);
+		//console.log('Sharing on Facebook:', shareUrl);
 		window.open(shareUrl, '_blank');
 	}
 
@@ -258,7 +258,7 @@ export class ReleaseComponent {
 			ogType: 'music.album'
 		}
 
-		console.log('Meta data object set:', metaDataObj);
+		//console.log('Meta data object set:', metaDataObj);
 
 		this.metaData.setMetaData(metaDataObj);
 

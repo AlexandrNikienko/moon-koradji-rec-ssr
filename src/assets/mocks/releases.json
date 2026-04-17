@@ -92,7 +92,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/55JsnewVxZIIzUcCbYiymM",
 				"appleMusic": "https://music.apple.com/ua/album/chrome/1885834490",
-				"beatport": "https://www.beatport.com/release/chrome/6805713"
+				"beatport": "https://www.beatport.com/release/chrome/6805713",
+				"tidal": "https://tidal.com/album/507767012"
 			},
 			"styles": ["Dark Psytrance"],
 			"bpmRange": { "min": 148, "max": 150 }
@@ -137,7 +138,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/6FcrSnzzKQWken8xWtVga7",
 				"appleMusic": "https://music.apple.com/ua/album/totem-single/1852774934",
-				"beatport": "https://www.beatport.com/release/totem/5577503"
+				"beatport": "https://www.beatport.com/release/totem/5577503",
+				"tidal": "https://tidal.com/album/473443121"
 			},
 			"styles": ["Forest Psytrance"],
 			"bpmRange": { "min": 148, "max": 148 }
@@ -180,7 +182,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/7CE1zOeyt4tgonvAmIOztO",
 				"appleMusic": "https://music.apple.com/ua/album/histora-plethora/1819906661",
-				"beatport": "https://www.beatport.com/release/histora-plethora/5123193"
+				"beatport": "https://www.beatport.com/release/histora-plethora/5123193",
+				"tidal": "https://tidal.com/album/440592490"
 			},
 			"styles": ["Dark Psytrance"],
 			"bpmRange": { "min": 150, "max": 152 }
@@ -238,7 +241,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/7AShCyJExAhhmkuFgdEJM8",
 				"appleMusic": "https://music.apple.com/ua/album/alphaum/1811131365",
-				"beatport": "https://www.beatport.com/release/alphaum/5061768"
+				"beatport": "https://www.beatport.com/release/alphaum/5061768",
+				"tidal": "https://tidal.com/album/432619366"
 			},
 			"styles": ["Dark Psytrance"],
 			"bpmRange": { "min": 148, "max": 153 }
@@ -280,7 +284,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/4AcGTYVpD7ZIEK0xSCra7x",
 				"appleMusic": "https://music.apple.com/ua/album/abstract-selection/1806120806",
-				"beatport": "https://www.beatport.com/release/abstract-selection/5018779"
+				"beatport": "https://www.beatport.com/release/abstract-selection/5018779",
+				"tidal": "https://tidal.com/album/427716119"
 			},
 			"styles": ["Dark Psytrance"],
 			"bpmRange": { "min": 146, "max": 148 }
@@ -320,7 +325,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/6HtP9ALI7DLXf1eySlG0FW",
 				"appleMusic": "https://music.apple.com/ua/album/mental-rotation/1798437730",
-				"beatport": "https://www.beatport.com/release/mental-rotation/4958550"
+				"beatport": "https://www.beatport.com/release/mental-rotation/4958550",
+				"tidal": "https://tidal.com/album/420130486"
 			},
 			"styles": ["Dark Psytrance"],
 			"bpmRange": { "min": 142, "max": 148 }
@@ -363,7 +369,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/0SaoF4Q8FKp1x01b2jcOqk",
 				"appleMusic": "https://music.apple.com/ua/album/bent/1768751165",
-				"beatport": "https://www.beatport.com/release/bent/4728630"
+				"beatport": "https://www.beatport.com/release/bent/4728630",
+				"tidal": "https://tidal.com/album/386511558"
 			},
 			"styles": ["Dark Psytrance, Forest Psytrance"],
 			"bpmRange": { "min": 147, "max": 148 }
@@ -400,7 +407,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/0C83Jmf5S0vmTtbb07rlTM",
 				"appleMusic": "https://music.apple.com/ua/album/blackout-2-luminous-darkness/1762600913",
-				"beatport": "https://www.beatport.com/release/blackout-2-luminous-darkness/4689445"
+				"beatport": "https://www.beatport.com/release/blackout-2-luminous-darkness/4689445",
+				"tidal": "https://tidal.com/album/380749571"
 			},
 			"styles": ["Forest Psytrance", "Dark Psytrance"],
 			"bpmRange": { "min": 147, "max": 152 }
@@ -446,7 +454,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/4zoRkNOdSIPFeEGAplrN8D",
 				"appleMusic": "https://music.apple.com/ua/album/springwald/1740151793",
-				"beatport": "https://www.beatport.com/release/springwald/4526440"
+				"beatport": "https://www.beatport.com/release/springwald/4526440",
+				"tidal": "https://tidal.com/album/356135543"
 			},
 			"styles": ["Twilight Psytrance"],
 			"bpmRange": { "min": 149, "max": 150 }
@@ -486,7 +495,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/1DLwX6RZSzzULhvh79woLi",
 				"appleMusic": "https://music.apple.com/ua/album/innermatics/1718077995",
-				"beatport": "https://www.beatport.com/release/innermatics/4350900"
+				"beatport": "https://www.beatport.com/release/innermatics/4350900",
+				"tidal": "https://tidal.com/album/330516416"
 			},
 			"styles": ["Dark Psytrance"],
 			"bpmRange": { "min": 150, "max": 150 }
@@ -522,7 +532,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/5XGdgCQHZROcP0TCSCDUVF",
 				"appleMusic": "https://music.apple.com/ua/album/blackout/1709312274",
-				"beatport": "https://www.beatport.com/release/blackout/4282266"
+				"beatport": "https://www.beatport.com/release/blackout/4282266",
+				"tidal": "https://tidal.com/album/318665233"
 			},
 			"styles": ["Forest Psytrance", "Dark Psytrance"],
 			"bpmRange": { "min": 149, "max": 155 }
@@ -564,7 +575,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/0ae6iuGxaGso2UhakowwdG",
 				"appleMusic": "https://music.apple.com/ua/album/alive-memory/1681111870",
-				"beatport": "https://www.beatport.com/release/alive-memory/4086492"
+				"beatport": "https://www.beatport.com/release/alive-memory/4086492",
+				"tidal": "https://tidal.com/album/287699951"
 			},
 			"styles": ["Melodic Psytrance"],
 			"bpmRange": { "min": 135, "max": 145 }
@@ -605,7 +617,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/1XZG5qitiYlHlnxsLczZGa",
 				"appleMusic": "https://music.apple.com/ua/album/eternal-shadow-ep/1662982676",
-				"beatport": "https://www.beatport.com/release/eternal-shadow/3980840"
+				"beatport": "https://www.beatport.com/release/eternal-shadow/3980840",
+				"tidal": "https://tidal.com/album/269800924"
 			},
 			"styles": ["Dark Psytrance"],
 			"bpmRange": { "min": 150, "max": 150 }
@@ -644,7 +657,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/3DQ0idyppXLm76Il9Y4RYh",
 				"appleMusic": "https://music.apple.com/ua/album/neural-embers/1512414276",
-				"beatport": "https://www.beatport.com/release/neural-embers/2960615"
+				"beatport": "https://www.beatport.com/release/neural-embers/2960615",
+				"tidal": ""
 			},
 			"styles": ["Forest Psytrance"],
 			"bpmRange": { "min": 148, "max": 151 }
@@ -686,7 +700,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/2FIWqDP2SjO5YovHn0Lryb",
 				"appleMusic": "https://music.apple.com/ua/album/iconoclast/1681186126",
-				"beatport": ""
+				"beatport": "",
+				"tidal": "https://tidal.com/album/287699883"
 			},
 			"styles": ["Dark Psytrance"],
 			"bpmRange": { "min": 130, "max": 150 }
@@ -723,7 +738,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/3j2r1dY1slT431LhmTrNo6",
 				"appleMusic": "https://music.apple.com/ua/album/bapholot-on-earth-single/1483467787",
-				"beatport": "https://www.beatport.com/release/bapholot-on-earth/2743690"
+				"beatport": "https://www.beatport.com/release/bapholot-on-earth/2743690",
+				"tidal": "https://tidal.com/album/120135256"
 			},
 			"styles": ["Dark Psytrance"],
 			"bpmRange": { "min": 148, "max": 150 }
@@ -759,7 +775,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/5gXeqgHtDYdynBv30ebTsX",
 				"appleMusic": "https://music.apple.com/ua/album/illusorium/1482677409",
-				"beatport": "https://www.beatport.com/release/illusorium/2730487"
+				"beatport": "https://www.beatport.com/release/illusorium/2730487",
+				"tidal": "https://tidal.com/album/119158454"
 			},
 			"styles": ["Forest Psytrance", "Dark Psytrance"],
 			"bpmRange": { "min": 147, "max": 151 }
@@ -804,7 +821,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/3kH1Vfvp1Tba66skZ8Cz6Z",
 				"appleMusic": "https://music.apple.com/ua/album/mind-games/1214417374",
-				"beatport": "https://www.beatport.com/release/mind-games/1977070"
+				"beatport": "https://www.beatport.com/release/mind-games/1977070",
+				"tidal": "https://tidal.com/album/71396124"
 			},
 			"styles": ["Forest Psytrance"],
 			"bpmRange": { "min": 145, "max": 156 }
@@ -849,7 +867,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/2iF4fJYE4gtLIj6l9RVXjU",
 				"appleMusic": "https://music.apple.com/ua/album/intropix/1559559744",
-				"beatport": "https://www.beatport.com/release/intropix/3338369"
+				"beatport": "https://www.beatport.com/release/intropix/3338369",
+				"tidal": "https://tidal.com/album/178018161"
 			},
 			"styles": ["Forest Psytrance"],
 			"bpmRange": { "min": 143, "max": 150 }
@@ -895,7 +914,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/2jKRt4YCfdWaikWqFhgFQe",
 				"appleMusic": "https://music.apple.com/ua/album/night-day/659466922",
-				"beatport": "https://www.beatport.com/release/night-day/1107336"
+				"beatport": "https://www.beatport.com/release/night-day/1107336",
+				"tidal": "https://tidal.com/album/20593691"
 			},
 			"styles": ["Dark Psytrance"],
 			"bpmRange": { "min": 140, "max": 148 }
@@ -955,7 +975,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/7lHvci5AMNmYfTTc2kAXUj",
 				"appleMusic": "https://music.apple.com/ua/album/infinity-keepers-2-depth-perception/1551634159",
-				"beatport": "https://www.beatport.com/release/infinity-keepers-2-depth-perception/3275364"
+				"beatport": "https://www.beatport.com/release/infinity-keepers-2-depth-perception/3275364",
+				"tidal": "https://tidal.com/album/171851929"
 			},
 			"styles": ["Dark Psytrance"],
 			"bpmRange": { "min": 145, "max": 154 }
@@ -997,7 +1018,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/3wZuMdxaihr2zRXPFp0o7f",
 				"appleMusic": "https://music.apple.com/ua/album/in-space/526526500",
-				"beatport": "https://www.beatport.com/release/in-space/912629"
+				"beatport": "https://www.beatport.com/release/in-space/912629",
+				"tidal": "https://tidal.com/artist/3952243"
 			},
 			"styles": ["Suomi"],
 			"bpmRange": { "min": 135, "max": 160 }
@@ -1043,7 +1065,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/1HL7CjCzyCQEifAtoPcqoq",
 				"appleMusic": "https://music.apple.com/ua/album/emergence/500706334",
-				"beatport": "https://www.beatport.com/release/emergence/879240"
+				"beatport": "https://www.beatport.com/release/emergence/879240",
+				"tidal": "https://tidal.com/artist/4496465"
 			},
 			"styles": ["Chillout"]
         },
@@ -1084,7 +1107,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/4S0CwtFgi88gZfeRDSh1bd",
 				"appleMusic": "https://music.apple.com/ua/album/legendarium/1550330555",
-				"beatport": "https://www.beatport.com/release/legendarium/3262142"
+				"beatport": "https://www.beatport.com/release/legendarium/3262142",
+				"tidal": "https://tidal.com/album/170401662"
 			},
 			"styles": ["Forest Psytrance, Dark Psytrance, Chillout"],
 			"bpmRange": { "min": 147, "max": 152 }
@@ -1123,7 +1147,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/5rLNVhEwGbXWS8AfpDDtxo",
 				"appleMusic": "https://music.apple.com/ua/album/shadow-enuin-vol-2/1543495435",
-				"beatport": "https://www.beatport.com/release/shadow-enuin-vol-2/3216336"
+				"beatport": "https://www.beatport.com/release/shadow-enuin-vol-2/3216336",
+				"tidal": "https://tidal.com/album/164645621"
 			},
 			"styles": ["Forest Psytrance, Dark Psytrance"],
 			"bpmRange": { "min": 146, "max": 151 }
@@ -1165,7 +1190,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/7I7NZ3pltrl6sDXmTZXByg",
 				"appleMusic": "https://music.apple.com/ua/album/infinity-keepers/1542963772",
-				"beatport": "https://www.beatport.com/release/infinity-keepers/3215256"
+				"beatport": "https://www.beatport.com/release/infinity-keepers/3215256",
+				"tidal": "https://tidal.com/album/164437788"
 			},
 			"styles": ["Dark Psytrance"],
 			"bpmRange": { "min": 148, "max": 160 }
@@ -1207,7 +1233,8 @@
 			"streamingLinks": {
 				"spotify": "https://open.spotify.com/album/12ZqxAjCkVHtcO825m0M9w",
 				"appleMusic": "https://music.apple.com/ua/album/shadow-enuin-at-the-earths-edge/1547981954",
-				"beatport": "https://www.beatport.com/release/shadow-enuin-at-the-earths-edge/3249063"
+				"beatport": "https://www.beatport.com/release/shadow-enuin-at-the-earths-edge/3249063",
+				"tidal": "https://tidal.com/album/168679074"
 			},
 			"styles": ["Forest Psytrance, Dark Psytrance"],
 			"bpmRange": { "min": 146, "max": 152 }
