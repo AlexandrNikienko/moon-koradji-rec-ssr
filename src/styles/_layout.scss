@@ -163,6 +163,13 @@ app-root {
 			transform: scale3d(1.5, 1.5, 1);
 			text-decoration: none;
 		}
+
+		&--tiktok {
+			svg {
+				width: 1em;
+				fill: currentColor;
+			}
+		}
 	}
 	
 	@include mobile {

@@ -96,6 +96,11 @@
 			font-size: 1em;
 			text-decoration: none;
 
+			svg {
+				fill: currentColor;
+				width: .9em;
+			}
+
 			&:hover {
 				text-decoration: none;
 				color: white;
@@ -127,7 +132,8 @@
 		}
 
 		.fab,
-		.fas {
+		.fas,
+		svg {
 			margin-right: 0;
 			margin-inline-end: 0.25em;
 
