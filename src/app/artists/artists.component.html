@@ -31,10 +31,11 @@
 
 	<ul class="filter__list">
 		<li class="filter__list-item">
-			<i class="far fa-star"></i> - featured artist
+			<app-svg-icon icon="star" cssClass="icon-star"/> - featured artist
 		</li>
+		
 		<li class="filter__list-item">
-			<i class="far fa-eye-slash"></i> - inactive/closed project
+			<app-svg-icon icon="eyeSlash" cssClass="icon-eye-slash"/> - inactive/closed project
 		</li>
 	</ul>
 </div>
@@ -55,11 +56,11 @@
 
 				<span class="artist-item__icon">
 					@if (item.featured) {
-					<i class="far fa-star"></i>
+					<app-svg-icon icon="star" cssClass="icon-star" />
 					}
 
 					@if (item.inactive) {
-					<i class="far fa-eye-slash"></i>
+					<app-svg-icon icon="eyeSlash" cssClass="icon-eye-slash" />
 					}
 				</span>
 			</p>
@@ -80,12 +81,14 @@
 	@for (item of djs(); track item.artistRoute) {
 	<div class="artist-item">
 		<a [routerLink]="['/artists', item.artistRoute]" class="artist-item__link">
-			<p class="artist-item__name">{{item.artistName}}
-				<sup>
-					@if (item.featured) {
-					<i class="far fa-star"></i>
-					}
-				</sup>
+			<p class="artist-item__name">
+				{{item.artistName}}
+
+				@if (item.featured) {
+				<span class="artist-item__icon">
+					<app-svg-icon icon="star" cssClass="icon-star" />
+				</span>
+				}
 			</p>
 
 			<svg class="artist-item__flag">

@@ -10,7 +10,7 @@
 
 		<div class="artist-details-wrapper">
 			<div class="s-go-back" routerLink="/artists">
-				<i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>Go to Artists page
+				<app-svg-icon icon="arrowLeft"/>Go to Artists page
 			</div>
 
 			@if (artist().artistRealName || artist().artistCountry) {
@@ -40,36 +40,31 @@
 			</div>
 
 			<div class="btn-group float-end" role="group">
-				<!--<a class="btn btn-link" href="javascript: void(0)" (click)="share()"
-					title="Share on Facebook">
-					<i class="fas fa-share fa-2x"></i>
-				</a>-->
-
 				@if (artist().artistFacebook) {
 				<a class="btn btn-link" href="{{artist().artistFacebook}}" target="_blank" rel="noreferrer" [matTooltip]="'Facebook'"
 					[matTooltipPosition]="'above'" [matTooltipShowDelay]="100" aria-label="Facebook">
-					<i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>
+					<app-svg-icon icon="facebook"/>
 				</a>
 				}
 				
 				@if (artist().artistSoundcloud) {
 				<a class="btn btn-link" href="{{artist().artistSoundcloud}}" target="_blank" rel="noreferrer" [matTooltip]="'SoundCloud'"
 					[matTooltipPosition]="'above'" [matTooltipShowDelay]="100" aria-label="SoundCloud">
-					<i class="fab fa-soundcloud fa-2x" aria-hidden="true"></i>
+					<app-svg-icon icon="soundcloud"/>
 				</a>
 				}
 				
 				@if (artist().artistInstagram) {
 				<a class="btn btn-link" href="{{artist().artistInstagram}}" target="_blank" rel="noreferrer" [matTooltip]="'Instagram'"
 					[matTooltipPosition]="'above'" [matTooltipShowDelay]="100" aria-label="Instagram">
-					<i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+					<app-svg-icon icon="instagram"/>
 				</a>
 				}
 				
 				@if (artist().artistMixcloud) {
 				<a class="btn btn-link" href="{{artist().artistMixcloud}}" target="_blank" rel="noreferrer" [matTooltip]="'Mixcloud'"
 					[matTooltipPosition]="'above'" [matTooltipShowDelay]="100" aria-label="Mixcloud">
-					<i class="fab fa-mixcloud fa-2x" aria-hidden="true"></i>
+					<app-svg-icon icon="mixcloud"/>
 				</a>
 				}
 			</div>

@@ -10,6 +10,7 @@ import { HeadingComponent } from './../layout/heading/heading.component';
 import { MetaDataService, iMeta } from './../core/services/meta-data.service';
 import { Artist } from '../core/models/artist.model';
 import { JsonLdService } from '../core/services/json-ld.service';
+import { SvgIconComponent } from "../shared/svg-icon/svg-icon.component";
 
 type ArtistStatus = 'All' | 'Active' | 'Inactive' | 'Featured' | 'Has Podcast';
 
@@ -17,11 +18,12 @@ type artistsWithLetters = Artist & { letter: string | null };
 
 @Component({
     imports: [
-		HeadingComponent,
-		RouterModule,
-		MatSelectModule,
-		FormsModule
-	],
+    HeadingComponent,
+    RouterModule,
+    MatSelectModule,
+    FormsModule,
+    SvgIconComponent
+],
     selector: 'app-artists',
     templateUrl: './artists.component.html',
     styleUrls: ['artists.scss'],

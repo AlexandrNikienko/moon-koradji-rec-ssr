@@ -1,8 +1,9 @@
 import { RouterModule } from '@angular/router';
 import { Component, signal } from '@angular/core';
+import { SvgIconComponent } from "../../shared/svg-icon/svg-icon.component";
 
 @Component({
-    imports: [RouterModule],
+    imports: [RouterModule, SvgIconComponent],
     selector: 'app-footer',
     templateUrl: './footer.component.html',
     styleUrls: ['footer.scss']

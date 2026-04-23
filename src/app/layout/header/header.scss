@@ -41,23 +41,9 @@
 		transition: .1s;
 		font-weight: 400;
 		min-width: unset;
-
 		background: linear-gradient(90deg, cyan, #b771e9);
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
-    }
-
-    .nav-link {
-        i {
-			vertical-align: baseline;
-			margin-right: .25em;
-			display: none !important;
-			
-			@supports (margin-inline-end: 0) {
-				margin-right: 0;
-				margin-inline-end: .25em;
-			}
-        }
     }
 }
 
@@ -80,9 +66,9 @@
 }
 
 .external-link {
-	width: 12px;
-	height: 12px;
-	margin-right: -12px;
+	width: .75rem;
+	height: .75rem;
+	margin-right: -.75rem;
 	display: inline-block;
 
 	path {
@@ -97,13 +83,6 @@
 			line-height: 2rem;
 			text-align: left;
 			text-align: start;
-
-			i {
-				margin-right: 5px;
-				display: inline-block;
-				text-align: center;
-				width: 20px;
-			}
 		} 
     }
 }

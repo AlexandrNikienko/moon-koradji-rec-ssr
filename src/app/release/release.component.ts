@@ -16,6 +16,7 @@ import { ReleaseCardComponent } from '../shared/release-card/release-card.compon
 import { DataSignalService } from '../core/services/data-signal';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { JsonLdService } from '../core/services/json-ld.service';
+import { SvgIconComponent } from '../shared/svg-icon/svg-icon.component';
 
 @Component({
 	selector: 'app-release',
@@ -27,7 +28,8 @@ import { JsonLdService } from '../core/services/json-ld.service';
 		SharedVideoComponent,
 		PictureComponent,
 		ReleaseCardComponent,
-		MatTooltipModule
+		MatTooltipModule,
+		SvgIconComponent
 	],
 	templateUrl: './release.component.html',
 	styleUrls: ['release.component.scss'],

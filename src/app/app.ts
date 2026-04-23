@@ -6,6 +6,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { ScrollToTopComponent } from './layout/scroll-to-top/scroll-to-top.component';
+import { SvgIconComponent } from './shared/svg-icon/svg-icon.component';
 import { ScrollTopService } from './core/services/scroll-to-top.service';
 
 @Component({
@@ -14,6 +15,7 @@ import { ScrollTopService } from './core/services/scroll-to-top.service';
     HeaderComponent,
     FooterComponent,
     ScrollToTopComponent,
+    SvgIconComponent,
     MatTooltipModule,
     CommonModule
   ],

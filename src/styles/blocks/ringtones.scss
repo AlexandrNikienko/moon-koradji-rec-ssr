@@ -19,6 +19,11 @@
 	
 	&__item {
 		margin-bottom: .75rem;
+
+		svg {
+			width: 10px;
+			margin-inline-end: .25rem;
+		}
 	}
 
 	&__type {
@@ -52,18 +57,6 @@
 				display: none;
 				opacity: 0;
 			}
-		}
-	}
-
-    .fas {
-        font-size: .75rem;
-		margin-right: 5rem;
-		display: inline-block;
-    	width: 10px;
-		
-		@supports (margin-inline-end: 0) {
-			margin-right: 0;
-			margin-inline-end: .5rem;
 		}
 	}
 	

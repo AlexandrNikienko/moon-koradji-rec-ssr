@@ -14,6 +14,7 @@ import { JsonLdService } from '../core/services/json-ld.service';
 import { Release } from '../core/models/release.model';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { ReleaseCardComponent } from "../shared/release-card/release-card.component";
+import { SvgIconComponent } from '../shared/svg-icon/svg-icon.component';
 
 @Component({
     imports: [
@@ -23,7 +24,8 @@ import { ReleaseCardComponent } from "../shared/release-card/release-card.compon
     RouterModule,
     MatTooltipModule,
     ReleaseCardComponent,
-	ReleaseCardComponent
+	ReleaseCardComponent,
+	SvgIconComponent
 ],
     templateUrl: 'artist.component.html',
     styleUrls: ['artist.component.scss']

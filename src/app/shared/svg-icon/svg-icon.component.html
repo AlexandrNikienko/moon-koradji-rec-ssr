@@ -1,0 +1,10 @@
+@if(svgIcon()) {
+    <svg
+		[attr.class]="cssClass()"
+		xmlns="http://www.w3.org/2000/svg"
+		[attr.viewBox]="svgIcon().viewBox"
+		aria-hidden="true"
+	>
+		<path [attr.d]="svgIcon().path" fill="currentColor"></path>
+	</svg>
+}
