@@ -45,6 +45,15 @@
 		&:last-of-type {
 			margin-bottom: 0;
 		}
+
+		a {
+			text-decoration: underline;
+			color: currentColor;
+
+			&:hover {
+				color: white;
+			}
+		}
 	}
 
 	&__tracklist {
@@ -69,6 +78,7 @@
     line-height: normal;
 	white-space: nowrap;
 	font-size: .9rem;
+	text-decoration: none;
 
 	&:hover {
 		border-color: rgba(255, 255, 255, 0.3);

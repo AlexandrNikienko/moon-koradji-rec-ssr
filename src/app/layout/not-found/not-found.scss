@@ -1,17 +1,53 @@
-:host {
-    text-align: center;
+.error-page {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: '404';
+    position: absolute;
+    font-size: clamp(120px, 25vw, 220px);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.03);
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+  }
 }
 
-.error {
-	font-size: 60px;
-	margin-bottom: 20px;
+.error-code {
+  position: relative;
+  z-index: 1;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.25);
+  margin-block-end: 1rem;
 }
 
-.notes {
-	font-size: 30px;
-	margin-bottom: 20px;
-}
+.error-text {
+  position: relative;
+  z-index: 1;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.4);
+  max-width: 420px;
+  margin-block-end: 1.5rem;
 
-.text {
-	font-size: 16px;
+  a {
+    color: rgba(180, 150, 255, 0.8);
+    text-decoration: none;
+    border-bottom: 0.5px solid rgba(180, 150, 255, 0.3);
+
+    &:hover {
+      color: rgba(180, 150, 255, 1);
+      border-bottom-color: rgba(180, 150, 255, 0.6);
+    }
+  }
 }

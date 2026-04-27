@@ -17,6 +17,7 @@ import { DataSignalService } from '../core/services/data-signal';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { JsonLdService } from '../core/services/json-ld.service';
 import { SvgIconComponent } from '../shared/svg-icon/svg-icon.component';
+import { Style } from '../core/models/style.model';
 
 @Component({
 	selector: 'app-release',
@@ -42,6 +43,13 @@ export class ReleaseComponent {
 	private dataSignalService = inject(DataSignalService);
 	private metaData = inject(MetaDataService);
 	private jsonLd = inject(JsonLdService);
+
+	private readonly stylesData: Signal<Style[]> = this.dataSignalService.getData<Style>('styles');
+
+	private readonly availableStyles: Signal<string[]> = computed(() =>
+		this.stylesData().map(style => style.styleName)
+	);
+
 
 	releaseRoute = toSignal(
 		this.route.paramMap.pipe(map(params => params.get('releaseRoute'))),
@@ -71,7 +79,6 @@ export class ReleaseComponent {
 				: `${min} – ${max}`
 			: null;
 	});
-
 
 	nextRelease = computed<Release | null>(() => {
 		const i = this.releaseIndex();
@@ -107,6 +114,10 @@ export class ReleaseComponent {
 				this.setMetaData(rel);
 			}
 		});
+	}
+
+	styleExists(style: string): boolean {
+		return this.availableStyles().includes(style);
 	}
 
 	shareOnFacebook(): void {

@@ -1,8 +1,11 @@
-<p class="error">404 error</p>
+<section class="error-page">
+	<p class="error-code">404 error</p>
 
-<p class="notes">Page not found</p>
+	<mk-heading [title]="'Page not found'" />
 
-<p class="text">We're sorry, the page you are requested couldn't be found.<br>Please go back to the 
-	<a class="is-underline" routerLink="/">home page</a> or contact us at 
-	<a class="is-underline" href="mailto:info@moonkoradji.com">info&#64;moonkoradji.com</a>
-</p>
+	<p class="error-text">
+		The page you requested couldn't be found. Please go back to the
+		<a routerLink="/">home page</a> or contact us at
+		<a href="mailto:info@moonkoradji.com">info&#64;moonkoradji.com</a>.
+	</p>
+</section>
