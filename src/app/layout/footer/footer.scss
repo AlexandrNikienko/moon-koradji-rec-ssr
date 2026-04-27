@@ -19,12 +19,11 @@
 	}
 
 	&__credits {
-		margin-top: 2em;
-		//text-align: center;
+		margin-block-start: 2em;
 		display: flex;
-		justify-content: space-between;
-		// padding-block-start: 1rem;
-    	// border-block-start: 1px solid #333;
+		flex-direction: column;
+		align-items: end;
+		gap: .25rem;
 	}
 
 	.b-short-about {
@@ -55,39 +54,18 @@
 			display: inline-block;
 		}
 
-		// a {
-		// 	text-decoration: underline;
-		// 	//color: currentColor;
-
-		// 	&:hover {
-		// 		color: white;
-		// 	}
-		// }
-
 		@include mobile {
 			margin-bottom: 1em;
 		}
 	}
 
-	.s-more-info {
-		text-align: right;
-		text-align: end;
-		line-height: 1.5;
-
-		&__notes {
-			margin: 0.5em 0 0.25em 0;
-			font-size: 1em;
-
-			i {
-				font-style: italic;
-			}
-		}
-
-		&__contact {
-			a:hover {
-				text-decoration: underline;
-			}
-		}
+	.contact {
+		padding: 1rem;
+		border-radius: .5rem;
+		border: 1px solid rgba(111, 74, 200, 0.3);
+		background: rgba(111, 74, 200, 0.06);
+		font-size: .75rem;
+		color: rgba(200, 180, 255, 0.6);
 	}
 
 	.s-follow {
@@ -107,7 +85,7 @@
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: flex-end;
-			margin-bottom: 0.5em;
+			margin-block-end: 1rem;
 		}
 
 		.btn-link {
@@ -150,7 +128,7 @@
 	}
 
 	.shops-wrapper {
-		margin-top: 2em;
+		margin-block: 2rem;
 
 		&__title {
 			font-size: 1rem;
@@ -164,10 +142,9 @@
 		display: flex;
 		gap: 1rem 2rem;
 		align-items: center;
-		//justify-content: space-between;
 		flex-wrap: wrap;
 		list-style: none;
-		padding: 0;
+		padding: .25rem 0;
 		margin: 0;
 
 		&__item-link {
@@ -178,14 +155,6 @@
 				max-height: 30px;
 				vertical-align: middle;
 			}
-		}
-
-		@include tablet {
-			justify-content: center;
-		}
-
-		@include mobile {
-			justify-content: center;
 		}
 	}
 
@@ -249,104 +218,8 @@
     transform: translate(-50%) rotate(180deg);
 }
 
-.streaming-list {
-	padding: 0;
-	//gap: 1rem;
-	width: fit-content;
-	display: grid;
-	grid-template-rows: repeat(3, 1fr);
-	grid-template-columns: repeat(3, 1fr);
-	background: black;
-    border-radius: 1rem;
-	//margin-left: auto;
-	background: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 100%);
-
-	position: relative;
-
-	&:before {
-		content: "";
-		position: absolute;
-		inset: 0;
-		filter: url(#noiseFilter);
-		opacity: 0.05;
-		pointer-events: none;
-	}
-
-	&:after {
-		content: "";
-		pointer-events: none;
-		position: absolute;
-		opacity: 0.5;
-		inset: 0;
-		border-radius: 1rem;
-		border: 1px solid  transparent;
-		border-image: initial;
-		background: linear-gradient(210deg, rgba(255, 255, 255, 0.22) 6.2%, rgba(20, 20, 20, 0.5) 21.56%, rgba(50, 50, 50, 0.5) 69.03%, rgba(255, 255, 255, 0.4) 96.99%) border-box border-box;
-		mask: linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 0px) padding-box exclude, linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 0px);
-	}
-
-	li {
-		width: 100px;
-		height: 100px;
-		//border: 1px solid #333;
-		list-style: none;
-		place-content: center;
-    	text-align: center;
-		position: relative;
-
-		a:hover {
-			span {
-				opacity: 1;
-			}
-
-			svg,
-			app-svg-icon {
-				opacity: .5;
-			}
-		}
-	}
-
-	app-svg-icon,
-	.amazon-music-icon,
-	.qobuz-music-icon,
-	.youtube-music-icon {
-		position: absolute;
-		font-size: 2rem;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-		transition: opacity 0.3s ease;
-	}
-
-	.amazon-music-icon {
-		width: 3rem;
-	}
-
-	.qobuz-music-icon {
-		width: 2.1rem;
-	}
-
-	.youtube-music-icon {
-		width: 2.1rem;
-	}
-}
-
-.streaming-name {
-	line-height: normal;
-    display: block;
-	//font-weight: bold;
-	position: relative;
-	opacity: 0;
-	transition: opacity 0.3s ease;
-	background: linear-gradient(90deg, cyan, #b771e9);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.streaming-title {
-	font-size: 0.75rem;
-	font-weight: 300;
-	text-transform: uppercase;
-	color: white;
+.footer-right {
+	display: flex;
+    flex-direction: column;
+    align-items: end;
 }

@@ -17,21 +17,23 @@ import { Artist } from '../core/models/artist.model';
 import { News } from '../core/models/news.model';
 import { EventsComponent } from './events/events';
 import { SvgIconComponent } from "../shared/svg-icon/svg-icon.component";
+import { StreamingComponent } from '../shared/streaming/streaming.component';
 
 @Component({
     selector: 'mk-home',
     imports: [
-    CommonModule,
-    RouterModule,
-    WelcomeComponent,
-    HeadingComponent,
-    HeroComponent,
-    ReleaseCardComponent,
-    PodcastComponent,
-    SharedGalleryComponent,
-    EventsComponent,
-    SvgIconComponent
-],
+		CommonModule,
+		RouterModule,
+		WelcomeComponent,
+		HeadingComponent,
+		HeroComponent,
+		ReleaseCardComponent,
+		PodcastComponent,
+		SharedGalleryComponent,
+		EventsComponent,
+		SvgIconComponent,
+		StreamingComponent
+	],
     templateUrl: './home.component.html',
     styleUrls: ['home.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush

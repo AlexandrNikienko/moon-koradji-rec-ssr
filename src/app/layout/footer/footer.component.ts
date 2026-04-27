@@ -3,6 +3,7 @@ import { Component, signal } from '@angular/core';
 import { SvgIconComponent } from "../../shared/svg-icon/svg-icon.component";
 
 @Component({
+    standalone: true,
     imports: [RouterModule, SvgIconComponent],
     selector: 'app-footer',
     templateUrl: './footer.component.html',
