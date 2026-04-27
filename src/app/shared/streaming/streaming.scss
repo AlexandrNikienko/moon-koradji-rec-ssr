@@ -1,3 +1,5 @@
+@use '../../../styles/utils' as *;
+
 .streaming-list {
 	padding: 0;
 	width: fit-content;
@@ -8,8 +10,9 @@
     border-radius: 1rem;
 	margin-block-end: 0;
 	background: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 100%);
+    margin: auto;
 
-	position: relative;
+	//position: relative;
 
 	// &:before {
 	// 	content: "";
@@ -50,6 +53,12 @@
 				opacity: 1;
 			}
 		}
+
+        @include mobile {
+            span {
+				opacity: 1;
+			}
+        }
 	}
 
 	app-svg-icon,
@@ -73,7 +82,7 @@
 	}
 
 	.youtube-music-icon {
-		width: 2.1rem;
+		width: 2rem;
 	}
 }
 
@@ -90,6 +99,9 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    width: 10ch;
+    margin: auto;
+    line-height: 1;
 }
 
 .streaming-title {
