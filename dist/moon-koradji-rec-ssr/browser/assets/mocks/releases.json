@@ -372,7 +372,7 @@
 				"beatport": "https://www.beatport.com/release/bent/4728630",
 				"tidal": "https://tidal.com/album/386511558"
 			},
-			"styles": ["Dark Psytrance, Forest Psytrance"],
+			"styles": ["Dark Psytrance", "Forest Psytrance"],
 			"bpmRange": { "min": 147, "max": 148 }
 		},
 		{
@@ -1110,7 +1110,7 @@
 				"beatport": "https://www.beatport.com/release/legendarium/3262142",
 				"tidal": "https://tidal.com/album/170401662"
 			},
-			"styles": ["Forest Psytrance, Dark Psytrance, Chillout"],
+			"styles": ["Forest Psytrance", "Dark Psytrance", "Chillout"],
 			"bpmRange": { "min": 147, "max": 152 }
         },
         {
@@ -1150,7 +1150,7 @@
 				"beatport": "https://www.beatport.com/release/shadow-enuin-vol-2/3216336",
 				"tidal": "https://tidal.com/album/164645621"
 			},
-			"styles": ["Forest Psytrance, Dark Psytrance"],
+			"styles": ["Forest Psytrance", "Dark Psytrance"],
 			"bpmRange": { "min": 146, "max": 151 }
         },
         {
@@ -1236,7 +1236,7 @@
 				"beatport": "https://www.beatport.com/release/shadow-enuin-at-the-earths-edge/3249063",
 				"tidal": "https://tidal.com/album/168679074"
 			},
-			"styles": ["Forest Psytrance, Dark Psytrance"],
+			"styles": ["Forest Psytrance", "Dark Psytrance"],
 			"bpmRange": { "min": 146, "max": 152 }
 
         }

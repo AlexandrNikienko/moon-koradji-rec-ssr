@@ -9,7 +9,18 @@
             "title": "Glia Gathering",
 			"info": "Psytrance festival in Romanian mountains",
 			"link": "https://www.facebook.com/profile.php?id=100070371251345",
-			"artists": ["Whrikk", "Molchun", "Noise Gust", "DJ Zloj"]
+			"artists": ["Adansonia","Whrikk", "Molchun", "Noise Gust", "DJ Zloj"]
+        },
+        {
+            "date": "28-30",
+            "month": "August",
+            "year": "2026",
+			"endDate": "2026-08-28",
+            "country": "Sweden",
+            "title": "The Shadow Of The Dark Shaman",
+			"info": "Open-air gathering in the Stokholm forest",
+			"link": "https://www.facebook.com/events/1536476800936129",
+			"artists": ["Already Maged", "Traskel", "Time For Slime", "Ka-Sol", "Troglodytes", "DJ Zloj"]
         },
 		{
             "date": "19-22",
