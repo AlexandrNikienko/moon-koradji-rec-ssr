@@ -9,6 +9,9 @@
 }
 
 .slide {
+    text-decoration: none;
+    position: relative;
+
 	&__image {
 		border-radius: 10px;
 		overflow: hidden;
