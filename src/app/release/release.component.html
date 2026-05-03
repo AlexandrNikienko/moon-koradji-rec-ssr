@@ -139,7 +139,7 @@
 
       @if(release().styles?.length > 0) {
         <p class="release-credits__paragraph">
-          Styles: 
+          Style: 
           @for (style of release().styles; track style; let last = $last) {
             @if (styleExists(style)) {
               <a [routerLink]="['/styles', style.toLocaleLowerCase().replaceAll(' ', '-')]">{{style}}</a>

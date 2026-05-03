@@ -1180,6 +1180,30 @@
 			"artistSoundcloud": "https://soundcloud.com/mubali"
 		},
 		{
+			"artistRoute": "nervasystem",
+			"artistName": "Nervasystem",
+			"artistRealName": "Mark Dressler",
+			"artistCountry": "Great Britain",
+			"flag": "gb",
+			"artistAvatar": "artist_nervasystem.jpg",
+			"artistDescription": [
+				{
+					"paragraph": "Nervasystem is the long-standing project of UK producer Mark Dressler, a pioneering force rooted in the original wave of psychedelic & goa trance. Emerging from the fertile Bristol scene in the mid-90s, he quickly carved out a distinct path with a very individual & heavily trippy psychedelic sound, that resists convention and favors deep, evolving psychedelic exploration. Some of his releases are considered an all time classic of the psytrance music scene."
+				},
+				{
+					"paragraph": "With a great number of releases on seminal labels such as Matsuri Productions, Phantasm Records, Elektrik Orgasm, and Psychic Deli, Nervasystem’s unique signature sound spread all around the global scene. Moreover, Drezz has collaborated with some of the strongest artists in the scene such as Tsuyoshi Suzuki , Sean Williams (Process, Beast), Alexis Cousins (Aether, Jnr Hacksaw) and many more."
+				},
+				{
+					"paragraph": "Today, Nervasystem stands as a bridge between generations of psychedelic trance — honored by longtime listeners and rediscovered by a new wave of seekers."
+				},
+				{
+					"paragraph": "Remaining firmly outside trends and expectations, his work continues to explore the deeper dimensions of sound, offering a listening experience that is as cerebral as it is immersive. This resonates deeply with the philosophy of Moon Koradji Records. It is this shared vision that brings the release of this legendary artist to the label, and Moon Koradji Records is proud to present his new EP."
+				}
+			],
+			"artistFacebook": "https://www.facebook.com/profile.php?id=100063753698336",
+			"artistSoundcloud": "https://soundcloud.com/nervasystem"
+		},
+		{
 			"featured": true,
 			"artistRoute": "nexus",
 			"artistName": "N3XU5",
