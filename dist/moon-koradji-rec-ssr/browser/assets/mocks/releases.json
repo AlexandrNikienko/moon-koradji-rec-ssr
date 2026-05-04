@@ -1,6 +1,48 @@
 {
     "releases": [
 		{
+			"hidden": true,
+			"releaseNumber": "MKRL029",
+			"releaseYear": "2026",
+			"releaaseType": "EP",
+			"releaseDate": "",
+			"releaseTitle": "Nervasystem - Mysterium Tremendum",
+			"releaseSubTitle": "coming soon",
+			"releaseCover": {
+				"default": "mkrl029_nervasystem_mysterium_tremendum.jpg",
+				"webp": "mkrl029_nervasystem_mysterium_tremendum-500.webp",
+				"webp2x": "mkrl029_nervasystem_mysterium_tremendum-1000.webp"
+			},
+			"facebookShareThumb": null,
+			"releaseRoute": "nervasystem-mysterium-tremendum",
+			"releaseDescription": [
+				{
+					"paragraph": "A meeting point between timeless exploration and forward-thinking psychedelia, Mysterium Tremendum stands as a pure expression of Nervasystem’s singular vision."
+				}
+			],
+			"releaseAuthor": "Mark Dressler",
+			"masteredBy": "Drezz",
+			"artworkBy": "Manyanaman",
+			"tracklist": [
+				"Nervasystem - Mesh",
+				"Nervasystem - Interference Patterns II",
+				"Nervasystem - LILA"
+			],
+			"bandcampLink": "",
+			"albumBandcampId": "",
+			"artists": [
+				"Nervasystem"
+			],
+			"_streamingLinks": {
+				"spotify": "",
+				"appleMusic": "",
+				"beatport": "",
+				"tidal": ""
+			},
+			"styles": null,
+			"bpmRange": { "min": 140, "max": 145 }
+		},
+		{
 			"isHero": true,
 			"isNew": true,
 			"releaseNumber": "MKRL028",
@@ -17,21 +59,26 @@
 			"facebookShareThumb": "mkrl028_dylalien_b_whalian_fb_share.jpg",
 			"releaseRoute": "dylalien-b-whalian",
 			"releaseDescription": [
-				{   
-					"paragraph": "Coming soon."
+				{
+					"paragraph": "This album is more than music — it’s a sonic experiment. Driven by deep, evolving frequencies, it unlocks a raw, instinctive energy — the “Dylalien” presence — guiding the listener into a state of movement and release."
 				},
 				{
-					"paragraph": ""
-				},
-				{
-					"paragraph": ""
+					"paragraph": "Designed for the dancefloor ritual, B. Whalian transforms rhythm into experience, dissolving boundaries between body and mind."
 				}
 			],
 			"releaseAuthor": "Dylan Chillin",
 			"masteredBy": "Ankur / Dog Of Tears",
 			"artworkBy": "Ozan",
 			"tracklist": [
-				""
+				"Dylalien - Don't Shake Your Teeth at the DJ",
+				"Dylalien - Bassiachi",
+				"Dylalien - Djarum",
+				"Dylalien - Oishi",
+				"Dylalien - Portal Party Mix 5000",
+				"Dylalien - Culo",
+				"Dylalien - Noop Noop on the Boop Boop",
+				"Dylalien - Wake'n and Bake'n",
+				"Dylalien - Dirt Dude"
 			],
 			"bandcampLink": "",
 			"albumBandcampId": "",
@@ -41,7 +88,8 @@
 			"_streamingLinks": {
 				"spotify": "",
 				"appleMusic": "",
-				"beatport": ""
+				"beatport": "",
+				"tidal": ""
 			},
 			"styles": ["Dark Psytrance"],
 			"bpmRange": { "min": 142, "max": 153 }
