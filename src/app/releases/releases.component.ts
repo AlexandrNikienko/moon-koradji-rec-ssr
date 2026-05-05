@@ -107,6 +107,8 @@ export class ReleasesComponent {
         const bpmMin = this.bpmMin() ?? bounds.min;
         const bpmMax = this.bpmMax() ?? bounds.max;
 
+        result = result.filter(r => !r.hidden);
+
         if (type !== 'All') {
             result = result.filter(r => r.releaseType === type);
         }

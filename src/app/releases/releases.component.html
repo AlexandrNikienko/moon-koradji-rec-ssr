@@ -53,7 +53,7 @@
 @if (filteredReleases()) {
   <div class="releases">
     @for (release of filteredReleases(); track release.releaseNumber) {
-      <app-release-card [releaseItem]="release" [hidden]="release.hidden"/>
+      <app-release-card [releaseItem]="release"/>
     }
   </div>
 }

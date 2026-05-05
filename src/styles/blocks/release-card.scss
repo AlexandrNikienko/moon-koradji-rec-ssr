@@ -50,20 +50,20 @@
 		bottom: -42px;
 		z-index: 10;
 		transition: 0.3s;
+		padding-inline: 1rem;
 	}
 
 	&__bottom-title {
 		line-height: normal;
 		color: var(--lightGreyAlt);
-		padding: 0 1rem 1rem;
+		padding-block-end: 1rem;
 		margin: 0;
 		display: block;
 		transition: padding-bottom 0.3s;
 	}
 
 	&__bottom-text {
-		padding: 0 1rem 1rem;
-		font-size: 1rem;
+		padding-block-end: 1rem;
 		color: var(--themeColor);
 		white-space: nowrap;
 		margin: 0;

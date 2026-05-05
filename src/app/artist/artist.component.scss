@@ -99,3 +99,10 @@
 	font-size: 2rem;
 	line-height: 0;
 }
+
+::ng-deep {
+	.release-card__bottom {
+		font-size: .875rem;
+		padding-inline: .5rem;
+	}
+}
