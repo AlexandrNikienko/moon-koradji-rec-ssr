@@ -1,9 +1,10 @@
 @use '../../styles/_utils.scss' as *;
 
-::ng-deep .release-cover {
-	// width: 240px;
-	margin: 0 1rem 0.75rem 0;
-	box-shadow: $brand-border;
+::ng-deep {
+	.release-cover {
+		margin: 0 1rem 0.75rem 0;
+		box-shadow: $brand-border;
+	}
 }
 
 .release-actions {
@@ -166,6 +167,11 @@
 	::ng-deep {
 		.release-card {
 			width: 200px;
+
+			&__bottom {
+				font-size: .875rem;
+				padding-inline: .5rem;
+			}
 
 			@include mobile {
 				width: 140px;
