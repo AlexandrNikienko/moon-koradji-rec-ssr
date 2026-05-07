@@ -51,7 +51,7 @@ export class HomeComponent {
 	);
 
     recentReleases: Signal<Release[]> = computed<Release[]>(() =>
-		this.allReleases().filter(release => !release.isHero && !release.hidden).slice(0, 3)
+		this.allReleases().filter(release => !release.isHero && !release.hidden && release.releaseDate).slice(0, 3)
 	);
 
     releaseCards = viewChildren(ReleaseCardComponent, { read: ElementRef });
