@@ -1,64 +1,19 @@
 {
     "releases": [
 		{
+			"isHero": false,
 			"releaseNumber": "MKRL029",
-			"releaseYear": "2026",
-			"releaaseType": "EP",
-			"releaseDate": "",
-			"releaseTitle": "Nervasystem - Mysterium Tremendum",
-			"releaseSubTitle": "coming soon",
-			"releaseCover": {
-				"default": "mkrl029_nervasystem_mysterium_tremendum.jpg",
-				"webp": "mkrl029_nervasystem_mysterium_tremendum-500.webp",
-				"webp2x": "mkrl029_nervasystem_mysterium_tremendum-1000.webp"
-			},
-			"facebookShareThumb": "mkrl029_nervasystem_mysterium_tremendum_fb_share.jpg",
-			"releaseRoute": "nervasystem-mysterium-tremendum",
-			"releaseDescription": [
-				{
-					"paragraph": "Three darkish, night-time motorik tracks, to evoke peak dancefloor experiences, inward journeys by dream train, and an awesome fascination, which uncovers the essence of the numinous, evoking the Mysterium Tremendum!"
-				},
-				{
-					"paragraph": "As ever, Nervasystem pushes the envelope and refuses to be pigeonholed into generic cul-de-sacs, whilst delivering three belting tracks of unadulterated psychedelic trance dancefloor technology, for the shakers and the takers, the movers and the groovers, and the angel-headed hipsters lost in the Lila. Hold on tight, and follow the shapes and patterns. Liberation is coming."
-				}
-			],
-			"releaseAuthor": "Mark Dressler",
-			"masteredBy": "Drezz",
-			"artworkBy": "Manyanaman",
-			"tracklist": [
-				"Nervasystem - Mesh",
-				"Nervasystem - Interference Patterns II",
-				"Nervasystem - LILA"
-			],
-			"bandcampLink": "",
-			"albumBandcampId": "",
-			"artists": [
-				"Nervasystem"
-			],
-			"_streamingLinks": {
-				"spotify": "",
-				"appleMusic": "",
-				"beatport": "",
-				"tidal": ""
-			},
-			"styles": null,
-			"bpmRange": { "min": 140, "max": 145 }
-		},
-		{
-			"isHero": true,
-			"_isNew": true,
-			"releaseNumber": "MKRL028",
 			"releaseYear": "2026",
 			"releaaseType": "EP",
 			"releaseDate": "",
 			"releaseTitle": "Dylalien - B. Whalian",
 			"releaseSubTitle": "coming soon",
 			"releaseCover": {
-				"default": "mkrl028_dylalien_b_whalian.jpg",
-				"webp": "mkrl028_dylalien_b_whalian-500.webp",
-				"webp2x": "mkrl028_dylalien_b_whalian-1000.webp"
+				"default": "mkrl029_dylalien_b_whalian.jpg",
+				"webp": "mkrl029_dylalien_b_whalian-500.webp",
+				"webp2x": "mkrl029_dylalien_b_whalian-1000.webp"
 			},
-			"facebookShareThumb": "mkrl028_dylalien_b_whalian_fb_share.jpg",
+			"facebookShareThumb": "mkrl029_dylalien_b_whalian_fb_share.jpg",
 			"releaseRoute": "dylalien-b-whalian",
 			"releaseDescription": [
 				{
@@ -92,6 +47,52 @@
 			},
 			"styles": ["Dark Psytrance"],
 			"bpmRange": { "min": 142, "max": 153 }
+		},
+		{
+			"isHero": true,
+			"isNew": true,
+			"releaseNumber": "MKRL028",
+			"releaseYear": "2026",
+			"releaaseType": "EP",
+			"releaseDate": "May 8th, 2026",
+			"releaseTitle": "Nervasystem - Mysterium Tremendum",
+			"releaseSubTitle": "listen & purchase",
+			"releaseCover": {
+				"default": "mkrl028_nervasystem_mysterium_tremendum.jpg",
+				"webp": "mkrl028_nervasystem_mysterium_tremendum-500.webp",
+				"webp2x": "mkrl028_nervasystem_mysterium_tremendum-1000.webp"
+			},
+			"facebookShareThumb": "mkrl028_nervasystem_mysterium_tremendum_fb_share.jpg",
+			"releaseRoute": "nervasystem-mysterium-tremendum",
+			"releaseDescription": [
+				{
+					"paragraph": "Three darkish, night-time motorik tracks, to evoke peak dancefloor experiences, inward journeys by dream train, and an awesome fascination, which uncovers the essence of the numinous, evoking the Mysterium Tremendum!"
+				},
+				{
+					"paragraph": "As ever, Nervasystem pushes the envelope and refuses to be pigeonholed into generic cul-de-sacs, whilst delivering three belting tracks of unadulterated psychedelic trance dancefloor technology, for the shakers and the takers, the movers and the groovers, and the angel-headed hipsters lost in the Lila. Hold on tight, and follow the shapes and patterns. Liberation is coming."
+				}
+			],
+			"releaseAuthor": "Mark Dressler",
+			"masteredBy": "Drezz",
+			"artworkBy": "Manyanaman",
+			"tracklist": [
+				"Nervasystem - Mesh",
+				"Nervasystem - Interference Patterns II",
+				"Nervasystem - LILA"
+			],
+			"bandcampLink": "https://moonkoradjirecords.bandcamp.com/album/nervasystem-mysterium-tremendum",
+			"albumBandcampId": "2722832174",
+			"artists": [
+				"Nervasystem"
+			],
+			"_streamingLinks": {
+				"spotify": "",
+				"appleMusic": "",
+				"beatport": "",
+				"tidal": ""
+			},
+			"styles": null,
+			"bpmRange": { "min": 140, "max": 145 }
 		},
 		{
 			"isNew": true,

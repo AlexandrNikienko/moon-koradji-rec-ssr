@@ -34,7 +34,7 @@ export class HeroComponent {
 			}
 			
 			const today = new Date();
-			releaseDate.setHours(12, 0, 0, 0); //12AM
+			releaseDate.setHours(9, 0, 0, 0); //9AM
 			
 			return releaseDate > today ? 'Coming Soon' : 'Out Now';
 		} catch {
