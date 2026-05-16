@@ -1,5 +1,3 @@
-<app-welcome/>
-
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true">
   <defs>
     <linearGradient id="violetToCyan" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -9,8 +7,10 @@
   </defs>
 </svg>
 
+<app-welcome/>
+
 @if (heroRelease()) {
-  <section class="hero-wrapper">
+  <section class="hero-wrapper" id="hero">
     <app-hero [heroRelease]="heroRelease()"/>
   </section>
 }

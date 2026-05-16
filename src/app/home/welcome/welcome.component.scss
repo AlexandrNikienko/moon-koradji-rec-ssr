@@ -2,7 +2,7 @@
 
 .welcome {
     position: relative;
-    height: calc(100vh - 2rem * 2 - 58px * 2);
+    height: calc(100vh - (2rem * 2 + 58px * 2 + 35px)); //main vertical padding twice + header height twice + infobar height
     display: flex;
     align-items: center;
     justify-content: center;
