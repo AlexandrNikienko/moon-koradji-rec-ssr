@@ -86,11 +86,11 @@
 			"artists": [
 				"Nervasystem"
 			],
-			"_streamingLinks": {
-				"spotify": "",
-				"appleMusic": "",
-				"beatport": "",
-				"tidal": ""
+			"streamingLinks": {
+				"spotify": "https://open.spotify.com/album/1FT7GxH95E4X4QDbvYS7Mq",
+				"appleMusic": "https://music.apple.com/ua/album/mysterium-tremendum-single/6768633270",
+				"beatport": "https://www.beatport.com/release/mysterium-tremendum/6929508",
+				"tidal": "https://tidal.com/album/523838962"
 			},
 			"styles": null,
 			"bpmRange": { "min": 140, "max": 145 }
