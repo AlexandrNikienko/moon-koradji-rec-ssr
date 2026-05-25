@@ -38,8 +38,43 @@
 	position: relative;
 	z-index: 10;
 
+	> div {
+		padding: .5rem;
+		// position: relative;
+		// background-image: conic-gradient(
+		// 	from 45deg, rgb(197, 187, 184) 0deg, 
+		// 	rgb(197, 187, 184) 90deg,
+		// 	rgb(130, 155, 176) calc(90.1deg),
+		// 	rgb(130, 155, 176) 180deg,
+		// 	rgb(83, 114, 153) calc(180.1deg),
+		// 	#63e 270deg,
+		// 	rgb(91, 75, 116) calc(270.1deg), 
+		// 	rgb(91, 75, 116) 360deg);
+		// background-size: cover;
+		// background-position: center center;
+		// background-repeat: no-repeat;
+
+		border: .25rem solid;
+		//border-image: repeating-radial-gradient(circle at 10px, turquoise, pink 2px, greenyellow 4px, pink 2px) 1;
+		border-image: repeating-radial-gradient(circle at 10px, cyan, #b771e9 2px, #63e   4px, #b771e9 2px) 1;
+	}
+
+	.release-card {
+		border-radius: 0;
+		border: 12px solid #111;
+    	box-shadow: $brand-border;
+
+		&__inner {
+			background: linear-gradient(to bottom, transparent 50%, rgba(#111, 1) 100%);
+		}
+	}
+
 	@include media-breakpoint-down(md) {
-		> app-release-card:last-of-type {
+		> div {
+			padding: .5rem;
+		}
+
+		> div:last-of-type {
 			display: none;
 		}
 	}

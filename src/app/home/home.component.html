@@ -21,7 +21,9 @@
 
     <div class="recent-releases-inner">
       @for (release of recentReleases(); track $index) {
-          <app-release-card [releaseItem]="release"/>
+		<div class="recent-release-inner__decorator">
+          	<app-release-card [releaseItem]="release"/>
+		</div>
       }
     </div>
   </section>

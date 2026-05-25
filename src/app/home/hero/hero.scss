@@ -2,10 +2,10 @@
 
 .hero {
     display: flex;
-    padding: 2rem;
+    padding: 2rem 4rem;
 	gap: 2rem;
 	margin-top: 2.2rem;
-	border-radius: 1rem;
+	//border-radius: 1rem;
 	isolation: isolate;
 	position: relative;
 	overflow: hidden;
@@ -82,7 +82,7 @@
 		inset: 0;
 		opacity: 0.1;
 		z-index: -1;
-		filter: blur(1px) brightness(2);
+		filter: blur(1px) brightness(1);
 	}
 
 	&__bg-image {
@@ -90,8 +90,8 @@
 	}
 
 	::ng-deep .picture img {
-		width: 475px;
-		border-radius: 1rem;
+		width: 440px;
+		//border-radius: 1rem;
 		box-shadow: $brand-border;
 
 		@include tablet {
