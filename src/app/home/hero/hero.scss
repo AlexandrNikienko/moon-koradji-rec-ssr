@@ -10,8 +10,7 @@
 	background: radial-gradient(140% 100% at 50% 0%, rgba(102, 51, 238, 0.2) 0%, transparent 70%);
 
 	@include mobile {
-		margin-top: 1rem;
-		padding: 1rem;
+		padding: 2rem 1rem 1rem;
 		gap: 0;
 	}
 
