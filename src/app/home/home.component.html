@@ -9,11 +9,13 @@
 
 <app-welcome/>
 
-@if (heroRelease()) {
-  <section class="hero-wrapper" id="hero">
-    <app-hero [heroRelease]="heroRelease()"/>
-  </section>
-}
+<section class="hero-wrapper" id="hero">
+	<app-shared-electric-border>
+		@if (heroRelease()) {
+			<app-hero [heroRelease]="heroRelease()"/>
+		}
+	</app-shared-electric-border>
+</section>
 
 @if (recentReleases().length > 0) {
   <section class="recent-releases-wrapper">

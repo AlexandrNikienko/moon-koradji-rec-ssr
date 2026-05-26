@@ -4,12 +4,9 @@
     display: flex;
     padding: 2rem 4rem;
 	gap: 2rem;
-	margin-top: 2.2rem;
-	//border-radius: 1rem;
 	isolation: isolate;
 	position: relative;
 	overflow: hidden;
-	border: 1px solid gainsboro;
 	background: radial-gradient(140% 100% at 50% 0%, rgba(102, 51, 238, 0.2) 0%, transparent 70%);
 
 	@include mobile {

@@ -2,22 +2,24 @@ import { ChangeDetectionStrategy, Component, DestroyRef, ElementRef, Signal, com
 import { RouterModule } from '@angular/router';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 
-import { MetaDataService, iMeta } from './../core/services/meta-data.service';
-import { DataSignalService } from '../core/services/data-signal';
+// TODO refactoring: use @ for absolute paths (@ = src/app/)
+import { MetaDataService, iMeta } from '@/core/services/meta-data.service';
+import { DataSignalService } from '@/core/services/data-signal';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { HeadingComponent } from '../layout/heading/heading.component';
-import { Release } from '../core/models/release.model';
+import { HeadingComponent } from '@/layout/heading/heading.component';
+import { Release } from '@/core/models/release.model';
 import { HeroComponent } from './hero/hero';
-import { ReleaseCardComponent } from '../shared/release-card/release-card.component';
+import { ReleaseCardComponent } from '@/shared/release-card/release-card.component';
 import { PodcastComponent } from './podcast/podcast.component';
-import { Gallery } from '../core/models/gallery.model';
-import { Utils } from '../core/utils';
-import { SharedGalleryComponent } from '../shared/gallery/gallery.component';
-import { Artist } from '../core/models/artist.model';
-import { News } from '../core/models/news.model';
+import { Gallery } from '@/core/models/gallery.model';
+import { Utils } from '@/core/utils';
+import { SharedGalleryComponent } from '@/shared/gallery/gallery.component';
+import { Artist } from '@/core/models/artist.model';
+import { News } from '@/core/models/news.model';
 import { EventsComponent } from './events/events';
-import { SvgIconComponent } from "../shared/svg-icon/svg-icon.component";
-import { StreamingComponent } from '../shared/streaming/streaming.component';
+import { SvgIconComponent } from "@/shared/svg-icon/svg-icon.component";
+import { StreamingComponent } from '@/shared/streaming/streaming.component';
+import { ElectricBorderComponent } from '@/shared/electric-border/electric-border';
 
 @Component({
     selector: 'mk-home',
@@ -32,7 +34,8 @@ import { StreamingComponent } from '../shared/streaming/streaming.component';
 		SharedGalleryComponent,
 		EventsComponent,
 		SvgIconComponent,
-		StreamingComponent
+		StreamingComponent,
+		ElectricBorderComponent
 	],
     templateUrl: './home.component.html',
     styleUrls: ['home.component.scss'],
