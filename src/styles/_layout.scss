@@ -149,6 +149,7 @@ app-root {
 	&__item {
 		display: flex;
 		padding: 0 10px;
+		opacity: .75;
 		transition: 0.3s;
 
 		+ .socials__item {
@@ -158,6 +159,7 @@ app-root {
 		&:hover {
 			transform: scale3d(1.5, 1.5, 1);
 			text-decoration: none;
+			opacity: 1;
 		}
 
 		&--tiktok {
@@ -191,7 +193,7 @@ mk-home .btn {
 
 	&:hover {
 		color: currentColor;
-		transform: matrix(1.05, 0, 0, 1.05, 0, 0);
+		//transform: matrix(1.05, 0, 0, 1.05, 0, 0);
 		background-image: linear-gradient(to right, rgb(126, 34, 206), rgb(8, 145, 178));
 	}
 }
