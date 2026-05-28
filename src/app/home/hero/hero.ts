@@ -7,10 +7,11 @@ import { IMAGEFOLDER } from '../../../environments/environment';
 
 import { PictureComponent } from '../../shared/picture/picture.component';
 import { HeadingComponent } from '../../layout/heading/heading.component';
+import { SvgIconComponent } from '@/shared/svg-icon/svg-icon.component';
 
 @Component({
   selector: 'app-hero',
-  imports: [CommonModule, RouterModule, PictureComponent, HeadingComponent],
+  imports: [CommonModule, RouterModule, PictureComponent, HeadingComponent, SvgIconComponent],
   templateUrl: './hero.html',
   styleUrls: ['./hero.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush

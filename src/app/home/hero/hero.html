@@ -28,7 +28,10 @@
             <p class="hero__sub-title">&laquo;{{heroRelease()!.releaseTitle.split(' - ')[1]}}&raquo;</p>
         }
 
-        <a [routerLink]="'/releases/' + heroRelease()!.releaseRoute" class="btn">More Info</a>
+        <!-- <a [routerLink]="'/releases/' + heroRelease()!.releaseRoute" class="btn">More Info</a> -->
+        <a [routerLink]="'/releases/' + heroRelease()!.releaseRoute" class="hero-btn">
+            <app-svg-icon icon="moonKoradji"></app-svg-icon>More Info
+        </a>
     </div>
 
     <div class="hero__bg" aria-hidden="true">
