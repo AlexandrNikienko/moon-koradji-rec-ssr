@@ -82,8 +82,8 @@
 }
 
 ::ng-deep app-release-card {
-	opacity: 0;
-	transition: .5s;
+	// opacity: 0;
+	// transition: .5s;
 
 	@include media-breakpoint-up(lg) {
 		&:nth-child(1) {

@@ -61,15 +61,15 @@
         <p class="release-actions__title">Streaming:</p>
 
         <div class="release-actions__links">
-          @if (release().streamingLinks.spotify) {
-          <a href="{{release().streamingLinks.spotify}}" target="_blank" class="release-link" rel="noreferrer">
-            <app-svg-icon icon="spotify"/> Spotify
-          </a>
-          }
-
           @if (release().streamingLinks.appleMusic) {
           <a href="{{release().streamingLinks.appleMusic}}" target="_blank" class="release-link" rel="noreferrer">
             <app-svg-icon icon="appleMusic"/> Apple Music
+          </a>
+          }
+          
+          @if (release().streamingLinks.spotify) {
+          <a href="{{release().streamingLinks.spotify}}" target="_blank" class="release-link" rel="noreferrer">
+            <app-svg-icon icon="spotify"/> Spotify
           </a>
           }
 

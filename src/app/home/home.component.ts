@@ -88,7 +88,7 @@ export class HomeComponent {
 		effect(() => {
 			if (!this.releaseCards().length) return;
 
-			this.initScrollAnimation();
+			//this.initScrollAnimation();
 
 			this.releaseCards().forEach(card =>
 				this.observer?.observe(card.nativeElement)
