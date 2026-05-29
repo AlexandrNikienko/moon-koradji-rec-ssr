@@ -62,6 +62,11 @@
     }
 }
 
+:host(.is-safari) .main-card {
+    filter: none;
+    margin: 0;
+}
+
 /* Glow effects */
 .glow-layer-1 {
     border: 2px solid rgba(221, 132, 72, 0.6); // ? TODO

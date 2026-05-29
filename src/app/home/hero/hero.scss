@@ -83,6 +83,7 @@
 
 	&__bg-image {
 		object-fit: cover;
+		border-radius: 1rem;
 	}
 
 	::ng-deep .picture img {
