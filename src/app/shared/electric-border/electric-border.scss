@@ -52,8 +52,7 @@
     box-shadow: $brand-border;
     margin-top: -4px;
     margin-left: -4px;
-    filter: url(#turbulent-displace);
-    will-change: filter;
+    //filter: url(#turbulent-displace);
 
     @include mobile {
         filter: none;
