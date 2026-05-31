@@ -50,9 +50,12 @@
     //border: 2px solid var(--electric-border-color);
     border: 2px solid red;
     box-shadow: $brand-border;
-    //margin-top: -4px;
-    //margin-left: -4px;
-    //filter: url(#turbulent-displace);
+
+    &.filter-active {
+        margin-top: -4px;
+        margin-left: -4px;    
+        filter: url(#turbulent-displace);
+    }
 
     @include mobile {
         filter: none;
