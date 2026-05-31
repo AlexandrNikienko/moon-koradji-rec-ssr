@@ -51,23 +51,23 @@
     border: 2px solid red;
     box-shadow: $brand-border;
 
-    &.filter-active {
-        margin-top: -4px;
-        margin-left: -4px;    
-        filter: url(#turbulent-displace);
-    }
+    // &.filter-active {
+    //     margin-top: -4px;
+    //     margin-left: -4px;    
+    //     filter: url(#turbulent-displace);
+    // }
 
-    @include mobile {
-        filter: none;
-        margin: 0;
-        inset: 0;
-    }
+    // @include mobile {
+    //     filter: none;
+    //     margin: 0;
+    //     inset: 0;
+    // }
 }
 
-:host(.is-safari) .main-card {
-    filter: none;
-    margin: 0;
-}
+// :host(.is-safari) .main-card {
+//     filter: none;
+//     margin: 0;
+// }
 
 /* Glow effects */
 .glow-layer-1 {
