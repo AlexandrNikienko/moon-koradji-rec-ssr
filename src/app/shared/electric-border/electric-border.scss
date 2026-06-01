@@ -109,10 +109,12 @@
             transparent 30%,
             transparent 70%,
             white);
-}
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
 
-.overlay-1 {
-    opacity: 1;
+    // @include mobile {
+    //     display: none;
+    // }
 }
 
 .overlay-2 {
