@@ -1,13 +1,14 @@
 {
     "releases": [
 		{
-			"isHero": false,
+			"isHero": true,
+			"isNew": true,
 			"releaseNumber": "MKRL029",
 			"releaseYear": "2026",
 			"releaseType": "Album",
-			"releaseDate": "",
+			"releaseDate": "June 4th, 2025",
 			"releaseTitle": "Dylalien - B. Whalian",
-			"releaseSubTitle": "coming soon",
+			"releaseSubTitle": "listen & purchase",
 			"releaseCover": {
 				"default": "mkrl029_dylalien_b_whalian.jpg",
 				"webp": "mkrl029_dylalien_b_whalian-500.webp",
@@ -17,10 +18,16 @@
 			"releaseRoute": "dylalien-b-whalian",
 			"releaseDescription": [
 				{
+					"paragraph": "One of the most unconventional psytrance projects on the global scene, Dylalien has built a reputation for a sound that stands far apart from standard expectations of the genre."
+				},
+				{
+					"paragraph": "Both as Dylalien and as a member of Fractal Cowboys, he was long championed by Goa Gil, whose sets and charts regularly featured tracks from both projects."
+				},
+				{
 					"paragraph": "Dylalien's long-awaited debut psytrance album delivers deep, mutating grooves and a sound design palette that refuses to behave — built on its distinctive alien logic."
 				}
 			],
-			"releaseAuthor": "Dylan Chillin",
+			"releaseAuthor": "Dylan Klarfield",
 			"masteredBy": "Ankur / Dog Of Tears",
 			"artworkBy": "Ozan",
 			"tracklist": [
@@ -34,8 +41,8 @@
 				"Dylalien - Wake'n and Bake'n",
 				"Dylalien - Dirt Dude"
 			],
-			"bandcampLink": "",
-			"albumBandcampId": "",
+			"bandcampLink": "https://moonkoradjirecords.bandcamp.com/album/dylalien-b-whalian",
+			"albumBandcampId": "3230307125",
 			"artists": [
 				"Dylalien"
 			],
@@ -49,7 +56,6 @@
 			"bpmRange": { "min": 142, "max": 153 }
 		},
 		{
-			"isHero": true,
 			"isNew": true,
 			"releaseNumber": "MKRL028",
 			"releaseYear": "2026",
