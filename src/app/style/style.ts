@@ -46,7 +46,7 @@ export class StyleComponent {
 
   styleArtists = computed(() =>
     this.allArtists().filter(a =>
-      a.styles?.includes(this.styleRoute() ?? '')
+      a.styles?.includes(this.style()?.styleName ?? '')
     )
   );
 
