@@ -1234,7 +1234,7 @@
 			"artistSoundcloud": "https://soundcloud.com/mubali"
 		},
 		{
-			"_featured": true,
+			"featured": true,
 			"artistRoute": "nervasystem",
 			"artistName": "Nervasystem",
 			"artistRealName": "Mark Dressler",
