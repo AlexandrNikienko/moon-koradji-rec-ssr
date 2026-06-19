@@ -46,11 +46,11 @@
 			"artists": [
 				"Dylalien"
 			],
-			"_streamingLinks": {
-				"spotify": "",
-				"appleMusic": "",
-				"beatport": "",
-				"tidal": ""
+			"streamingLinks": {
+				"spotify": "https://open.spotify.com/album/2uxxHhG7bx5x7Dndku1LhJ",
+				"appleMusic": "https://music.apple.com/ua/album/b-whalian/6777080268",
+				"beatport": "https://www.beatport.com/release/b-whalian/7029625",
+				"tidal": "https://tidal.com/album/530944673"
 			},
 			"styles": ["Dark Psytrance"],
 			"bpmRange": { "min": 142, "max": 153 }
