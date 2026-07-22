@@ -49,7 +49,23 @@
 			"masteredBy": "Wild Mastering",
 			"artworkBy": "Simon Hayes",
 			"styles": ["Dark Psytrance"],
-			"bpmRange": { "min": 150, "max": 150 }
+			"bpmRange": { "min": 150, "max": 150 },
+			"tracklist": [
+				"Simon Hayes - Stand For Love",
+				"Simon Hayes - This Shift Shall Echo Into Your Strengths",
+				"Simon Hayes - Undulating Oasis"
+			],
+			"bandcampLink": "",
+			"albumBandcampId": "",
+			"artists": [
+				"Simon Hayes"
+			],
+			"_streamingLinks": {
+				"spotify": "",
+				"appleMusic": "",
+				"beatport": "",
+				"tidal": ""
+			}
 		},
 		{
 			"isNew": true,

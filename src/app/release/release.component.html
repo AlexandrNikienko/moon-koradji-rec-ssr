@@ -89,15 +89,17 @@
       }
     </div>
 
-    <h2 class="small-title">About</h2>
+    @if (release().releaseDescription) {
+      <h2 class="small-title">About</h2>
 
-    <div class="release-description">
-      @for (description of release().releaseDescription; track description.paragraph) {
-      <p class="release-description__paragraph">
-        {{description.paragraph}}
-      </p>
-      }
-    </div>
+      <div class="release-description">
+        @for (description of release().releaseDescription; track description.paragraph) {
+        <p class="release-description__paragraph">
+          {{description.paragraph}}
+        </p>
+        }
+      </div>
+    }
 
     <h2 class="small-title text-right">Credits</h2>
 
