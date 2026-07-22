@@ -56,7 +56,11 @@ export class ReleaseComponent {
 		{ initialValue: null }
 	);
 
-	allReleases: Signal<Release[]> = this.dataSignalService.getData<Release>('releases');
+	allReleasesWithHidden: Signal<Release[]> = this.dataSignalService.getData<Release>('releases');
+	
+	allReleases: Signal<Release[]> = computed(() =>
+		this.allReleasesWithHidden().filter(release => !release.hidden)
+	);
 	allArtists: Signal<Artist[]> = this.dataSignalService.getData<Artist>('artists');
 
 	releaseIndex = computed<number>(() =>
@@ -94,7 +98,7 @@ export class ReleaseComponent {
 		const release = this.release();
 		if (!release) return [];
 
-		return this.allArtists().filter(a => release.artists.includes(a.artistName));
+		return this.allArtists().filter(a => release.artists?.includes(a.artistName));
 	});
 
 	coverModalOpen = signal<boolean>(false);

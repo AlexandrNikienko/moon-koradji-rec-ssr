@@ -124,11 +124,11 @@
   @if(isHomePage()) {
   <div class="out-now">
     <a class="out-now__link" href="#hero">
-      <p class="out-now__label">Out Now</p>
+      <p class="out-now__label">{{heroReleaseStatus()}}</p>
 
       <div class="out-now__title">
-        <span class="out-now__title-primary">DYLALIEN</span>
-        <span class="out-now__title-secondary">«B. Whalian»</span>
+        <span class="out-now__title-primary">{{heroRelease()?.releaseTitle.split(' - ')[0]}}</span>
+        <span class="out-now__title-secondary">«{{heroRelease()?.releaseTitle.split(' - ')[1]}}»</span>
       </div>
 
       <span class="out-now__cta" aria-label="Scroll to release">

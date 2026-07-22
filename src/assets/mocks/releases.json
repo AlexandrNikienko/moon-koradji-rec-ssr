@@ -1,7 +1,57 @@
 {
     "releases": [
 		{
+			"hidden": true,
+			"releaseNumber": "",
+			"releaseYear": "2026",
+			"releaseType": "Album",
+			"releaseDate": "",
+			"releaseTitle": "Snajda - My Turn",
+			"releaseSubTitle": "listen & purchase",
+			"releaseCover": {
+				"default": "snajda.jpg"
+			},
+			"facebookShareThumb": "",
+			"releaseRoute": "snajda",
+			"releaseDescription": [
+				{
+					"paragraph": "More info soon."
+				}
+			],
+			"releaseAuthor": "Björn Andersson",
+			"masteredBy": "Anarkick",
+			"artworkBy": "Coyo Tao",
+			"styles": ["Drum and Bass"],
+			"bpmRange": { "min": 172, "max": 180 }
+		},
+		{
 			"isHero": true,
+			"isNew": true,
+			"releaseNumber": "MKRL030",
+			"releaseYear": "2026",
+			"releaseType": "EP",
+			"releaseDate": "July 23, 2026",
+			"releaseTitle": "Simon Hayes - Darkness Believes In Colour",
+			"releaseSubTitle": "listen & purchase",
+			"releaseCover": {
+				"default": "mkrl030_simon_hayes_darkness_believes_in_colour.jpg",
+				"webp": "mkrl030_simon_hayes_darkness_believes_in_colour-500.webp",
+				"webp2x": "mkrl030_simon_hayes_darkness_believes_in_colour-1000.webp"
+			},
+			"facebookShareThumb": "mkrl030_simon_hayes_darkness_believes_in_colour_fb_share.jpeg",
+			"releaseRoute": "simon-hayes-darkness-believes-in-colour",
+			"releaseDescription": [
+				{
+					"paragraph": "More info soon."
+				}
+			],
+			"releaseAuthor": "Simon Hayes",
+			"masteredBy": "Wild MAstering",
+			"artworkBy": "Simon Hayes",
+			"styles": ["Dark Psytrance"],
+			"bpmRange": { "min": 150, "max": 150 }
+		},
+		{
 			"isNew": true,
 			"releaseNumber": "MKRL029",
 			"releaseYear": "2026",
@@ -102,7 +152,6 @@
 			"bpmRange": { "min": 140, "max": 145 }
 		},
 		{
-			"isNew": true,
 			"releaseNumber": "MKRL027",
 			"releaseYear": "2026",
 			"releaseType": "EP",
@@ -414,9 +463,7 @@
 			"releaseAuthor": "Björn Andersson",
 			"masteredBy": "Ankur @ Seres Studio",
 			"artworkBy": "Ekaterina Bochkar",
-			"beatspaceLink": "",
 			"bandcampLink": "https://moonkoradjirecords.bandcamp.com/album/katastrof-bent",
-			"videoLink": "",
 			"artists": [
 				"Katastrof"
 			],
