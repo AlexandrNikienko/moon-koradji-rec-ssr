@@ -40,13 +40,13 @@
 			},
 			"facebookShareThumb": "mkrl030_simon_hayes_darkness_believes_in_colour_fb_share.jpeg",
 			"releaseRoute": "simon-hayes-darkness-believes-in-colour",
-			"releaseDescription": [
+			"_releaseDescription": [
 				{
 					"paragraph": "More info soon."
 				}
 			],
 			"releaseAuthor": "Simon Hayes",
-			"masteredBy": "Wild MAstering",
+			"masteredBy": "Wild Mastering",
 			"artworkBy": "Simon Hayes",
 			"styles": ["Dark Psytrance"],
 			"bpmRange": { "min": 150, "max": 150 }
