@@ -160,8 +160,8 @@ export class WelcomeComponent implements AfterViewInit, OnDestroy {
     // Title 1 (MOON KORADJI) - slide up
     tl.fromTo(
       this.titleAccentRef.nativeElement,
-      { opacity: 0 },
-      { opacity: 1, duration: 1, ease: 'power3.out' },
+      { opacity: 0, y: 30 },
+      { opacity: 1, y: 0, duration: 1, ease: 'power3.out' },
       0.15
     );
 
@@ -169,7 +169,13 @@ export class WelcomeComponent implements AfterViewInit, OnDestroy {
     tl.fromTo(
       this.titleRecordsRef.nativeElement,
       { opacity: 0, y: 30 },
-      { opacity: 1, y: 0, duration: 1, ease: 'power3.out' },
+      { opacity: 1, y: 0, duration: 1, ease: 'power3.out',
+        onComplete: () => {
+          gsap.set(this.titleAccentRef.nativeElement, {
+            clearProps: 'transform'
+          });
+        }
+       },
       0.25
     );
 
