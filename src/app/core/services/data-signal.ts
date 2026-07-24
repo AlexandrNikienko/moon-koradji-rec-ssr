@@ -1,5 +1,6 @@
 import { Injectable, inject, signal, computed } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { firstValueFrom } from 'rxjs';
 
 import { DATAFOLDER } from '../../../environments/environment';
 import { toObservable } from '@angular/core/rxjs-interop';
@@ -67,6 +68,25 @@ export class DataSignalService {
 			return copy;
 		});
 		this.ensureLoaded(key);
+	}
+
+	/**
+	 * Prefetch specific data keys and store them synchronously for SSR.
+	 * Resolves when all keys have been fetched (or errored).
+	 */
+	prefetch(keys: string[]): Promise<void> {
+		const tasks = keys.map(key => {
+			const url = `${DATAFOLDER}${key}.json`;
+			return firstValueFrom(this.http.get<{ [k: string]: any }>(url))
+				.then(data => {
+					this.store.update(s => ({ ...s, [key]: data[key] }));
+				})
+				.catch(() => {
+					// swallow errors during prefetch to avoid blocking render
+				});
+		});
+
+		return Promise.all(tasks).then((): void => undefined);
 	}
 
 	clear(): void {

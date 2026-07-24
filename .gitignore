@@ -44,3 +44,5 @@ speed-measure-plugin*.json
 .angular/cache/15.2.1/babel-webpack
 .angular/**
 
+#build files
+/dist
