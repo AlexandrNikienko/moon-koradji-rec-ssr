@@ -1740,6 +1740,7 @@
 			"artistRoute": "simon-hayes",
 			"artistName": "Simon Hayes",
 			"artistRealName": "Simon Hayes",
+			"featured": true,
 			"artistCountry": "South Africa",
 			"flag": "za",
 			"artistAvatar": "artist_simon_hayes.jpg",
