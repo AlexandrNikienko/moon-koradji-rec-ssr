@@ -22,7 +22,13 @@
 			"masteredBy": "Anarkick",
 			"artworkBy": "Coyo Tao",
 			"styles": ["Drum and Bass"],
-			"bpmRange": { "min": 172, "max": 180 }
+			"bpmRange": { "min": 172, "max": 180 },
+			"_streamingLinks": {
+				"spotify": "",
+				"appleMusic": "",
+				"beatport": "",
+				"tidal": ""
+			}
 		},
 		{
 			"isHero": true,
@@ -66,11 +72,11 @@
 			"artists": [
 				"Simon Hayes"
 			],
-			"_streamingLinks": {
-				"spotify": "",
-				"appleMusic": "",
-				"beatport": "",
-				"tidal": ""
+			"streamingLinks": {
+				"spotify": "https://open.spotify.com/album/0235t2zcT1RxAZNLSXZyMH",
+				"appleMusic": "https://music.apple.com/ua/album/darkness-believes-in-colour/6796698397",
+				"beatport": "https://www.beatport.com/release/darkness-believes-in-colour/7297530",
+				"tidal": "https://tidal.com/album/548131138"
 			}
 		},
 		{
