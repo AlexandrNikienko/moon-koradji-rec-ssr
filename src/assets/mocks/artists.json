@@ -1064,6 +1064,27 @@
 			"artistSoundcloud": ""
 		},
 		{
+			"artistRoute": "lentej",
+			"artistName": "Lentej",
+			"artistRealName": "Luisiany Inoa",
+			"artistCountry": "USA",
+			"flag": "us",
+			"artistAvatar": "artist_lentej.jpg",
+			"artistDescription": [
+				{
+					"paragraph": "Lentej born and raised in NY, USA is a DJ & electronic music producer who’s creative journey started in 2006."
+				},
+				{
+					"paragraph": "With a knack for both uplifting and dark music, he likes to blend these contrasting sonic universes to create something truly unforeseen."
+				},
+				{
+					"paragraph": "Inspired by life and all kinds of music, he's dedicated to creating and playing simpler, but highly effective psychedelic dance music."
+				}
+			],
+			"artistFacebook": "https://facebook.com/LentejDj/",
+			"artistSoundcloud": "https://soundcloud.com/lentej"
+		},
+		{
 			"artistRoute": "loom",
 			"artistName": "Loom",
 			"artistRealName": "Nicolas Marcato",

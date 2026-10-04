@@ -33,6 +33,55 @@
 		{
 			"isHero": true,
 			"isNew": true,
+			"releaseNumber": "MKRL031",
+			"releaseYear": "2026",
+			"releaseType": "EP",
+			"releaseDate": "October 2, 2026",
+			"releaseTitle": "Lentej - Space Jungle",
+			"releaseSubTitle": "listen & purchase",
+			"releaseCover": {
+				"default": "mkrl031_lentej_space_jungle.jpg",
+				"webp": "mkrl031_lentej_space_jungle-500.webp",
+				"webp2x": "mkrl031_lentej_space_jungle-1000.webp"
+			},
+			"facebookShareThumb": "mkrl031_lentej_space_jungle_fb_share.jpg",
+			"releaseRoute": "lentej-space-jungle",
+			"releaseDescription": [
+				{
+					"paragraph": "Moon Koradji presents Space Jungle, the debut 4-track EP from Lentej. Across its first three tracks, Lentej merges minimalist forest textures with dark atmospheres, while simultaneously layering groovy basslines with relentless energy, creating a strange space where organic environments and digital blend in unexpected ways."
+				},
+				{
+					"paragraph": "The journey reaches its final destination with an experimental Psy-influenced Breakcore track, a lax but high-intensity trip to transport you places you never knew existed…"
+				},
+				{
+					"paragraph": "An unforgettable adventure awaits you."
+				}
+			],
+			"releaseAuthor": "Luisiany Inoa",
+			"masteredBy": "Petran",
+			"artworkBy": "Gydravlic",
+			"styles": ["Dark Psytrance", "Breakcore"],
+			"bpmRange": { "min": 149, "max": 196 },
+			"tracklist": [
+				"Lentej - Bottle Trip",
+				"Lentej - Flood",
+				"Lentej - Haus Music",
+				"Lentej - Bhagna"
+			],
+			"bandcampLink": "https://moonkoradjirecords.bandcamp.com/album/lentej-space-jungle",
+			"albumBandcampId": "3669289072",
+			"artists": [
+				"Lentej"
+			],
+			"_streamingLinks": {
+				"spotify": "",
+				"appleMusic": "",
+				"beatport": "",
+				"tidal": ""
+			}
+		},
+		{
+			"isNew": true,
 			"releaseNumber": "MKRL030",
 			"releaseYear": "2026",
 			"releaseType": "EP",
@@ -134,7 +183,6 @@
 			"bpmRange": { "min": 142, "max": 153 }
 		},
 		{
-			"isNew": true,
 			"releaseNumber": "MKRL028",
 			"releaseYear": "2026",
 			"releaseType": "EP",
