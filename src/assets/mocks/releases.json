@@ -73,11 +73,11 @@
 			"artists": [
 				"Lentej"
 			],
-			"_streamingLinks": {
-				"spotify": "",
-				"appleMusic": "",
+			"streamingLinks": {
+				"spotify": "https://open.spotify.com/album/50uoE5jVwghNHiqqJD2X30",
+				"appleMusic": "https://music.apple.com/us/album/space-jungle-ep/6820969178",
 				"beatport": "",
-				"tidal": ""
+				"tidal": "https://tidal.com/album/568520115"
 			}
 		},
 		{

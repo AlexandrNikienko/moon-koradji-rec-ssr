@@ -1082,7 +1082,10 @@
 				}
 			],
 			"artistFacebook": "https://facebook.com/LentejDj/",
-			"artistSoundcloud": "https://soundcloud.com/lentej"
+			"artistSoundcloud": "https://soundcloud.com/lentej",
+			"styles": [
+				"Dark Psytrance"
+			]
 		},
 		{
 			"artistRoute": "loom",
